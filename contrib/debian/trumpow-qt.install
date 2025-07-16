@@ -1,0 +1,6 @@
+usr/local/bin/trumpow-qt usr/bin
+share/pixmaps/trumpow32.xpm usr/share/pixmaps
+share/pixmaps/trumpow16.xpm usr/share/pixmaps
+share/pixmaps/trumpow128.png usr/share/pixmaps
+debian/trumpow-qt.desktop usr/share/applications
+debian/trumpow-qt.protocol usr/share/kde4/services/

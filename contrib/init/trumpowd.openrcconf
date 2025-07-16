@@ -1,0 +1,33 @@
+# /etc/conf.d/trumpowd: config file for /etc/init.d/trumpowd
+
+# Config file location
+#TRUMPOWD_CONFIGFILE="/etc/trumpow/trumpow.conf"
+
+# What directory to write pidfile to?  (created and owned by $TRUMPOWD_USER)
+#TRUMPOWD_PIDDIR="/var/run/trumpowd"
+
+# What filename to give the pidfile
+#TRUMPOWD_PIDFILE="${TRUMPOWD_PIDDIR}/trumpowd.pid"
+
+# Where to write trumpowd data (be mindful that the blockchain is large)
+#TRUMPOWD_DATADIR="/var/lib/trumpowd"
+
+# User and group to own trumpowd process
+#TRUMPOWD_USER="trumpow"
+#TRUMPOWD_GROUP="trumpow"
+
+# Path to trumpowd executable
+#TRUMPOWD_BIN="/usr/bin/trumpowd"
+
+# Nice value to run trumpowd under
+#TRUMPOWD_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+TRUMPOWD_OPTS="-disablewallet"
+
+# The timeout in seconds OpenRC will wait for trumpowd to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+TRUMPOWD_SIGTERM_TIMEOUT=60
