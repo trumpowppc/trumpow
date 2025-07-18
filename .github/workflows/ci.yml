@@ -152,10 +152,8 @@ jobs:
                procps bison python3 python3-pip python3-setuptools python3-wheel
           apt-get install -y ${{ matrix.packages }}
 
-          # Install autoconf-archive to fix AX_CXX_COMPILE_STDCXX macro issue (only for Linux)
-          if grep -qi "linux" <<< "${{ matrix.name }}"; then
-            apt-get install -y autoconf-archive
-          fi
+          # Fix for AX_CXX_COMPILE_STDCXX macro
+          echo "${{ matrix.name }}" | grep -qi "linux" && apt-get install -y autoconf-archive
 
           python3 -m pip install setuptools==70.3.0 --upgrade
           python3 -m pip install lief
