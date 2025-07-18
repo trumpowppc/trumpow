@@ -82,7 +82,7 @@ jobs:
             host: i686-w64-mingw32
             container: ubuntu:20.04
             container-options: --privileged
-            packages: python3 nsis g++-mingw-w64-i686 wine32 bc wine-binfmt binfmt-support
+            packages: python3 nsis g++-mingw-w64-i686 wine32 bc wine-binfmt binfmt-support autoconf-archive
             preinstall: |
               dpkg --add-architecture i386
             postinstall: |
@@ -101,7 +101,7 @@ jobs:
             host: x86_64-w64-mingw32
             container: ubuntu:20.04
             container-options: --privileged
-            packages: python3 nsis g++-mingw-w64-x86-64 wine64 bc wine-binfmt
+            packages: python3 nsis g++-mingw-w64-x86-64 wine64 bc wine-binfmt autoconf-archive
             postinstall: |
               update-alternatives --set x86_64-w64-mingw32-gcc  /usr/bin/x86_64-w64-mingw32-gcc-posix
               update-alternatives --set x86_64-w64-mingw32-g++  /usr/bin/x86_64-w64-mingw32-g++-posix
@@ -117,7 +117,7 @@ jobs:
           - name: x86_64-macos
             host: x86_64-apple-darwin11
             container: ubuntu:20.04
-            packages: cmake imagemagick libcap-dev librsvg2-bin libz-dev libbz2-dev libtiff-tools libtinfo5 xorriso
+            packages: cmake imagemagick libcap-dev librsvg2-bin libz-dev libbz2-dev libtiff-tools libtinfo5 xorriso autoconf-archive
             run-bench: false
             check-security: true
             check-symbols: false
