@@ -35,13 +35,13 @@ PGP keys used for signing Trumpow Core [Gitian release](/doc/release-process.md)
 Scripts and notes for Mac builds.
 
 ### [RPM](/contrib/rpm) ###
-RPM spec file for building trumpow-core on RPM based distributions
+RPM spec file for building trumpow on RPM based distributions
 
 ### [Gitian-build](/contrib/gitian-build.sh) ###
 Script for running full Gitian builds.
 
 ### [Snap](/contrib/snap) ###
-snapcraft.yaml file for building and distributing trumpow-core with Snapcraft.
+snapcraft.yaml file for building and distributing trumpow with Snapcraft.
 
 Test and Verify Tools
 ---------------------

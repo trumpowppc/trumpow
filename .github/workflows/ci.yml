@@ -241,5 +241,5 @@ jobs:
             depends/${{ matrix.host }}/include/bitcoinconsensus.h
             depends/${{ matrix.host }}/share/man/man1/trumpow*
             dist/Trumpow-Qt.app
-            Trumpow-Core.dmg
+            Trumpow.dmg
             ${{ matrix.name }}-bench.csv

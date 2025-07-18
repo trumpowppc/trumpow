@@ -514,7 +514,7 @@ std::string HelpMessage(HelpMessageMode mode)
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/trumpowppc/trumpow-core>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/trumpowppc/trumpow>";
     const std::string URL_WEBSITE = "<https://trumpow.meme>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2013, COPYRIGHT_YEAR) + " ") + "\n" +

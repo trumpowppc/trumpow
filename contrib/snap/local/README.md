@@ -17,9 +17,9 @@ snap install \*.snap --devmode
 ### To Upload to the Snap Store
 ```
 snapcraft login
-snapcraft register trumpow-core
+snapcraft register trumpow
 snapcraft upload \*.snap
-sudo snap install trumpow-core
+sudo snap install trumpow
 ```
 
 ### Usage
