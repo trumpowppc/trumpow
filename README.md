@@ -88,7 +88,7 @@ The JSON-RPC API provided by Trumpow Core is self-documenting and can be browsed
 		<td>15,625</td>
 	</tr>
 	<tr>
-		<td width="230">1,150,000</td>
+		<td width="230">1,050,000</td>
 		<td width="270">unlimited supply</td>
 		<td>10,000</td>
 	</tr>
