@@ -1,7 +1,7 @@
 <h1 align="center">
 <img src="https://i.imgur.com/sSswTOM.png" alt="Trumpow" width="300"/>
 <br/><br/>
-Trumpow Core [TRMP]
+TrumPOW [TRMP]
 </h1>
 
 
@@ -9,7 +9,7 @@ TrumPOW introduces an innovative world of meme-inspired cryptocurrency, blending
 
 Unlike all iterations before it, Trumpow is a layer 1 coin. This means there are no liquidity pools to drain, no blacklisting wallets, and no confusing smart contracts. Trumpow is a simple blockchain.
 
-The Trumpow Core software allows anyone to operate a node in the Trumpow blockchain networks and uses the Scrypt hashing method for Proof of Work. It is adapted from Dogecoin Core, Bitcoin Core, and other cryptocurrencies.
+The TrumPOW software allows anyone to operate a node in the Trumpow blockchain networks and uses the Scrypt hashing method for Proof of Work. It is adapted from Dogecoin Core, Bitcoin Core, and other cryptocurrencies.
 
 For information about the default fees used on the Trumpow network, please
 refer to the [fee recommendation](doc/fee-recommendation.md).
@@ -38,9 +38,9 @@ Changes:
 
 ## Usage 💻
 
-To start your journey with Trumpow Core, see the [installation guide](INSTALL.md) and the [getting started](doc/getting-started.md) tutorial.
+To start your journey with TrumPOW, see the [installation guide](INSTALL.md) and the [getting started](doc/getting-started.md) tutorial.
 
-The JSON-RPC API provided by Trumpow Core is self-documenting and can be browsed with `trumpow-cli help`, while detailed information for each command can be viewed with `trumpow-cli help <command>`. Alternatively, see the [Bitcoin Core documentation](https://developer.bitcoin.org/reference/rpc/) - which implement a similar protocol - to get a browsable version.
+The JSON-RPC API provided by TrumPOW is self-documenting and can be browsed with `trumpow-cli help`, while detailed information for each command can be viewed with `trumpow-cli help <command>`. Alternatively, see the [Bitcoin Core documentation](https://developer.bitcoin.org/reference/rpc/) - which implement a similar protocol - to get a browsable version.
 
 
 
@@ -97,7 +97,7 @@ The JSON-RPC API provided by Trumpow Core is self-documenting and can be browsed
 
 ### Ports
 
-Trumpow Core by default uses port `14327` for peer-to-peer communication that
+TrumPOW by default uses port `14327` for peer-to-peer communication that
 is needed to synchronize the "mainnet" blockchain and stay informed of new
 transactions and blocks. Additionally, a JSONRPC port can be opened, which
 defaults to port `15612` for mainnet nodes. It is strongly recommended to not
@@ -110,7 +110,7 @@ expose RPC ports to the public internet.
 
 ## Ongoing development 💻
 
-Trumpow Core is an open source and community driven software. The development
+TrumPOW is an open source and community driven software. The development
 process is open and publicly visible; anyone can see, discuss and work on the
 software.
 
@@ -120,7 +120,7 @@ Main development resources:
   follow planned and in-progress work for upcoming releases.
 * [GitHub Discussion](https://github.com/trumpowppc/trumpow/discussions) is used
   to discuss features, planned and unplanned, related to both the development of
-  the Trumpow Core software, the underlying protocols and the TRMP asset.
+  the TrumPOW software, the underlying protocols and the TRMP asset.
 
 
 ### Version strategy
@@ -144,7 +144,7 @@ If you find a bug or experience issues with this software, please report it
 using the [issue system](https://github.com/trumpowppc/trumpow/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5Bbug%5D+).
 
 Please see [the contribution guide](CONTRIBUTING.md) to see how you can
-participate in the development of Trumpow Core. There are often
+participate in the development of TrumPOW. There are often
 [topics seeking help](https://github.com/trumpowppc/trumpow/labels/help%20wanted)
 where your contributions will have high impact and get very appreciation.
 
@@ -174,6 +174,6 @@ Here are some places to visit:
 Do you have a question regarding Trumpow? An answer is perhaps already in the [FAQ](doc/FAQ.md) or the [Q&A section](https://github.com/trumpowppc/trumpow/discussions/categories/q-a) of the discussion board!
 
 ## License ⚖️
-Trumpow Core is released under the terms of the MIT license. See
+TrumPOW is released under the terms of the MIT license. See
 [COPYING](COPYING) for more information or see
 [opensource.org](https://opensource.org/licenses/MIT)
