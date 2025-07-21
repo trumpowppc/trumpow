@@ -24,7 +24,7 @@ Changes:
 
 * Addresses start with `T` instead of `D`
 * BIPS features will start block 1000
-* AuxPow starts at block 60,000 (Chain ID: 168)
+* AuxPow / Merge mining starts at block 60,000 (Chain ID: 168)
 * GUI themed for Trumpow
 
 * Coin Name    : TrumPOW
@@ -159,15 +159,15 @@ Here are some places to visit:
 
 * [Discord](https://discord.gg/rqtkgwsk6j)
 * [Website](https://trumpow.meme/)
-* [Telegram](https://t.me/trumpow)
-* [X](https://x.com/trumpowpow)
+* [Telegram EN](https://t.me/TrumPOWEN)
+* [Telegram CN](https://t.me/TrumPOWcn)
+* [X](https://x.com/trumpow168)
+* Explorer 1   : https://explorer.trumpow.meme
+* Explorer 2   : https://explorer-1.trumpow.meme
 
 ## Future Plan
 
-- More marketing
-- More development
-- Everything need to make TrumPOW to the moon
-
+- Please check the roadmap in our website
 
 ## Frequently Asked Questions ❓
 
