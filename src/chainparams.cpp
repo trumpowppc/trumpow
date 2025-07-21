@@ -83,7 +83,7 @@ public:
         consensus.nMajorityWindow = 2000;
         // BIP34 is never enforced in TRMP v2 blocks, so we enforce from v3
         consensus.BIP34Height = 1000;
-        consensus.BIP34Hash = uint256S("0x00"); // Replace this with block 1000 hash after mainnet launches
+        consensus.BIP34Hash = uint256S("0x568308325793c296a347599535dabd87aa0eb5ed4ab4fec35d76f262297de8e8"); // Replace this with block 1000 hash after mainnet launches // done replacement
         consensus.BIP65Height = 1000;
         consensus.BIP66Height = 1000;
         consensus.powLimit = uint256S("0x00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20;
@@ -112,9 +112,9 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 0; // Disabled
 
         // The best chain should have at least this much work.
-	    consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000010001"); // genesis min chainwork of mainnet
+	    consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000000000ecacd9e92a6d31"); // 5500
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0xe81c430d51410470bcefcd8ecd4661bde27fb2ef14df54d48fb6c2cdaa0c1fde"); // genesis hash mainnet
+        consensus.defaultAssumeValid = uint256S("0x7793d42151b246c68a45441b02676b66720fb7ec8b1e2c784a13ceedba9b1bc7"); // 5500
 
         // AuxPoW parameters
         consensus.nAuxpowChainId = 0x00A8; // 168
@@ -180,6 +180,9 @@ public:
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
             ( 0, uint256S("0xe81c430d51410470bcefcd8ecd4661bde27fb2ef14df54d48fb6c2cdaa0c1fde")) // genesis hash mainnet
+            ( 1000, uint256S("0x568308325793c296a347599535dabd87aa0eb5ed4ab4fec35d76f262297de8e8")) // 1000
+            ( 5500, uint256S("0x7793d42151b246c68a45441b02676b66720fb7ec8b1e2c784a13ceedba9b1bc7")) // 5500
+            
         };
 
         chainTxData = ChainTxData{ };
