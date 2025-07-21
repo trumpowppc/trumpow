@@ -22,7 +22,7 @@ apps:
     command: bin/trumpowd
     plugs: [home, removable-media, network, network-bind]
     environment:
-      # Override HOME so the datadir is located at ~/snap/trumpow-core/common/.trumpow/ instead of ~/snap/trumpow-core/current/.trumpow/, and each new version of the snap won't have a different data directory: https://docs.snapcraft.io/environment-variables/7983
+      # Override HOME so the datadir is located at ~/snap/trumpow/common/.trumpow/ instead of ~/snap/trumpow/current/.trumpow/, and each new version of the snap won't have a different data directory: https://docs.snapcraft.io/environment-variables/7983
       HOME: $SNAP_USER_COMMON
   qt:
     command-chain: [bin/desktop-launch]

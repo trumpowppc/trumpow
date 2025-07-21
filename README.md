@@ -32,8 +32,8 @@ Changes:
 * Algorithm    : Scrypt
 * Block Time   : 60 seconds
 * Explorer 1   : https://explorer.trumpow.meme
-* github       : https://github.com/trumpowppc/trumpow-core
-* Wallet       : https://github.com/trumpowppc/trumpow-core/releases
+* github       : https://github.com/trumpowppc/trumpow
+* Wallet       : https://github.com/trumpowppc/trumpow/releases
 
 
 ## Usage 💻
@@ -116,9 +116,9 @@ software.
 
 Main development resources:
 
-* [GitHub Projects](https://github.com/trumpowppc/trumpow-core/projects) is used to
+* [GitHub Projects](https://github.com/trumpowppc/trumpow/projects) is used to
   follow planned and in-progress work for upcoming releases.
-* [GitHub Discussion](https://github.com/trumpowppc/trumpow-core/discussions) is used
+* [GitHub Discussion](https://github.com/trumpowppc/trumpow/discussions) is used
   to discuss features, planned and unplanned, related to both the development of
   the Trumpow Core software, the underlying protocols and the TRMP asset.
 
@@ -141,11 +141,11 @@ There are 3 types of branches in this repository:
 ## Contributing 🤝
 
 If you find a bug or experience issues with this software, please report it
-using the [issue system](https://github.com/trumpowppc/trumpow-core/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5Bbug%5D+).
+using the [issue system](https://github.com/trumpowppc/trumpow/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5Bbug%5D+).
 
 Please see [the contribution guide](CONTRIBUTING.md) to see how you can
 participate in the development of Trumpow Core. There are often
-[topics seeking help](https://github.com/trumpowppc/trumpow-core/labels/help%20wanted)
+[topics seeking help](https://github.com/trumpowppc/trumpow/labels/help%20wanted)
 where your contributions will have high impact and get very appreciation.
 
 ## Communities 🐸
@@ -171,7 +171,7 @@ Here are some places to visit:
 
 ## Frequently Asked Questions ❓
 
-Do you have a question regarding Trumpow? An answer is perhaps already in the [FAQ](doc/FAQ.md) or the [Q&A section](https://github.com/trumpowppc/trumpow-core/discussions/categories/q-a) of the discussion board!
+Do you have a question regarding Trumpow? An answer is perhaps already in the [FAQ](doc/FAQ.md) or the [Q&A section](https://github.com/trumpowppc/trumpow/discussions/categories/q-a) of the discussion board!
 
 ## License ⚖️
 Trumpow Core is released under the terms of the MIT license. See

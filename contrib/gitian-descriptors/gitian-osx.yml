@@ -31,7 +31,7 @@ packages:
 - "libtinfo5"
 - "xorriso"
 remotes:
-- "url": "https://github.com/trumpowppc/trumpow-core.git"
+- "url": "https://github.com/trumpowppc/trumpow.git"
   "dir": "trumpow"
 files:
 - "MacOSX10.11.sdk.tar.gz"

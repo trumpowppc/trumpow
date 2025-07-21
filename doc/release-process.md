@@ -3,9 +3,9 @@ Release Process
 
 Before every release candidate:
 
-* Update translations (ping wumpus on IRC) see [translation_process.md](https://github.com/trumpowppc/trumpow-core/blob/master/doc/translation_process.md#synchronising-translations).
+* Update translations (ping wumpus on IRC) see [translation_process.md](https://github.com/trumpowppc/trumpow/blob/master/doc/translation_process.md#synchronising-translations).
 
-* Update manpages, see [gen-manpages.sh](https://github.com/trumpowppc/trumpow-core/blob/master/contrib/devtools/README.md#gen-manpagessh).
+* Update manpages, see [gen-manpages.sh](https://github.com/trumpowppc/trumpow/blob/master/contrib/devtools/README.md#gen-manpagessh).
 
 Before every minor and major release:
 
@@ -21,7 +21,7 @@ Before every minor and major release:
 
 Before every major release:
 
-* Update hardcoded [seeds](/contrib/seeds/README.md), see [this pull request](https://github.com/trumpowppc/trumpow-core/pull/7415) for an example.
+* Update hardcoded [seeds](/contrib/seeds/README.md), see [this pull request](https://github.com/trumpowppc/trumpow/pull/7415) for an example.
 * Update [`BLOCK_CHAIN_SIZE`](/src/qt/intro.cpp) to the current size plus some overhead.
 
 ### First time / New builders
@@ -32,9 +32,9 @@ Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
     git clone https://github.com/Trumpow/gitian.sigs.git
-    git clone https://github.com/trumpowppc/trumpow-core-detached-sigs.git
+    git clone https://github.com/trumpowppc/trumpow-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/trumpowppc/trumpow-core.git
+    git clone https://github.com/trumpowppc/trumpow.git
 
 ### Trumpow maintainers/release engineers, update version in sources
 

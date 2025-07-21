@@ -56,7 +56,7 @@
 * Change ticker symbol from `PPC` to `TRMP` in `readme.md`, man pages, and `amount.cpp`
 * Update `assets-attribution.md`
 * Update `gen-manpages.sh` to target the bash shell
-* Update readme files to correct urls and Pepe icon/text. Remove references to Trumpow in the Dogecoin release notes. Move Dogecoin release notes to new `release-notes/dogecoin` folder.
+* Update readme files to correct urls and TRMP icon/text. Remove references to Trumpow in the Dogecoin release notes. Move Dogecoin release notes to new `release-notes/dogecoin` folder.
 * Add link to official community Discord
 * Update `FAQ.md` to reflect Trumpow changes
 * Update `README_windows.txt` to point to the Dogecoin wiki (The wiki for Dogecoin is a good guide for Trumpow as well)

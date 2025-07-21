@@ -123,7 +123,7 @@ elif [[ ${OS} == "osx" ]]; then
 
     make deploy
 
-    ${GITHUB_WORKSPACE}/depends/x86_64-apple-darwin14/native/bin/dmg dmg "TRMP-Core.dmg" ${RELEASE_LOCATION}/${DISTNAME}-osx-unsigned.dmg
+    ${GITHUB_WORKSPACE}/depends/x86_64-apple-darwin14/native/bin/dmg dmg "Trumpow-Core.dmg" ${RELEASE_LOCATION}/${DISTNAME}-osx-unsigned.dmg
 
     cd ${STAGE_DIR}
     find . -name "lib*.la" -delete

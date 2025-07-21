@@ -14,7 +14,7 @@ on:
 #      - 'whitepaper/**'
 #      - '*.md'
   workflow_dispatch:
-    # This creates a "Run workflow" button on the github repo webpage when the "Build Kiteh" 
+    #     This creates a "Run workflow" button on the github repo webpage when the "Build Trumpow" 
     #     workflow is selected on the "Actions" tab. But only if this workflow is in
     #     the branch which is selected on github as the "default branch".
     inputs:
@@ -97,7 +97,7 @@ jobs:
       run: ${SCRIPTS}/04-configure-build.sh ${{ MATRIX.OS }} ${{ GITHUB.WORKSPACE }}
 
     - if: ${{ needs.check-jobs.outputs.should_skip != 'true' }}
-      name: Build KITEH
+      name: Build TRMP
       run: make -j2
 
 # Skip the binary checks for now.

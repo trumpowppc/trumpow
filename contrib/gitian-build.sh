@@ -37,7 +37,7 @@ test=false
 # Other Basic variables
 SIGNER=
 VERSION=
-url=https://github.com/trumpowppc/trumpow-core
+url=https://github.com/trumpowppc/trumpow
 proc=2
 mem=2000
 scriptName=$(basename -- "$0")
