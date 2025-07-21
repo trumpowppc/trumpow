@@ -1,5 +1,5 @@
 <h1 align="center">
-<img src="https://i.imgur.com/N6oux3G.png" alt="Trumpow" width="300"/>
+<img src="https://i.imgur.com/sSswTOM.png" alt="Trumpow" width="300"/>
 <br/><br/>
 Trumpow Core [TRMP]
 </h1>
