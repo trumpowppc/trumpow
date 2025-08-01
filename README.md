@@ -1,7 +1,7 @@
 <h1 align="center">
 <img src="https://i.imgur.com/sSswTOM.png" alt="Trumpow" width="300"/>
 <br/><br/>
-TrumPOW [TRMP]
+TrumPOW [$TRMP]
 </h1>
 
 
@@ -24,11 +24,10 @@ Changes:
 
 * Addresses start with `T` instead of `D`
 * BIPS features will start block 1000
-* AuxPow / Merge mining starts at block 60,000 (Chain ID: 168)
+* AuxPow / Merged mining starts at block 60,000 (Chain ID: 168)
 * GUI themed for Trumpow
-
 * Coin Name    : TrumPOW
-* Coin ticker  : TRMP
+* Coin ticker  : $TRMP
 * Algorithm    : Scrypt
 * Block Time   : 60 seconds
 * Explorer 1   : https://explorer.trumpow.meme
@@ -84,7 +83,7 @@ The JSON-RPC API provided by TrumPOW is self-documenting and can be browsed with
 	</tr>
 	<tr>
 		<td width="230">900,000</td>
-		<td width="270">1,149,999</td>
+		<td width="270">1,049,999</td>
 		<td>15,625</td>
 	</tr>
 	<tr>
@@ -97,7 +96,7 @@ The JSON-RPC API provided by TrumPOW is self-documenting and can be browsed with
 
 ### Ports
 
-TrumPOW by default uses port `14327` for peer-to-peer communication that
+TrumPOW by default uses port `33884` for peer-to-peer communication that
 is needed to synchronize the "mainnet" blockchain and stay informed of new
 transactions and blocks. Additionally, a JSONRPC port can be opened, which
 defaults to port `15612` for mainnet nodes. It is strongly recommended to not
@@ -160,10 +159,10 @@ Here are some places to visit:
 * [Discord](https://discord.gg/rqtkgwsk6j)
 * [Website](https://trumpow.meme/)
 * [Telegram EN](https://t.me/TrumPOWEN)
-* [Telegram CN](https://t.me/TrumPOWcn)
+* [Telegram CN](https://t.me/TrumPOWCN)
 * [X](https://x.com/trumpow168)
-* Explorer 1   : https://explorer.trumpow.meme
-* Explorer 2   : https://explorer-1.trumpow.meme
+* Explorer #1   : https://explorer.trumpow.meme
+* Explorer #2   : https://explorer-1.trumpow.meme
 
 ## Future Plan
 
