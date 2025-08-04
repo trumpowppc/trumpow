@@ -53,41 +53,41 @@ The JSON-RPC API provided by TrumPOW is self-documenting and can be browsed with
 	</tr>
 	<tr>
 		<td width="230">1</td>
-		<td width="270">149,999</td>
+		<td width="270">99,999</td>
 		<td>1,000,000</td>
 	</tr>
 	<tr>
-		<td width="230">150,000</td>
-		<td width="270">299,999</td>
+		<td width="230">100,000</td>
+		<td width="270">199,999</td>
 		<td>500,000</td>
 	</tr>
 	<tr>
-		<td width="230">300,000</td>
-		<td width="270">449,999</td>
+		<td width="230">200,000</td>
+		<td width="270">299,999</td>
 		<td>250,000</td>
 	</tr>
 	<tr>
-		<td width="230">450,000</td>
-		<td width="270">599,999</td>
+		<td width="230">300,000</td>
+		<td width="270">399,999</td>
 		<td>125,000</td>
 	</tr>
 	<tr>
-		<td width="230">600,000</td>
-		<td width="270">749,999</td>
+		<td width="230">400,000</td>
+		<td width="270">499,999</td>
 		<td>62,500</td>
 	</tr>
 	<tr>
-		<td width="230">750,000</td>
-		<td width="270">899,999</td>
+		<td width="230">500,000</td>
+		<td width="270">599,999</td>
 		<td>31,250</td>
 	</tr>
 	<tr>
-		<td width="230">900,000</td>
-		<td width="270">1,049,999</td>
+		<td width="230">600,000</td>
+		<td width="270">699,999</td>
 		<td>15,625</td>
 	</tr>
 	<tr>
-		<td width="230">1,050,000</td>
+		<td width="230">700,000</td>
 		<td width="270">unlimited supply</td>
 		<td>10,000</td>
 	</tr>

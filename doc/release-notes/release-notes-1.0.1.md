@@ -1,4 +1,4 @@
-##Trumpow Core 1.0.0 Release Notes (Initial Release)
+##Trumpow Core 1.0.1 Release Notes (Initial Release)
 
 ####Technical
 
