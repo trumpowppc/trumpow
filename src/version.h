@@ -43,6 +43,9 @@ static const int INVALID_CB_NO_BAN_VERSION = 70015;
 //! accept merge mining before block 100k, starting with this version
 static const int AUXPOW_BEFORE_100K_VERSION = 70016;
 
+//! Fix the mistake made with halving to reduce total supply and inflation
+static const int HALVING_FIX_VERSION = 70017;
+
 // XXX: Decide if this is appropriate - if we reintroduce alerts we may need
 //      to  reduce to 70016
 //! disconnect from peers older than this proto version
