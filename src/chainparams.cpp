@@ -19,6 +19,7 @@
 #include "chainparamsseeds.h"
 #include "arith_uint256.h"
 #include "arith_uint256.h"
+
 static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesisOutputScript, uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
     CMutableTransaction txNew;
@@ -202,7 +203,7 @@ public:
     CTestNetParams() {
         strNetworkID = "test";
 
-        consensus.nSubsidyHalvingInterval = 150000;
+        consensus.nSubsidyHalvingInterval = 100000;
         consensus.nMajorityEnforceBlockUpgrade = 501;
         consensus.nMajorityRejectBlockOutdated = 750;
         consensus.nMajorityWindow = 1000;
