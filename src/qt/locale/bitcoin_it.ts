@@ -2630,7 +2630,7 @@ p, li { white-space: pre-wrap; }
         <translation>Attenzione: Non é possibile calcolare le commissioni di transazione in questo momento.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 ribbits and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 ribbits in fee, while &quot;total at least&quot; pays 1000 ribbits. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 trumpowtoshi and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 trumpowtoshi in fee, while &quot;total at least&quot; pays 1000 trumpowtoshi. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation>Se la commissioni di transazione sono configurate su 1000 ribbit e la transazione é solo 250 bytes, la commissione sará solamente di 250 ribbit per kilobyte, mentre il totale sará di almeno 1000 ribbit. Per transazioni più grandi di un kilobyte entrambi pagano per kilobyte.</translation>
     </message>
     <message>
