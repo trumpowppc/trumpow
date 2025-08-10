@@ -160,7 +160,7 @@ Here are some places to visit:
 * [Website](https://trumpow.meme/)
 * [Telegram EN](https://t.me/TrumPOWEN)
 * [Telegram CN](https://t.me/TrumPOWCN)
-* [X](https://x.com/trumpow168)
+* [X](https://x.com/TrmPow)
 * Explorer #1   : https://explorer.trumpow.meme
 * Explorer #2   : https://explorer-1.trumpow.meme
 
