@@ -1,8 +1,8 @@
-Source: Trumpow
+Source: trumpow
 Section: utils
 Priority: optional
-Maintainer:
-Uploaders:
+Maintainer: Matt Corallo <matt@mattcorallo.com>
+Uploaders: Matt Corallo <matt@mattcorallo.com>
 Build-Depends: debhelper,
  devscripts,
  automake,

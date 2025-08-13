@@ -1,7 +1,6 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2016 The Bitcoin Core developers
-// Copyright (c) 2022 The Dogecoin Core developers
-// Copyright (c) 2025 The Trumpow Core developers
+// Copyright (c) 2022-2024 The Dogecoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -17,8 +16,6 @@
 #include <boost/assign/list_of.hpp>
 
 #include "chainparamsseeds.h"
-#include "arith_uint256.h"
-#include "arith_uint256.h"
 
 static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesisOutputScript, uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
@@ -78,6 +75,7 @@ public:
     CMainParams() {
         strNetworkID = "main";
 
+        // Blocks 0 - 100000 are conventional difficulty calculation
         consensus.nSubsidyHalvingInterval = 100000;
         consensus.nMajorityEnforceBlockUpgrade = 1500;
         consensus.nMajorityRejectBlockOutdated = 1900;
@@ -102,7 +100,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
 
         // Deployment of BIP68, BIP112, and BIP113.
-        // XXX: BIP heights and hashes all need to be updated to TRMP values
+        // XXX: BIP heights and hashes all need to be updated to Trumpow values
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1462060800; // May 1st, 2016
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1493596800; // May 1st, 2017
@@ -113,7 +111,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 0; // Disabled
 
         // The best chain should have at least this much work.
-	    consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000074d82d8a18841f1"); // 23275
+	consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000074d82d8a18841f1"); // 23275
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x5b523460ef6d2917b717131b720444440e7b8ee4e634f6c02ecf2a02d41ad80a"); // 23275
 
@@ -290,29 +288,6 @@ public:
         minDifficultyConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         auxpowConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
 
-        // should i disable this?
-        // calculate main genesis block
-        // consensus.hashGenesisBlock = uint256S("0x00");
-        if (true && (genesis.GetHash() != consensus.hashGenesisBlock)) {
-            std::cout << std::string("Calculating main genesis block...\n");
-                arith_uint256 hashTarget = arith_uint256().SetCompact(genesis.nBits);
-                uint256 hash;
-                genesis.nNonce = 0;
-                while (UintToArith256(genesis.GetHash()) > hashTarget)
-                {
-                    ++genesis.nNonce;
-                    if (genesis.nNonce == 0)
-                    {
-                        ++genesis.nTime;
-                    }
-                }
-                std::cout << "Genesis block found!\n";
-                std::cout << "nonce: " << genesis.nNonce << "\n";
-                std::cout << "time: " << genesis.nTime << "\n";
-                std::cout << "blockhash: " << genesis.GetHash().ToString().c_str() << "\n";
-                std::cout << "merklehash: " << genesis.hashMerkleRoot.ToString().c_str() << "\n";
-            }
-
         assert(consensus.hashGenesisBlock == uint256S("0x9f57e1ca1fac63513eb17a6d758294c17c9c2c16169a99dc3dfcc62c552474f6")); // genesis hash testnet
         assert(genesis.hashMerkleRoot == uint256S("0xa2435644e54e63726c142a69c36e031bbb45ddc569447d568e1af7373443bb05")); // merkle hash
 
@@ -420,29 +395,6 @@ public:
         
         digishieldConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         auxpowConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
-
-        // Mine Genesis(genesis, consensus.powLimit, true);
-        // calculate main genesis block
-        // consensus.hashGenesisBlock = uint256S("0x00");
-        if (true && (genesis.GetHash() != consensus.hashGenesisBlock)) {
-            std::cout << std::string("Calculating main genesis block...\n");
-                arith_uint256 hashTarget = arith_uint256().SetCompact(genesis.nBits);
-                uint256 hash;
-                genesis.nNonce = 0;
-                while (UintToArith256(genesis.GetHash()) > hashTarget)
-                {
-                    ++genesis.nNonce;
-                    if (genesis.nNonce == 0)
-                    {
-                        ++genesis.nTime;
-                    }
-                }
-                std::cout << "Genesis block found!\n";
-                std::cout << "nonce: " << genesis.nNonce << "\n";
-                std::cout << "time: " << genesis.nTime << "\n";
-                std::cout << "blockhash: " << genesis.GetHash().ToString().c_str() << "\n";
-                std::cout << "merklehash: " << genesis.hashMerkleRoot.ToString().c_str() << "\n";
-            }
 
         assert(consensus.hashGenesisBlock == uint256S("0x0adc5031c521d2163977f517a611a6292cb87d74fbd544f8fe2684a6bb1c2d28")); // genesis hash regtest
         assert(genesis.hashMerkleRoot == uint256S("0xa2435644e54e63726c142a69c36e031bbb45ddc569447d568e1af7373443bb05")); // merkle hash

@@ -77,7 +77,6 @@ src/qt/test/moc*.cpp
 
 # Compilation and Qt preprocessor part
 *.qm
-# Makefile
 Makefile
 doc/man/Makefile
 trumpow-qt

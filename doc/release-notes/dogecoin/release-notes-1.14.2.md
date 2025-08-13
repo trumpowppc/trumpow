@@ -434,7 +434,7 @@ Unused mempool memory used by coincache
   when there is extra memory available. This may result in an increase in
   memory usage during IBD for those previously relying on only the `-dbcache`
   option to limit memory during that time.
->>>>>>> Update release notes for 1.14 (#1464)
+Update release notes for 1.14 (#1464)
 
 Credits
 =======

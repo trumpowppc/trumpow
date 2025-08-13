@@ -1,7 +1,7 @@
 Building on FreeBSD
 --------------------
 
-**Last tested with:** 1.0-dev
+**Last tested with:** 1.1.1-dev
 **Tested on:** FreeBSD 11.4
 
 Clang is installed by default as `cc` compiler, this makes it easier to get

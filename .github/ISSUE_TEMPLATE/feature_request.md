@@ -7,7 +7,7 @@ title: '[feat] '
 <!-- Please make sure you are posting an technical issue related to Trumpow Core. --> 
 
 <!-- For general questions about Trumpow or wallet recovery please use one of the various communities:
-* [Discord](https://trumpow.meme/discord) -->
+* [Discord](https://discord.gg/ybRF4dny5B) -->
 
 <!-- ISSUES MISSING IMPORTANT INFORMATION MAY BE CLOSED WITHOUT INVESTIGATION. -->
 

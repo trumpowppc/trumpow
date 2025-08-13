@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Print paper wallets</string>
+   <string>Print Your Paper Wallets</string>
   </property>
   <widget class="QLabel" name="privateKeyQRCode">
    <property name="geometry">
@@ -55,7 +55,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>New Address</string>
+    <string>Very New Address</string>
    </property>
    <property name="icon">
     <iconset resource="../bitcoin.qrc">
@@ -147,7 +147,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Print</string>
+    <string>So Print</string>
    </property>
    <property name="icon">
     <iconset resource="../bitcoin.qrc">
@@ -180,7 +180,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Number of wallets?</string>
+    <string>Many Wallets?</string>
    </property>
   </widget>
   <widget class="QComboBox" name="walletCount">

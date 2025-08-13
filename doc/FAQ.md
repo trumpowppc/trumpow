@@ -2,7 +2,7 @@
 
 ### How much Trumpow can exist?
 
-In the first 600,000 blocks (about 1 year and 2 months) 100 billion Trumpow will be mined. After this, every block will award 10,000 Trumpow. At one block per minute this equates to an additional ~5.25 billion Trumpow per year. Because a flat amount of new coins are mined, Trumpow inflates less each year.
+In the first 700,000 blocks (about 1 year and 5 months) 198 billion Trumpow will be mined. After this, every block will award 10,000 Trumpow. At one block per minute this equates to an additional ~5.25 billion Trumpow per year. Because a flat amount of new coins are mined, Trumpow inflates less each year.
 
 Inflation = ~5.25 Billion/TotalSupply
 
@@ -13,7 +13,7 @@ Since TotalSupply increases each year, inflation decreases.
 Trumpow uses a simplified variant of the scrypt key derivation function as its
 proof of work with a target time of one minute per block and difficulty
 readjustment after every block. The block rewards are fixed and halve every
-100,000 blocks. Starting with the 600,000th block, a permanent reward of
+100,000 blocks. Starting with the 700,000th block, a permanent reward of
 10,000 Trumpow per block will be issued.
 
 Reasoning from Dogecoin:
@@ -31,12 +31,26 @@ lessen the impact of sudden increases and decreases of network hashing rate.
 
 **The current block reward schedule:**
 
-| Block                | Reward in Trumpow |
+| Block                | Reward in Trumpow  |
 | :------------------- | -----------------: |
-| 1–99,999             |            500,000 |
-| 100,000–199,999      |            250,000 |
-| 200,000–299,999      |            125,000 |
-| 300,000–399,999      |             62,500 |
-| 400,000–499,999      |             31,250 |
-| 500,000–599,999      |             15,625 |
+| 1–99,999             |          1,000,000 |
+| 100,000–199,999      |            500,000 |
+| 200,000–299,999      |            250,000 |
+| 300,000–399,999      |            125,500 |
+| 400,000–499,999      |             62,500 |
+| 500,000–599,999      |             31,250 |
+| 600,000-699,999      |             15,625 |
+| 700,000+             |             10,000 |
+
+**The original block reward schedule, with one-minute block targets and
+four-hour difficulty readjustment:**
+
+| Block                | Reward in Dogecoin |
+| :------------------- | -----------------: |
+| 1–99,999             |        0–1,000,000 |
+| 100,000–199,999      |          0–500,000 |
+| 200,000–299,999      |          0–250,000 |
+| 300,000–399,999      |          0–125,000 |
+| 400,000–499,999      |           0–62,500 |
+| 500,000–599,999      |           0–31,250 |
 | 600,000+             |             10,000 |

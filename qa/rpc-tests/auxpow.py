@@ -12,8 +12,8 @@ from test_framework.util import *
 from test_framework import scrypt_auxpow
 
 class AuxPOWTest (BitcoinTestFramework):
-    REWARD = 500000 # reward per block
-    CHAIN_ID = "3f"
+    REWARD = 1000000 # reward per block
+    CHAIN_ID = "168"
     DIGISHIELD_START = 10 # nHeight when digishield starts
     AUXPOW_START = 20 # nHeight when auxpow starts
     MATURITY_HEIGHT = 60 # number of blocks for mined transactions to mature

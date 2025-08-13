@@ -44,7 +44,7 @@ related to the DNS seed operation.
 If these expectations cannot be satisfied the operator should
 discontinue providing services and contact the active Trumpow
 Core development team as well as posting on
-[Trumpow Dev](https://reddit.com/r/trumpowdev).
+[Trumpow Dev](https://reddit.com/r/trumpowdev). <will change later>
 
 Behavior outside of these expectations may be reasonable in some
 situations but should be discussed in public in advance.
@@ -52,3 +52,4 @@ situations but should be discussed in public in advance.
 See also
 ----------
 - [generic-seeder](https://github.com/team-exor/generic-seeder) is a reference implementation of a DNS seed.
+- [dogecoin-seeder](https://github.com/langerhans/dogecoin-seeder) is a reference implementation of a DNS seed.

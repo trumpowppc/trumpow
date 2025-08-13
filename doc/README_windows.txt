@@ -1,4 +1,4 @@
-Trumpow Core 1.0.0
+Trumpow Core 1.1.1
 =====================
 
 Intro

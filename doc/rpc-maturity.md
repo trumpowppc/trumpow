@@ -110,7 +110,7 @@ Core RPC. Maturity is expressed over 3 stages:
 | sendtoaddress          | STABLE     |                                            |
 | setaccount             | STABLE     |                                            |
 | setban                 | STABLE     |                                            |
-| setmaxconnections      | UNSTABLE   | New since 1.14.6                           |
+| setmaxconnections      | UNSTABLE   | New since dogecoin 1.14.6                  |
 | setnetworkactive       | STABLE     |                                            |
 | settxfee               | STABLE     |                                            |
 | signmessage            | STABLE     |                                            |
@@ -119,6 +119,7 @@ Core RPC. Maturity is expressed over 3 stages:
 | stop                   | STABLE     |                                            |
 | submitauxblock         | STABLE     |                                            |
 | submitblock            | STABLE     |                                            |
+| uptime                 | STABLE     | Introduced in dogecoin 1.15.0              |
 | validateaddress        | STABLE     |                                            |
 | verifychain            | STABLE     |                                            |
 | verifymessage          | STABLE     |                                            |

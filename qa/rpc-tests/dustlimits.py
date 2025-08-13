@@ -150,7 +150,7 @@ class DustLimitTest(BitcoinTestFramework):
         assert_equal(self.nodes[2].getmempoolinfo()['size'], 0)
         assert_equal(self.nodes[3].getmempoolinfo()['size'], 0)
 
-        print("success!")
+        print("such success. wow!")
 
     def create_dusty_tx(self, n, dust, fee):
         minAmount =  5 * (dust + fee)

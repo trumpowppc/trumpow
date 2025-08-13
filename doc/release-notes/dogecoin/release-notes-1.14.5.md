@@ -124,7 +124,7 @@ Key Derivation
 
 The BIP32 hierarchical deterministic key derivation path contained the wrong
 chain ID. Previously the chain ID 0 was used, it's now correctly set to 3 as
-per [SLIP44](https://github.com/satoshilabs/slips/blob/master/slip-0044.md).
+per [SLIP44](https://github.com/trumpowtoshilabs/slips/blob/master/slip-0044.md).
 
 The wallet.dat files stay fully interoperable between versions. Wallets created
 with 1.14.5 will benefit from greater interoperability with hardware wallets in
