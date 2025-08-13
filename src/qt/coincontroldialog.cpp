@@ -14,6 +14,7 @@
 #include "txmempool.h"
 #include "walletmodel.h"
 
+#include "base58.h"
 #include "wallet/coincontrol.h"
 #include "init.h"
 #include "policy/policy.h"
@@ -112,11 +113,7 @@ CoinControlDialog::CoinControlDialog(const PlatformStyle *_platformStyle, QWidge
     connect(ui->treeWidget, SIGNAL(itemChanged(QTreeWidgetItem*, int)), this, SLOT(viewItemChanged(QTreeWidgetItem*, int)));
 
     // click on header
-#if QT_VERSION < 0x050000
-    ui->treeWidget->header()->setClickable(true);
-#else
     ui->treeWidget->header()->setSectionsClickable(true);
-#endif
     connect(ui->treeWidget->header(), SIGNAL(sectionClicked(int)), this, SLOT(headerSectionClicked(int)));
 
     // ok button
@@ -392,10 +389,9 @@ void CoinControlDialog::viewItemChanged(QTreeWidgetItem* item, int column)
         if (ui->treeWidget->isEnabled()) // do not update on every click for (un)select all
             CoinControlDialog::updateLabels(model, this);
     }
-
     // TODO: Remove this temporary qt5 fix after Qt5.3 and Qt5.4 are no longer used.
     //       Fixed in Qt5.5 and above: https://bugreports.qt.io/browse/QTBUG-43473
-#if QT_VERSION >= 0x050000
+#if QT_VERSION < 0x050500
     else if (column == COLUMN_CHECKBOX && item->childCount() > 0)
     {
         if (item->checkState(COLUMN_CHECKBOX) == Qt::PartiallyChecked && item->child(0)->checkState(COLUMN_CHECKBOX) == Qt::PartiallyChecked)
@@ -510,7 +506,7 @@ void CoinControlDialog::updateLabels(WalletModel *model, QDialog* dialog)
         if (fWitness)
         {
             // there is some fudging in these numbers related to the actual virtual transaction size calculation that will keep this estimate from being exact.
-            // usually, the result will be an overestimate within a couple of satoshis so that the confirmation dialog ends up displaying a slightly smaller fee.
+            // usually, the result will be an overestimate within a couple of trumpowtoshis so that the confirmation dialog ends up displaying a slightly smaller fee.
             // also, the witness stack size value value is a variable sized integer. usually, the number of stack items will be well under the single byte var int limit.
             nBytes += 2; // account for the serialized marker and flag bytes
             nBytes += nQuantity; // account for the witness byte that holds the number of stack items for each input.
@@ -608,7 +604,7 @@ void CoinControlDialog::updateLabels(WalletModel *model, QDialog* dialog)
     // tool tips
     QString toolTipDust = tr("This label turns red if any recipient receives an amount smaller than the current dust threshold.");
 
-    // how many satoshis the estimated fee can vary per byte we guess wrong
+    // how many trumpowtoshis the estimated fee can vary per byte we guess wrong
     double dFeeVary;
     if (payTxFee.GetFeePerK() > 0)
         dFeeVary = (double)std::max(CWallet::GetRequiredFee(1000), payTxFee.GetFeePerK()) / 1000;

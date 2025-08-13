@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Copyright (c) 2015-2016 The Bitcoin Core developers
-# Copyright (c) 2021 The Dogecoin Core developers
+# Copyright (c) 2021-2022 The Dogecoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -113,10 +113,10 @@ class FullBlockTest(ComparisonTestFramework):
         if spend == None:
             block = create_block(base_block_hash, coinbase, block_time)
         else:
-            coinbase.vout[0].nValue += spend.tx.vout[spend.n].nValue - 1 # all but one satoshi to fees
+            coinbase.vout[0].nValue += spend.tx.vout[spend.n].nValue - 1 # all but one trumpowtoshi to fees
             coinbase.rehash()
             block = create_block(base_block_hash, coinbase, block_time)
-            tx = create_transaction(spend.tx, spend.n, b"", 1, script)  # spend 1 satoshi
+            tx = create_transaction(spend.tx, spend.n, b"", 1, script)  # spend 1 trumpowtoshi
             self.sign_tx(tx, spend.tx, spend.n)
             self.add_transactions_to_block(block, [tx])
             block.hashMerkleRoot = block.calc_merkle_root()
@@ -397,7 +397,7 @@ class FullBlockTest(ComparisonTestFramework):
         b26 = update_block(26, [])
         yield rejected(RejectResult(16, b'bad-cb-length'))
 
-        # Extend the b26 chain to make sure bitcoind isn't accepting b26
+        # Extend the b26 chain to make sure trumpowd isn't accepting b26
         b27 = block(27, spend=out[7])
         yield rejected(RejectResult(0, b'bad-prevblk'))
 
@@ -409,7 +409,7 @@ class FullBlockTest(ComparisonTestFramework):
         b28 = update_block(28, [])
         yield rejected(RejectResult(16, b'bad-cb-length'))
 
-        # Extend the b28 chain to make sure bitcoind isn't accepting b28
+        # Extend the b28 chain to make sure trumpowd isn't accepting b28
         b29 = block(29, spend=out[7])
         yield rejected(RejectResult(0, b'bad-prevblk'))
 
@@ -510,7 +510,7 @@ class FullBlockTest(ComparisonTestFramework):
         redeem_script_hash = hash160(redeem_script)
         p2sh_script = CScript([OP_HASH160, redeem_script_hash, OP_EQUAL])
 
-        # Create a transaction that spends one satoshi to the p2sh_script, the rest to OP_TRUE
+        # Create a transaction that spends one trumpowtoshi to the p2sh_script, the rest to OP_TRUE
         # This must be signed because it is spending a coinbase
         spend = out[11]
         tx = create_tx(spend.tx, spend.n, 1, p2sh_script)
@@ -520,7 +520,7 @@ class FullBlockTest(ComparisonTestFramework):
         b39 = update_block(39, [tx])
         b39_outputs += 1
 
-        # Until block is full, add tx's with 1 satoshi to p2sh_script, the rest to OP_TRUE
+        # Until block is full, add tx's with 1 trumpowtoshi to p2sh_script, the rest to OP_TRUE
         tx_new = None
         tx_last = tx
         total_size=len(b39.serialize())
@@ -617,7 +617,7 @@ class FullBlockTest(ComparisonTestFramework):
         height = self.block_heights[self.tip.sha256] + 1
         coinbase = create_coinbase(height, self.coinbase_pubkey)
         b44 = CBlock()
-        b44.nVersion = 0x3F0004 # To get this number. Set your chain id in chainparams.cpp; Run python3 qa/rpc-tests/getblock.py --gen-test-data; In qa/rpc-tests/data/getblock.json take the version value (not the one that's equal to 1) and convert it to hex. That's this number.
+        b44.nVersion = 0x620004
         b44.nTime = self.tip.nTime + 1
         b44.hashPrevBlock = self.tip.sha256
         b44.nBits = 0x207fffff
@@ -632,7 +632,7 @@ class FullBlockTest(ComparisonTestFramework):
         # A block with a non-coinbase as the first tx
         non_coinbase = create_tx(out[15].tx, out[15].n, 1)
         b45 = CBlock()
-        b44.nVersion = 0x3F0004
+        b44.nVersion = 0x620004
         b45.nTime = self.tip.nTime + 1
         b45.hashPrevBlock = self.tip.sha256
         b45.nBits = 0x207fffff
@@ -648,7 +648,7 @@ class FullBlockTest(ComparisonTestFramework):
         # A block with no txns
         tip(44)
         b46 = CBlock()
-        b44.nVersion = 0x3F0004
+        b44.nVersion = 0x620004
         b46.nTime = b44.nTime+1
         b46.hashPrevBlock = b44.sha256
         b46.nBits = 0x207fffff
@@ -969,11 +969,11 @@ class FullBlockTest(ComparisonTestFramework):
         # -> b43 (13) -> b53 (14) -> b55 (15) -> b57 (16) -> b60 (17) -> b64 (18) -> b65 (19) -> b69 (20)
         #                                                                                    \-> b68 (20)
         #
-        # b68 - coinbase with an extra 10 satoshis,
-        #       creates a tx that has 9 satoshis from out[20] go to fees
-        #       this fails because the coinbase is trying to claim 1 satoshi too much in fees
+        # b68 - coinbase with an extra 10 trumpowtoshis,
+        #       creates a tx that has 9 trumpowtoshis from out[20] go to fees
+        #       this fails because the coinbase is trying to claim 1 trumpowtoshi too much in fees
         #
-        # b69 - coinbase with extra 10 satoshis, and a tx that gives a 10 satoshi fee
+        # b69 - coinbase with extra 10 trumpowtoshis, and a tx that gives a 10 trumpowtoshi fee
         #       this succeeds
         #
         tip(65)

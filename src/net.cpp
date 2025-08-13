@@ -1491,8 +1491,7 @@ void ThreadMapPort()
     // since API version 18 / release 2.2.8
     // both signature and return values of UPNP_GetValidIGD have been changed
     // see miniupnp commit c0a50ce33e3b99ce8a96fd43049bb5b53ffac62f
-    #if MINIUPNPC_API_VERSION < 18
-
+#if MINIUPNPC_API_VERSION < 18
     r = UPNP_GetValidIGD(devlist, &urls, &data, lanaddr, sizeof(lanaddr));
     // r: 1 = success, 2 = not connected, 3 = unrecognized IGD
 #else

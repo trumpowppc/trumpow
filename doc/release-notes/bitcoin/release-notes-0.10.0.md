@@ -510,11 +510,11 @@ Wallet:
 - `d5087d1` Use script matching rather than destination matching for watch-only
 - `d88af56` Fee fixes
 - `a35b55b` Dont run full check every time we decrypt wallet
-- `3a7c348` Fix make_change to not create half-satoshis
+- `3a7c348` Fix make_change to not create half-trumpowtoshis
 - `f606bb9` fix a possible memory leak in CWalletDB::Recover
 - `870da77` fix possible memory leaks in CWallet::EncryptWallet
 - `ccca27a` Watch-only fixes
-- `9b1627d` [Wallet] Reduce minTxFee for transaction creation to 1000 satoshis
+- `9b1627d` [Wallet] Reduce minTxFee for transaction creation to 1000 trumpowtoshis
 - `a53fd41` Deterministic signing
 - `15ad0b5` Apply AreSane() checks to the fees from the network
 - `11855c1` Enforce minRelayTxFee on wallet created tx and add a maxtxfee option

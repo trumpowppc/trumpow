@@ -60,7 +60,7 @@
     </message>
     <message>
         <source>&amp;Close</source>
-        <translation>Затваряне</translation>
+        <translation type="vanished">Затваряне</translation>
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
@@ -88,22 +88,22 @@
     </message>
     <message>
         <source>&amp;Choose</source>
-        <translation>Избор</translation>
+        <translation type="vanished">Избор</translation>
     </message>
     <message>
-        <source>Sending addresses</source>
+        <source>Such sending addresses</source>
         <translation>Адреси за изпращане</translation>
     </message>
     <message>
-        <source>Receiving addresses</source>
+        <source>Much receiving addresses</source>
         <translation>Адреси за получаване</translation>
     </message>
     <message>
-        <source>These are your Trumpow addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Dogecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Това са Доджкоин адресите Ви за изпращане на плащания. Винаги проверявайте размера на сумата и адреса на получателя, преди да изпратите монети.</translation>
     </message>
     <message>
-        <source>These are your Trumpow addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Dogecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Това са Доджкоин адресите Ви за получаване на плащания. Препоръчително е да използвате нов адрес на получаване за всяка отделна транзакция.</translation>
     </message>
     <message>
@@ -133,6 +133,14 @@
     <message>
         <source>There was an error trying to save the address list to %1. Please try again.</source>
         <translation>Възникна грешка при опита за запазване на списъка с адреси в %1. Моля опитайте отново.</translation>
+    </message>
+    <message>
+        <source>C&amp;lose</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>C&amp;hoose</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -205,7 +213,7 @@
         <translation>Потвърдете криптирането на портфейла</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TRUMPOWS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DOGECOINS&lt;/b&gt;!</source>
         <translation>ВНИМАНИЕ: Ако криптирате вашият портфейл и изгубите паролата си, &lt;b&gt;ЩЕ ИЗГУБИТЕ ВСИЧКИТЕ СИ ДОДЖКОЙНИ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -253,7 +261,7 @@
         <translation>Внимание: Бутонът за главни букви (Caps Lock) е включен!</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your trumpows from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dogecoins from being stolen by malware infecting your computer.</source>
         <translation>%1 ще се затвори сега, за да довърши процеса на криптиране. Помнете, че криптирането на вашият портфейл не може напълно да предпази вашите Доджкойни в случаи на кражба чрез зловреден софтуер или вирус. </translation>
     </message>
 </context>
@@ -279,7 +287,7 @@
         <translation>Синхронизиране с мрежата...</translation>
     </message>
     <message>
-        <source>&amp;Overview</source>
+        <source>&amp;Wow</source>
         <translation>&amp;Баланс!</translation>
     </message>
     <message>
@@ -344,11 +352,11 @@
     </message>
     <message>
         <source>Such &amp;sending addresses...</source>
-        <translation>&amp;Адреси за изпращане...</translation>
+        <translation type="vanished">&amp;Адреси за изпращане...</translation>
     </message>
     <message>
         <source>Much &amp;receiving addresses...</source>
-        <translation>&amp;Адреси за получаване...</translation>
+        <translation type="vanished">&amp;Адреси за получаване...</translation>
     </message>
     <message>
         <source>Open &amp;URI...</source>
@@ -359,7 +367,7 @@
         <translation>Повторно индексиране на блокове в диска...</translation>
     </message>
     <message>
-        <source>Send coins to a Trumpow address</source>
+        <source>Send coins to a Dogecoin address</source>
         <translation>Изпращане на монети към Доджкойн адрес</translation>
     </message>
     <message>
@@ -383,7 +391,7 @@
         <translation>&amp;Потвърждаване на съобщение...</translation>
     </message>
     <message>
-        <source>Trumpow</source>
+        <source>Dogecoin</source>
         <translation>Доджкойн</translation>
     </message>
     <message>
@@ -391,11 +399,11 @@
         <translation>Портфейл</translation>
     </message>
     <message>
-        <source>&amp;Send</source>
+        <source>&amp;Such Send</source>
         <translation>&amp;Изпращане</translation>
     </message>
     <message>
-        <source>&amp;Receive</source>
+        <source>&amp;Much Receive</source>
         <translation>&amp;Получаване</translation>
     </message>
     <message>
@@ -411,11 +419,11 @@
         <translation>Криптиране на личните ключове, принадлежащи на портфейла Ви.</translation>
     </message>
     <message>
-        <source>Sign messages with your Trumpow addresses to prove you own them</source>
+        <source>Sign messages with your Dogecoin addresses to prove you own them</source>
         <translation>Подписване на съобщения с Вашия Доджкойн адрес, за да докажете идентичността им.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Trumpow addresses</source>
+        <source>Verify messages to ensure they were signed with specified Dogecoin addresses</source>
         <translation>Верифицирайте съобщения, за да сте сигурни, че са подписани с посочен Доджкойн адрес.</translation>
     </message>
     <message>
@@ -435,7 +443,7 @@
         <translation>Лента инструменти за раздели</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and trumpow: URIs)</source>
+        <source>Request payments (generates QR codes and dogecoin: URIs)</source>
         <translation>Изискване на плащания (генериране на QR кодове и Доджкойн: URIs)</translation>
     </message>
     <message>
@@ -447,7 +455,7 @@
         <translation>Показване на списъка с използваните адреси за получаване и етикети.</translation>
     </message>
     <message>
-        <source>Open a trumpow: URI or payment request</source>
+        <source>Open a dogecoin: URI or payment request</source>
         <translation>Отворете Доджкойн: URI или заявка за плащане</translation>
     </message>
     <message>
@@ -491,7 +499,7 @@
         <translation>Синхронизиран</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Trumpow command-line options</source>
+        <source>Show the %1 help message to get a list with possible Dogecoin command-line options</source>
         <translation>Показване на %1 помощно съобщение за лист с възможни Доджкойн команди</translation>
     </message>
     <message>
@@ -504,23 +512,23 @@
     </message>
     <message>
         <source>Date: %1</source>
-        <translation>Дата: %1</translation>
+        <translation type="vanished">Дата: %1</translation>
     </message>
     <message>
         <source>Amount: %1</source>
-        <translation>Сума: %1</translation>
+        <translation type="vanished">Сума: %1</translation>
     </message>
     <message>
         <source>Type: %1</source>
-        <translation>Тип: %1</translation>
+        <translation type="vanished">Тип: %1</translation>
     </message>
     <message>
         <source>Label: %1</source>
-        <translation>Етикет: %1</translation>
+        <translation type="vanished">Етикет: %1</translation>
     </message>
     <message>
         <source>Address: %1</source>
-        <translation>Адрес: %1</translation>
+        <translation type="vanished">Адрес: %1</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -547,11 +555,11 @@
         <translation>Печатане на хартиени портфейли</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
+        <source>&amp;Such sending addresses...</source>
         <translation>Адреси за изпращане...</translation>
     </message>
     <message>
-        <source>&amp;Receiving addresses...</source>
+        <source>&amp;Much receiving addresses...</source>
         <translation>Адреси за получаване...</translation>
     </message>
     <message>
@@ -559,12 +567,15 @@
         <translation>Добавяне на личен Ключ...</translation>
     </message>
     <message>
-        <source>Import a Trumpow private key</source>
+        <source>Import a Dogecoin private key</source>
         <translation>Добавяне на Доджкойн личен ключ</translation>
     </message>
-    <message>
-        <source>%n active connection(s) to Trumpow network</source>
-        <translation>%n активни връзки към Доджкойн мрежата</translation>
+    <message numerus="yes">
+        <source>%n active connection(s) to Dogecoin network</source>
+        <translation type="unfinished">
+            <numerusform>%n активни връзки към Доджкойн мрежата</numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
     <message>
         <source>Click to disable network activity.</source>
@@ -586,9 +597,12 @@
         <source>Connecting to peers...</source>
         <translation>Свързване с партньорите</translation>
     </message>
-    <message>
+    <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
-        <translation>Обработени %n блокове с транзакции.</translation>
+        <translation type="unfinished">
+            <numerusform>Обработени %n блокове с транзакции.</numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
     <message>
         <source>HD key generation is &lt;b&gt;enabled&lt;/b&gt;</source>
@@ -603,8 +617,38 @@
         <translation>Избягало изключение</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Trumpow can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Dogecoin can no longer continue safely and will quit.</source>
         <translation>Възникна фатална грешка! Доджкойн не може да продължи безопасно и ще се затвори. :(</translation>
+    </message>
+    <message>
+        <source>Date: %1
+</source>
+        <translation type="unfinished">Дата: %1
+</translation>
+    </message>
+    <message>
+        <source>Amount: %1
+</source>
+        <translation type="unfinished">Сума: %1
+</translation>
+    </message>
+    <message>
+        <source>Type: %1
+</source>
+        <translation type="unfinished">Тип: %1
+</translation>
+    </message>
+    <message>
+        <source>Label: %1
+</source>
+        <translation type="unfinished">Етикет: %1
+</translation>
+    </message>
+    <message>
+        <source>Address: %1
+</source>
+        <translation type="unfinished">Адрес: %1
+</translation>
     </message>
 </context>
 <context>
@@ -797,7 +841,7 @@
         <translation>Редактиране на адрес за изпращане</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Trumpow address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Dogecoin address.</source>
         <translation>Въведеният адрес &quot;%1&quot; не е валиден Доджкойн адрес.</translation>
     </message>
     <message>
@@ -981,20 +1025,26 @@
         <translation>Тъй като това е първото стартиране на програмата, можете да изберете къде %1 да се съхраняват данните ѝ. </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Trumpow block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>%1 will download and store a copy of the Dogecoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>%1 ще изтегли и съхрани копие на Доджкойн блокчейн. Поне %2GB данни ще бъдат съхранени в тази директория, и с течение на времето нейния размер ще расте. Портфейлът също ще бъде съхранен в тази директория. </translation>
     </message>
     <message>
         <source>Error: Specified data directory &quot;%1&quot; cannot be created.</source>
         <translation>Грешка: Посочената директория &quot;%1&quot; не може да бъде създадена.</translation>
     </message>
-    <message>
+    <message numerus="yes">
         <source>%n GB of free space available</source>
-        <translation>%n GB налично свободно място</translation>
+        <translation type="unfinished">
+            <numerusform>%n GB налично свободно място</numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
-    <message>
+    <message numerus="yes">
         <source>(of %n GB needed)</source>
-        <translation>(от необходими %n GB)</translation>
+        <translation type="unfinished">
+            <numerusform>(от необходими %n GB)</numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
     <message>
         <source>Choose data directory</source>
@@ -1016,12 +1066,12 @@
         <translation>Скрий</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the trumpow network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the dogecoin network, as detailed below.</source>
         <translation>Възможно е последните транзакции все още да не са видими, вследствие баланса на Вашия портфейл може да е временно неточен. Информацията ще е точна, когато Вашия портфейл приключи синхронизацията с Доджкойн мрежата. За подробности вижте долу.  </translation>
     </message>
     <message>
-        <source>Attempting to spend trumpows that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Опити за изпращане на Доджкойн монети, които са от транзакции със статус "непоказани" няма да бъдат приети от мрежата.</translation>
+        <source>Attempting to spend dogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Опити за изпращане на Доджкойн монети, които са от транзакции със статус &quot;непоказани&quot; няма да бъдат приети от мрежата.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1142,7 +1192,7 @@
         <translation>&amp;Похарчване на непотвърденото ресто</translation>
     </message>
     <message>
-        <source>Automatically open the Trumpow client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Dogecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Автоматично отворете клиентския Доджкойн порт на вашия рутер. Работи само с рутери поддържащи UPnP.</translation>
     </message>
     <message>
@@ -1150,7 +1200,7 @@
         <translation>Отваряне на входящия порт чрез &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Trumpow network through a SOCKS5 proxy.</source>
+        <source>Connect to the Dogecoin network through a SOCKS5 proxy.</source>
         <translation>Свързване с Доджкойн мрежата чрез SOCKS5  прокси.</translation>
     </message>
     <message>
@@ -1290,7 +1340,7 @@
         <translation>Тор</translation>
     </message>
     <message>
-        <source>Connect to the Trumpow network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <source>Connect to the Dogecoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
         <translation>Свързване към Доджкойн мрежата чрез отделно SOCKS5 прокси към скрити Тор услуги.</translation>
     </message>
     <message>
@@ -1333,7 +1383,7 @@
         <translation>Формуляр</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Trumpow network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dogecoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Показаната на екрана информация може да не е актуална. Вашият портфейл се синхронизира автоматично с Доджкойн мрежата, след като се установи връзка, но този процес все още не е приключил.</translation>
     </message>
     <message>
@@ -1441,12 +1491,12 @@
         <translation>Този, който притежава личните ключове, притежава монетите</translation>
     </message>
     <message>
-        <source>To see ongoing development and contribute, check out the Trumpow Core repository on GitHub</source>
+        <source>To see ongoing development and contribute, check out the Dogecoin Core repository on GitHub</source>
         <translation>За да видите как върви разработката или ако искате допринесете, моля посетете Доджкойн хранилището в GitHub</translation>
     </message>
     <message>
-        <source>Services that claim to double your trumpows are always ponzi schemes</source>
-        <translation>Услуги, които обещават да удвоят вашите Доджкойни, винаги се оказват "Понзи" финансови пирамиди.</translation>
+        <source>Services that claim to double your dogecoins are always ponzi schemes</source>
+        <translation>Услуги, които обещават да удвоят вашите Доджкойни, винаги се оказват &quot;Понзи&quot; финансови пирамиди.</translation>
     </message>
 </context>
 <context>
@@ -1456,11 +1506,11 @@
         <translation>Изпечатване на Вашите хартиени портфейли</translation>
     </message>
     <message>
-        <source>New Address</source>
+        <source>Very New Address</source>
         <translation>Супер нов адрес</translation>
     </message>
     <message>
-        <source>Print</source>
+        <source>So Print</source>
         <translation>Принтиране</translation>
     </message>
     <message>
@@ -1564,7 +1614,7 @@ p, li { white-space: pre-wrap; }
         <translation>Зареди Хартиени Портфейли</translation>
     </message>
     <message>
-        <source>The paper wallet printing process has begun.&lt;br/&gt;Please wait for the wallets to print completely and verify that everything printed correctly.&lt;br/&gt;Check for misalignments, ink bleeding, smears, or anything else that could make the private keys unreadable.&lt;br/&gt;Now, enter the number of TRMP you wish to send to each wallet:</source>
+        <source>The paper wallet printing process has begun.&lt;br/&gt;Please wait for the wallets to print completely and verify that everything printed correctly.&lt;br/&gt;Check for misalignments, ink bleeding, smears, or anything else that could make the private keys unreadable.&lt;br/&gt;Now, enter the number of DOGE you wish to send to each wallet:</source>
         <translation>Принтирането на хартиени портфейли започна.&lt;br/&gt;Моля изчакайте порфейлите да се изпечатат напълно и удостоверете, че всичко е изпечатано правилно.&lt;br/&gt;Проверете за протекло или размазано мастило, неподравнености или други проблеми, които биха могли да направят секретните ключове нечетими.&lt;br/&gt;Сега въведете колко Доджкойни искате да изпратите на всеки един портфейл::</translation>
     </message>
     <message>
@@ -1635,7 +1685,7 @@ p, li { white-space: pre-wrap; }
         <translation>Възникна грешка при назаявката за плащане</translation>
     </message>
     <message>
-        <source>Cannot start trumpow: click-to-pay handler</source>
+        <source>Cannot start dogecoin: click-to-pay handler</source>
         <translation>Доджкойн не можe да стартира: манипулатор кликни-да-платиш</translation>
     </message>
     <message>
@@ -1668,7 +1718,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Requested payment amount of %1 is too small (considered dust).</source>
-        <translation>Заявената сума за плащане: %1 е твърде малка (счита се за прах)</translation>
+        <translation type="vanished">Заявената сума за плащане: %1 е твърде малка (счита се за прах)</translation>
     </message>
     <message>
         <source>Refund from %1</source>
@@ -1699,7 +1749,7 @@ p, li { white-space: pre-wrap; }
         <translation>Линка за извличане на заявката за изплащане е невалиден: %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Trumpow address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Dogecoin address or malformed URI parameters.</source>
         <translation>Униформеният ресурсен идентификатор не може да бъде фразиран. Това може да е предизвикано от невалиден Доджкойн адрес, или неправилно формирани URI параметри.</translation>
     </message>
     <message>
@@ -1722,6 +1772,18 @@ p, li { white-space: pre-wrap; }
         <source>Payment request cannot be parsed!</source>
         <translation>Заявката за плащане не може да бъде фразирана.</translation>
     </message>
+    <message>
+        <source>BIP70 payment requests are deprecated and disabled by default. Restart with -enable-bip70 if you absolutely have to use this functionality.
+
+Use this functionality with extreme caution.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Payment request file handling is disabled by default. Restart with -enable-bip70 if you absolutely have to use this functionality.
+
+Use this functionality with extreme caution.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>PeerTableModel</name>
@@ -1731,7 +1793,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>NodeID</source>
-        <translation>ID на възела</translation>
+        <translation type="vanished">ID на възела</translation>
     </message>
     <message>
         <source>Node/Service</source>
@@ -1749,6 +1811,10 @@ p, li { white-space: pre-wrap; }
         <source>Bytes Received</source>
         <translation>Получени байта</translation>
     </message>
+    <message>
+        <source>NodeId</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>PeerTools</name>
@@ -1758,7 +1824,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Error: Peer-to-peer functionality missing or disabled</source>
-        <translation>Грешка: Функцята "Връзка до партньори" липсва или е изключена.</translation>
+        <translation>Грешка: Функцята &quot;Връзка до партньори&quot; липсва или е изключена.</translation>
     </message>
     <message>
         <source>Attempted to one try node.</source>
@@ -1788,7 +1854,7 @@ p, li { white-space: pre-wrap; }
         <translation>Сума</translation>
     </message>
     <message>
-        <source>Enter a Trumpow address (e.g. %1)</source>
+        <source>Enter a Dogecoin address (e.g. %1)</source>
         <translation>Въведете Доджкойн адрес (например: %1)</translation>
     </message>
     <message>
@@ -1835,29 +1901,47 @@ p, li { white-space: pre-wrap; }
         <source>%1 MB</source>
         <translation>%1 Мегабайт(а)</translation>
     </message>
-    <message>
+    <message numerus="yes">
         <source>%n second(s)</source>
-        <translation>%n секунда</translation>
+        <translation type="unfinished">
+            <numerusform>%n секунда</numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
-    <message>
+    <message numerus="yes">
         <source>%n minute(s)</source>
-        <translation>%n минути</translation>
+        <translation type="unfinished">
+            <numerusform>%n минути</numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
-    <message>
+    <message numerus="yes">
         <source>%n hour(s)</source>
-        <translation>%n часа</translation>
+        <translation type="unfinished">
+            <numerusform>%n часа</numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
-    <message>
+    <message numerus="yes">
         <source>%n day(s)</source>
-        <translation>%n дни</translation>
+        <translation type="unfinished">
+            <numerusform>%n дни</numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
-    <message>
+    <message numerus="yes">
         <source>%n week(s)</source>
-        <translation>%n седмици</translation>
+        <translation type="unfinished">
+            <numerusform>%n седмици</numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
-    <message>
+    <message numerus="yes">
         <source>%n year(s)</source>
-        <translation>%n години</translation>
+        <translation type="unfinished">
+            <numerusform>%n години</numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
     <message>
         <source>%1 didn&apos;t yet exit safely...</source>
@@ -2300,7 +2384,7 @@ p, li { white-space: pre-wrap; }
         <translation>Повторно &amp;изполване на вече същесвуващ адрес за плащане (не препоръчано)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Trumpow network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dogecoin network.</source>
         <translation>Незадължително съобщение, което можете да прикачите към заявката за плащане. То ще бъде показано когато заявката е отворена. Бележка: Това съобщение няма да бъде пратено заедно със плащането през Доджкойн мрежата.</translation>
     </message>
     <message>
@@ -2368,7 +2452,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>URI</source>
-        <translation> URI (Единен Идентификатор на Ресурси)></translation>
+        <translation> URI (Единен Идентификатор на Ресурси)&gt;</translation>
     </message>
     <message>
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
@@ -2577,7 +2661,7 @@ p, li { white-space: pre-wrap; }
         <translation>Заявката за плащане е изтекла.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Trumpow address</source>
+        <source>Warning: Invalid Dogecoin address</source>
         <translation>Внимание: Невалиден Доджкойн адрес</translation>
     </message>
     <message>
@@ -2598,7 +2682,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Using the fallbackfee can result in sending a transaction that will take several hours or days (or never) to confirm. Consider choosing your fee manually or wait until you have validated the complete chain.</source>
-        <translation>Използването на "fallbackfee" може да доведе до изпращане на транзакция, чието потвърждаване може да отнеме часове, дни или цяла вечност. Обмислете собственоръчен избор на вашата такса или изчакайте, докато сте удостоверили цялата верига..</translation>
+        <translation>Използването на &quot;fallbackfee&quot; може да доведе до изпращане на транзакция, чието потвърждаване може да отнеме часове, дни или цяла вечност. Обмислете собственоръчен избор на вашата такса или изчакайте, докато сте удостоверили цялата верига..</translation>
     </message>
     <message>
         <source>Warning: Fee estimation is currently not possible.</source>
@@ -2609,11 +2693,11 @@ p, li { white-space: pre-wrap; }
         <translation>свиване на настройките свързани с такси</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 trumpowtoshi and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 trumpowtoshi in fee, while &quot;total at least&quot; pays 1000 trumpowtoshi. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 satoshis and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 satoshis in fee, while &quot;total at least&quot; pays 1000 satoshis. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation>Ако персонализираната такса е настроена за 1000 монети, а за транзакцията са необходими 250 байта, тогава  &quot;за килобайт&quot; се плащат само 250 монети такса, докато &quot;общо най-малко&quot; се плащат 1000 монети. За транзакции по-големи от килобайт, и двата метода плащат за килобайт.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for trumpow transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for dogecoin transactions than the network can process.</source>
         <translation>Плащане само на минималната такса не е проблем, стига свободното място в блоковете да е повече от обема на транзакциитете. Обаче имайте предвид, че това може да доведе до транзакцията никога да не бъде потвърдена, ако има повече Доджкойн транзакции, отколкото мрежата може да обработи.</translation>
     </message>
     <message>
@@ -2667,6 +2751,10 @@ p, li { white-space: pre-wrap; }
     <message>
         <source>The address you selected for change is not part of this wallet. Any or all funds in your wallet may be sent to this address. Are you sure?</source>
         <translation>Адреса, който избрахте за ресто, не е част от този портфейл. Всички монети във вашия портфейл могат да бъдат изпратени до този адрес. Сигурни ли сте, че желаете това?</translation>
+    </message>
+    <message>
+        <source>If the custom fee is set to 1000 koinu and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 koinu in fee, while &quot;total at least&quot; pays 1000 koinu. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2724,7 +2812,7 @@ p, li { white-space: pre-wrap; }
         <translation>Въведете име за този адрес, за да го добавите в списъка с адреси</translation>
     </message>
     <message>
-        <source>The Trumpow address to send the payment to</source>
+        <source>The Dogecoin address to send the payment to</source>
         <translation>Доджкойн адреса, на който искате да изпратите заплащане</translation>
     </message>
     <message>
@@ -2732,7 +2820,7 @@ p, li { white-space: pre-wrap; }
         <translation>Добавете етикет за този адрес, за да го добавите в списъка от ползвани адреси</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less trumpows than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less dogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>Таксата ще бъде приспадната от изпращаната сумата. Получателя ще получи по-малко Доджкойни, от колкото вкарвате в полето сума. Ако са избрани повече от един получател, таксата ще бъде поделена по равно.</translation>
     </message>
     <message>
@@ -2740,7 +2828,7 @@ p, li { white-space: pre-wrap; }
         <translation>&amp;Изваждане на таксата от сумата</translation>
     </message>
     <message>
-        <source>A message that was attached to the trumpow: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Trumpow network.</source>
+        <source>A message that was attached to the dogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dogecoin network.</source>
         <translation>Беше добавено съобщение към Доджкойн: URI, което ще бъде запазено с транзакцията за Ваша справка. Бележка: Това съобщение няма да бъде изпратено чрез Доджкойн мрежата.</translation>
     </message>
     <message>
@@ -2809,7 +2897,7 @@ p, li { white-space: pre-wrap; }
         <translation>Копиране на текущия подпис в клипборда</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Trumpow address</source>
+        <source>Sign the message to prove you own this Dogecoin address</source>
         <translation>Подпишете съобщение като доказателство, че притежавате този адрес</translation>
     </message>
     <message>
@@ -2825,7 +2913,7 @@ p, li { white-space: pre-wrap; }
         <translation>&amp;Проверяване на Съобщение</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Trumpow address</source>
+        <source>Verify the message to ensure it was signed with the specified Dogecoin address</source>
         <translation>Потвърдете съобщението, за да сте сигурни, че е подписано с посочения Доджкойн адрес</translation>
     </message>
     <message>
@@ -2885,11 +2973,11 @@ p, li { white-space: pre-wrap; }
         <translation>Съобщението беше потвърдено.</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive trumpows sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive dogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>Можете да подпишете съобщения/споразумения с Вашите адреси, като доказателство, че можете да получавате Доджкойни, които са пратени там. Внимавайте да не подписвате разни неясни или произволни запитвания, тъй като имамници могат да опитат да Ви подведат да подпишете Вашата самоличност на тях. Подписвайте само подробни, ясни заявления, с които сте напълно съгласни.</translation>
     </message>
     <message>
-        <source>The Trumpow address to sign the message with</source>
+        <source>The Dogecoin address to sign the message with</source>
         <translation>Доджкойн адреса, с който ще се подписва събощението</translation>
     </message>
     <message>
@@ -2898,10 +2986,10 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Enter the receiver&apos;s address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack. Note that this only proves the signing party receives with the address, it cannot prove sendership of any transaction!</source>
-        <translation>Въведете адреса на получателя, съобщение (бъдете сигурни да копирате нови редове, празни места, раздели и т.н. точно както са) и подпис по долу, за да удостоверите съобщението. Внимавайте да не се вглъбите прекалено в подписа, отколкото в подписаното съобщение, за да итбегнете възможността да станете жертва на "посредническа" атака. Помнете - това само доказва, че долуподписания може да получава на този адрес; това не доказва подателсво на каквато и да е транзакция!</translation>
+        <translation>Въведете адреса на получателя, съобщение (бъдете сигурни да копирате нови редове, празни места, раздели и т.н. точно както са) и подпис по долу, за да удостоверите съобщението. Внимавайте да не се вглъбите прекалено в подписа, отколкото в подписаното съобщение, за да итбегнете възможността да станете жертва на &quot;посредническа&quot; атака. Помнете - това само доказва, че долуподписания може да получава на този адрес; това не доказва подателсво на каквато и да е транзакция!</translation>
     </message>
     <message>
-        <source>The Trumpow address the message was signed with</source>
+        <source>The Dogecoin address the message was signed with</source>
         <translation>Доджкойн адрес, с който беше подписано съобщението</translation>
     </message>
     <message>
@@ -3084,9 +3172,12 @@ p, li { white-space: pre-wrap; }
         <source>false</source>
         <translation>невярно</translation>
     </message>
-    <message>
+    <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation>Отворете за още %n блока</translation>
+        <translation type="unfinished">
+            <numerusform>Отворете за още %n блока</numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
     <message>
         <source>conflicted with a transaction with %1 confirmations</source>
@@ -3108,9 +3199,12 @@ p, li { white-space: pre-wrap; }
         <source>abandoned</source>
         <translation>изоставен</translation>
     </message>
-    <message>
+    <message numerus="yes">
         <source>matures in %n more block(s)</source>
-        <translation>отлежава в още %n блока</translation>
+        <translation type="unfinished">
+            <numerusform>отлежава в още %n блока</numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
     <message>
         <source>Transaction total size</source>
@@ -3226,9 +3320,12 @@ p, li { white-space: pre-wrap; }
         <source>Amount removed from or added to balance.</source>
         <translation>Сума извадена или добавена към баланса.</translation>
     </message>
-    <message>
+    <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation>Отворете за още %n блока</translation>
+        <translation type="unfinished">
+            <numerusform>Отворете за още %n блока</numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
     <message>
         <source>Abandoned</source>
@@ -3236,7 +3333,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Whether or not a watch-only address is involved in this transaction.</source>
-        <translation>Относно дали адрес който е маркиран като "само за наблюдение" учасва в тази транзакция.</translation>
+        <translation>Относно дали адрес който е маркиран като &quot;само за наблюдение&quot; учасва в тази транзакция.</translation>
     </message>
     <message>
         <source>User-defined intent/purpose of the transaction.</source>
@@ -3473,7 +3570,7 @@ p, li { white-space: pre-wrap; }
         <translation>Определете Вашия публичен адрес</translation>
     </message>
     <message>
-        <source>Trumpow Core</source>
+        <source>Dogecoin Core</source>
         <translation>Доджкойн Ядро</translation>
     </message>
     <message>
@@ -3601,7 +3698,7 @@ p, li { white-space: pre-wrap; }
         <translation>%s разработчици</translation>
     </message>
     <message>
-        <source>Bitcoin Core and Trumpow Core</source>
+        <source>Bitcoin Core and Dogecoin Core</source>
         <translation>Биткойн Ядро и Доджкойн Ядро</translation>
     </message>
     <message>
@@ -3698,7 +3795,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
-        <translation>Изпълване на команда когато една портфейлна транзакция се промени (%s в cmd е заменена от TxID)</translation>
+        <translation type="vanished">Изпълване на команда когато една портфейлна транзакция се промени (%s в cmd е заменена от TxID)</translation>
     </message>
     <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash, %i is replaced by block number)</source>
@@ -3965,7 +4062,7 @@ p, li { white-space: pre-wrap; }
         <translation>Адресни запитвания за партньори винаги ще бъдат осъществени чрез DNS проверка (по подразбиране: %u)</translation>
     </message>
     <message>
-        <source>High</source>
+        <source>Amaze</source>
         <translation>Смайвам</translation>
     </message>
     <message>
@@ -4161,7 +4258,7 @@ p, li { white-space: pre-wrap; }
         <translation>Каране на портфейла да излъчва транзакции</translation>
     </message>
     <message>
-        <source>Very High</source>
+        <source>Many generous</source>
         <translation>Толкова щедрост</translation>
     </message>
     <message>
@@ -4177,7 +4274,7 @@ p, li { white-space: pre-wrap; }
         <translation>Минимално</translation>
     </message>
     <message>
-        <source>Low</source>
+        <source>More</source>
         <translation>Още</translation>
     </message>
     <message>
@@ -4309,7 +4406,7 @@ p, li { white-space: pre-wrap; }
         <translation>Стартиране на мрежови нижки...</translation>
     </message>
     <message>
-        <source>Maximum</source>
+        <source>Such expensive</source>
         <translation>Баш скъпо</translation>
     </message>
     <message>
@@ -4429,7 +4526,7 @@ p, li { white-space: pre-wrap; }
         <translation>Дали да работи единствено в блоков режим (по подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Overview</source>
+        <source>Wow</source>
         <translation>Уау!</translation>
     </message>
     <message>
@@ -4439,6 +4536,14 @@ p, li { white-space: pre-wrap; }
     <message>
         <source>ZeroMQ notification options:</source>
         <translation>Настройки на ZeroMQ известия:</translation>
+    </message>
+    <message>
+        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID, %i with block height, with a value of 0 if tx is no longer in chaintip)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enable BIP-70 PaymentServer (default: 0)</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

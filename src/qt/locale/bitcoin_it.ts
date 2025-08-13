@@ -80,31 +80,31 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Scegli l&apos;indirizzo a cui inviare Trumpow</translation>
+        <translation>Scegli l&apos;indirizzo a cui inviare Dogecoin</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Scegli l&apos;indirizzo con cui ricevere Trumpow</translation>
+        <translation>Scegli l&apos;indirizzo con cui ricevere Dogecoin</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
         <translation>Sc&amp;egli</translation>
     </message>
     <message>
-        <source>Sending addresses</source>
+        <source>Such sending addresses</source>
         <translation>Indirizzi d&apos;invio</translation>
     </message>
     <message>
-        <source>Receiving addresses</source>
+        <source>Much receiving addresses</source>
         <translation>Indirizzi di ricezione</translation>
     </message>
     <message>
-        <source>These are your Trumpow addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Questo è un elenco di indirizzi Trumpow a cui puoi inviare pagamenti. Controlla sempre l&apos;importo e l&apos;indirizzo del beneficiario prima di inviare Trumpow.</translation>
+        <source>These are your Dogecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Questo è un elenco di indirizzi Dogecoin a cui puoi inviare pagamenti. Controlla sempre l&apos;importo e l&apos;indirizzo del beneficiario prima di inviare Dogecoin.</translation>
     </message>
     <message>
-        <source>These are your Trumpow addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Questi sono i tuoi indirizzi Trumpow che puoi usare per ricevere pagamenti. Si raccomanda di generare un nuovo indirizzo per ogni transazione.</translation>
+        <source>These are your Dogecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Questi sono i tuoi indirizzi Dogecoin che puoi usare per ricevere pagamenti. Si raccomanda di generare un nuovo indirizzo per ogni transazione.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -205,8 +205,8 @@
         <translation>Conferma la criptatura del portafoglio</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TRUMPOWS&lt;/b&gt;!</source>
-        <translation>Attenzione: se cripti il portafoglio e perdi la password, &lt;b&gt;PERDERAI TUTTI I TUOI TRUMPOW&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DOGECOINS&lt;/b&gt;!</source>
+        <translation>Attenzione: se cripti il portafoglio e perdi la password, &lt;b&gt;PERDERAI TUTTI I TUOI DOGECOIN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -253,8 +253,8 @@
         <translation>Attenzione: è attivo il tasto blocco maiuscole !</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your trumpows from being stolen by malware infecting your computer.</source>
-        <translation>%1 si chiuderá per completare il processo di criptatura. Ricordati che criptare il portafoglio potrebbe non proteggere i tuoi trumpow nel caso in cui il tuo computer sia infetto da malware.</translation>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dogecoins from being stolen by malware infecting your computer.</source>
+        <translation>%1 si chiuderá per completare il processo di criptatura. Ricordati che criptare il portafoglio potrebbe non proteggere i tuoi dogecoin nel caso in cui il tuo computer sia infetto da malware.</translation>
     </message>
 </context>
 <context>
@@ -279,8 +279,8 @@
         <translation>Sincronizzazione con la rete in corso...</translation>
     </message>
     <message>
-        <source>&amp;Overview</source>
-        <translation>&amp;Overview</translation>
+        <source>&amp;Wow</source>
+        <translation>&amp;Wow</translation>
     </message>
     <message>
         <source>Node</source>
@@ -351,8 +351,8 @@
         <translation>Re-indicizzazione blocchi su disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Trumpow address</source>
-        <translation>Invia monete ad un indirizzo Trumpow</translation>
+        <source>Send coins to a Dogecoin address</source>
+        <translation>Invia monete ad un indirizzo Dogecoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -375,19 +375,19 @@
         <translation>&amp;Verifica messaggio...</translation>
     </message>
     <message>
-        <source>Trumpow</source>
-        <translation>Trumpow</translation>
+        <source>Dogecoin</source>
+        <translation>Dogecoin</translation>
     </message>
     <message>
         <source>Wallet</source>
         <translation>Portafoglio</translation>
     </message>
     <message>
-        <source>&amp;Send</source>
+        <source>&amp;Such Send</source>
         <translation>&amp;Invia</translation>
     </message>
     <message>
-        <source>&amp;Receive</source>
+        <source>&amp;Much Receive</source>
         <translation>&amp;Ricevi</translation>
     </message>
     <message>
@@ -403,12 +403,12 @@
         <translation>Cripta le chiavi private del tuo portafoglio</translation>
     </message>
     <message>
-        <source>Sign messages with your Trumpow addresses to prove you own them</source>
-        <translation>Firma i messaggi con il tuo indirizzo Trumpow per dimostrarne il possesso</translation>
+        <source>Sign messages with your Dogecoin addresses to prove you own them</source>
+        <translation>Firma i messaggi con il tuo indirizzo Dogecoin per dimostrarne il possesso</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Trumpow addresses</source>
-        <translation>Verifica i messaggi per accertare che siano stati firmati con gli indirizzi Trumpow specificati</translation>
+        <source>Verify messages to ensure they were signed with specified Dogecoin addresses</source>
+        <translation>Verifica i messaggi per accertare che siano stati firmati con gli indirizzi Dogecoin specificati</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -427,8 +427,8 @@
         <translation>Barra degli strumenti</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and trumpow: URIs)</source>
-        <translation>Richiedi pagamenti (genera codici QR e trumpow: URI)</translation>
+        <source>Request payments (generates QR codes and dogecoin: URIs)</source>
+        <translation>Richiedi pagamenti (genera codici QR e dogecoin: URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -439,7 +439,7 @@
         <translation>Mostra la lista degli indirizzi di ricezione utilizzati</translation>
     </message>
     <message>
-        <source>Open a trumpow: URI or payment request</source>
+        <source>Open a dogecoin: URI or payment request</source>
         <translation>Apri un URI o una richiesta di pagamento</translation>
     </message>
     <message>
@@ -447,10 +447,10 @@
         <translation>Opzioni della riga di &amp;comando</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Trumpow network</source>
+        <source>%n active connection(s) to Dogecoin network</source>
         <translation>
-            <numerusform>%n connessione attiva alla rete Trumpow</numerusform>
-            <numerusform>%n connessioni attive alla rete Trumpow</numerusform>
+            <numerusform>%n connessione attiva alla rete Dogecoin</numerusform>
+            <numerusform>%n connessioni attive alla rete Dogecoin</numerusform>
         </translation>
     </message>
     <message>
@@ -497,8 +497,8 @@
         <translation>Aggiornato</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Trumpow command-line options</source>
-        <translation>Mostra il messaggio di aiuto di %1 per ottenere una lista di opzioni di comando per Trumpow </translation>
+        <source>Show the %1 help message to get a list with possible Dogecoin command-line options</source>
+        <translation>Mostra il messaggio di aiuto di %1 per ottenere una lista di opzioni di comando per Dogecoin </translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -563,11 +563,11 @@
         <translation>Stampa paper wallets</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
+        <source>&amp;Such sending addresses...</source>
         <translation>Indirizzi di invio</translation>
     </message>
     <message>
-        <source>&amp;Receiving addresses...</source>
+        <source>&amp;Much receiving addresses...</source>
         <translation>&amp;Indirizzi di ricezione</translation>
     </message>
     <message>
@@ -575,7 +575,7 @@
         <translation>&amp;Importa chiave privata</translation>
     </message>
     <message>
-        <source>Import a Trumpow private key</source>
+        <source>Import a Dogecoin private key</source>
         <translation>Importa una chiave privata</translation>
     </message>
     <message>
@@ -611,8 +611,8 @@
         <translation>Eccezione runaway</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Trumpow can no longer continue safely and will quit.</source>
-        <translation>Si è verificato un errore critico. Trumpow non può più continuare ad operare in sicurezza e verrà chiuso.</translation>
+        <source>A fatal error occurred. Dogecoin can no longer continue safely and will quit.</source>
+        <translation>Si è verificato un errore critico. Dogecoin non può più continuare ad operare in sicurezza e verrà chiuso.</translation>
     </message>
 </context>
 <context>
@@ -805,8 +805,8 @@
         <translation>Modifica indirizzo d&apos;invio</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Trumpow address.</source>
-        <translation>L&apos;indirizzo inserito &quot;%1&quot; non è un indirizzo Trumpow valido.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Dogecoin address.</source>
+        <translation>L&apos;indirizzo inserito &quot;%1&quot; non è un indirizzo Dogecoin valido.</translation>
     </message>
     <message>
         <source>The entered address &quot;%1&quot; is already in the address book.</source>
@@ -977,8 +977,8 @@
         <translation>Dato che questa è la prima volta che il programma viene lanciato, puoi scegliere dove %1 salverà i suoi dati.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Trumpow block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>%1 scaricherà e salverà una copia della blockchain di Trumpow. Saranno salvati almeno %2GB di dati in questa directory e continueranno ad aumentare col tempo. Anche il portafoglio verrà salvato in questa directory.</translation>
+        <source>%1 will download and store a copy of the Dogecoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>%1 scaricherà e salverà una copia della blockchain di Dogecoin. Saranno salvati almeno %2GB di dati in questa directory e continueranno ad aumentare col tempo. Anche il portafoglio verrà salvato in questa directory.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1042,12 +1042,12 @@
         <translation>Nascondi</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the trumpow network, as detailed below.</source>
-        <translation>Le transazioni recenti potrebbero non essere ancora visibili, quindi il saldo totale del tuo portafoglio potrebbe non essere corretto. Il saldo risulterà corretto quando il tuo portafoglio avrà completato la sincronizzazione con la rete trumpow, come indicato più sotto.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the dogecoin network, as detailed below.</source>
+        <translation>Le transazioni recenti potrebbero non essere ancora visibili, quindi il saldo totale del tuo portafoglio potrebbe non essere corretto. Il saldo risulterà corretto quando il tuo portafoglio avrà completato la sincronizzazione con la rete dogecoin, come indicato più sotto.</translation>
     </message>
     <message>
-        <source>Attempting to spend trumpows that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Il tentativo di spendere trumpow legati a transazioni non ancora visualizzate non verrà accettato dalla rete</translation>
+        <source>Attempting to spend dogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Il tentativo di spendere dogecoin legati a transazioni non ancora visualizzate non verrà accettato dalla rete</translation>
     </message>
     <message>
         <source>Progress increase per hour</source>
@@ -1185,16 +1185,16 @@ Per specificare più URL separarli con una barra verticale &quot;|&quot;.</trans
         <translation>&amp;Spendi resti non confermati</translation>
     </message>
     <message>
-        <source>Automatically open the Trumpow client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Apri automaticamente la porta del client Trumpow sul router. Il protocollo UPnP deve essere supportato da parte del router ed attivo.</translation>
+        <source>Automatically open the Dogecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Apri automaticamente la porta del client Dogecoin sul router. Il protocollo UPnP deve essere supportato da parte del router ed attivo.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Mappa le porte tramite &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Trumpow network through a SOCKS5 proxy.</source>
-        <translation>Connessione alla rete Trumpow attraverso un proxy SOCKS5.</translation>
+        <source>Connect to the Dogecoin network through a SOCKS5 proxy.</source>
+        <translation>Connessione alla rete Dogecoin attraverso un proxy SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1233,8 +1233,8 @@ Per specificare più URL separarli con una barra verticale &quot;|&quot;.</trans
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Trumpow network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Connessione alla rete Trumpow attraverso un proxy SOCKS5 separato per Tor.</translation>
+        <source>Connect to the Dogecoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Connessione alla rete Dogecoin attraverso un proxy SOCKS5 separato per Tor.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
@@ -1282,7 +1282,7 @@ Per specificare più URL separarli con una barra verticale &quot;|&quot;.</trans
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Scegli l&apos;unità di suddivisione predefinita da utilizzare per l&apos;interfaccia e per l&apos;invio di trumpow.</translation>
+        <translation>Scegli l&apos;unità di suddivisione predefinita da utilizzare per l&apos;interfaccia e per l&apos;invio di dogecoin.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1348,8 +1348,8 @@ Per specificare più URL separarli con una barra verticale &quot;|&quot;.</trans
         <translation>Modulo</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Trumpow network after a connection is established, but this process has not completed yet.</source>
-        <translation>Le informazioni visualizzate potrebbero non essere aggiornate. Il portafoglio si sincronizza automaticamente con la rete Trumpow una volta stabilita una connessione, ma questo processo non è ancora stato completato.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dogecoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Le informazioni visualizzate potrebbero non essere aggiornate. Il portafoglio si sincronizza automaticamente con la rete Dogecoin una volta stabilita una connessione, ma questo processo non è ancora stato completato.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1436,8 +1436,8 @@ Per specificare più URL separarli con una barra verticale &quot;|&quot;.</trans
         <translation>Fai le dovute ricerche prima di utilizzare qualsiasi servizio criptovalute.</translation>
     </message>
     <message>
-        <source>Services that claim to double your trumpows are always ponzi schemes</source>
-        <translation>Tutti i servizi che promettono di moltiplicare i tuoi Trumpow sono delle truffe.</translation>
+        <source>Services that claim to double your dogecoins are always ponzi schemes</source>
+        <translation>Tutti i servizi che promettono di moltiplicare i tuoi Dogecoin sono delle truffe.</translation>
     </message>
     <message>
         <source>Never share your wallet.dat file with anyone</source>
@@ -1460,8 +1460,8 @@ Per specificare più URL separarli con una barra verticale &quot;|&quot;.</trans
         <translation>Chiunque abbia accesso alla chiave privata ha il controllo totale sul portafoglio.</translation>
     </message>
     <message>
-        <source>To see ongoing development and contribute, check out the Trumpow Core repository on GitHub</source>
-        <translation>Per essere aggiornato sullo sviluppo di Trumpow e contribuire, segui il repository su GitHub!</translation>
+        <source>To see ongoing development and contribute, check out the Dogecoin Core repository on GitHub</source>
+        <translation>Per essere aggiornato sullo sviluppo di Dogecoin e contribuire, segui il repository su GitHub!</translation>
     </message>
 </context>
 <context>
@@ -1471,11 +1471,11 @@ Per specificare più URL separarli con una barra verticale &quot;|&quot;.</trans
         <translation>Stampa i tuoi Paper Wallets</translation>
     </message>
     <message>
-        <source>New Address</source>
+        <source>Very New Address</source>
         <translation>Nuovo Indirizzo</translation>
     </message>
     <message>
-        <source>Print</source>
+        <source>So Print</source>
         <translation>Stampa</translation>
     </message>
     <message>
@@ -1575,7 +1575,7 @@ p, li { white-space: pre-wrap; }
         <translation>Carica Paper Wallets</translation>
     </message>
     <message>
-        <source>The paper wallet printing process has begun.&lt;br/&gt;Please wait for the wallets to print completely and verify that everything printed correctly.&lt;br/&gt;Check for misalignments, ink bleeding, smears, or anything else that could make the private keys unreadable.&lt;br/&gt;Now, enter the number of TRMP you wish to send to each wallet:</source>
+        <source>The paper wallet printing process has begun.&lt;br/&gt;Please wait for the wallets to print completely and verify that everything printed correctly.&lt;br/&gt;Check for misalignments, ink bleeding, smears, or anything else that could make the private keys unreadable.&lt;br/&gt;Now, enter the number of DOGE you wish to send to each wallet:</source>
         <translation>Il processo di stampa del paper wallet è iniziato.&lt;br/&gt;Attendi che la stampa sia completa; successivamente, verifica che non ci siano stati errori di stampa.&lt;br/&gt;Controlla che non ci siano distorsioni, macchie, o problemi che potrebbero rendere il paper wallet illegibile.&lt;br/&gt;Ora inserisci la quantità di DOGE che vuoi inviare all&apos;indirizzo di ciascun portafoglio:</translation>
     </message>
     <message>
@@ -1588,11 +1588,11 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Send Coins</source>
-        <translation>Invia Trumpow</translation>
+        <translation>Invia Dogecoin</translation>
     </message>
     <message>
         <source>The recipient address is not valid, please recheck.</source>
-        <translation>L&apos;indirizzo del destinatario non é valido, controlla di nuovo.</translation>
+        <translation>L&apos;indirizzo del destinatario non è valido, controlla di nuovo.</translation>
     </message>
     <message>
         <source>The amount to pay must be larger than 0</source>
@@ -1608,7 +1608,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>Indirizzo già inserito. Puoi inviare Trumpow allo stesso indirizzo solo una volta nella stessa operazione.</translation>
+        <translation>Indirizzo già inserito. Puoi inviare Dogecoin allo stesso indirizzo solo una volta nella stessa operazione.</translation>
     </message>
     <message>
         <source>Transaction creation failed!</source>
@@ -1636,7 +1636,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>La transazione é stata rifiutata! Questo potrebbe accadere nel caso in cui alcuni dei tuoi fondi siano stati giá spesi, per esempio se hai usato una copia del file wallet.dat altrove e i fondi sono stati spesi nella copia ma non ancora registrati come spesi in questa installazione.</translation>
+        <translation>La transazione è stata rifiutata! Questo potrebbe accadere nel caso in cui alcuni dei tuoi fondi siano stati giá spesi, per esempio se hai usato una copia del file wallet.dat altrove e i fondi sono stati spesi nella copia ma non ancora registrati come spesi in questa installazione.</translation>
     </message>
 </context>
 <context>
@@ -1646,8 +1646,8 @@ p, li { white-space: pre-wrap; }
         <translation>Errore di richiesta di pagamento</translation>
     </message>
     <message>
-        <source>Cannot start trumpow: click-to-pay handler</source>
-        <translation>Impossibile avviare trumpow: gestore click-to-pay</translation>
+        <source>Cannot start dogecoin: click-to-pay handler</source>
+        <translation>Impossibile avviare dogecoin: gestore click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1662,8 +1662,8 @@ p, li { white-space: pre-wrap; }
         <translation>Indirizzo di pagamento non valido %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Trumpow address or malformed URI parameters.</source>
-        <translation>Impossibile interpretare l&apos;URI! I parametri dell&apos;URI o l&apos;indirizzo Trumpow potrebbero non essere corretti.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Dogecoin address or malformed URI parameters.</source>
+        <translation>Impossibile interpretare l&apos;URI! I parametri dell&apos;URI o l&apos;indirizzo Dogecoin potrebbero non essere corretti.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1727,7 +1727,25 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Requested payment amount of %1 is too small (below discard threshold).</source>
-        <translation>Il pagamento richiesto di %1 é troppo basso.</translation>
+        <translation>Il pagamento richiesto di %1 è troppo basso.</translation>
+    </message>
+    <message>
+        <source>BIP70 payment requests are deprecated and disabled by default. Restart with -enable-bip70 if you absolutely have to use this functionality.
+
+Use this functionality with extreme caution.</source>
+        <translation>Le richieste di pagamento BIP70 sono obsolete e disabilitate per impostazione predefinita. Riavvia con -enable-bip70 se hai assolutamente bisogno di utilizzare questa funzionalità.
+
+        Utilizza questa funzionalità con estrema cautela.
+        </translation>
+    </message>
+    <message>
+        <source>Payment request file handling is disabled by default. Restart with -enable-bip70 if you absolutely have to use this functionality.
+
+Use this functionality with extreme caution.</source>
+        <translation>La gestione dei file per le richieste di pagamento è disabilitata per impostazione predefinita. Riavvia con -enable-bip70 se hai assolutamente bisogno di utilizzare questa funzionalità.
+
+        Utilizza questa funzionalità con estrema cautela.  
+        </translation>
     </message>
 </context>
 <context>
@@ -1781,7 +1799,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Error: Node address is invalid</source>
-        <translation>Errore: L'indirizzo del nodo non é valido</translation>
+        <translation>Errore: L&apos;indirizzo del nodo non è valido</translation>
     </message>
     <message>
         <source>Error: Unable to add node</source>
@@ -1795,8 +1813,8 @@ p, li { white-space: pre-wrap; }
         <translation>Importo</translation>
     </message>
     <message>
-        <source>Enter a Trumpow address (e.g. %1)</source>
-        <translation>Inserisci un indirizzo Trumpow (ad es. %1)</translation>
+        <source>Enter a Dogecoin address (e.g. %1)</source>
+        <translation>Inserisci un indirizzo Dogecoin (ad es. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1886,7 +1904,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>%1 didn&apos;t yet exit safely...</source>
-        <translation>%1 non si é ancora chiuso...</translation>
+        <translation>%1 non si è ancora chiuso...</translation>
     </message>
 </context>
 <context>
@@ -2281,8 +2299,8 @@ p, li { white-space: pre-wrap; }
         <translation>R&amp;iusa un indirizzo di ricezione (non raccomandato)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Trumpow network.</source>
-        <translation>Un messaggio opzionale da allegare alla richiesta di pagamento, il quale sarà mostrato all&apos;apertura della richiesta. Nota: Il messaggio non sarà inviato con il pagamento sulla rete Trumpow.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dogecoin network.</source>
+        <translation>Un messaggio opzionale da allegare alla richiesta di pagamento, il quale sarà mostrato all&apos;apertura della richiesta. Nota: Il messaggio non sarà inviato con il pagamento sulla rete Dogecoin.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2393,7 +2411,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
-        <translation>L&apos;URI generato é troppo lungo. Riduci la lunghezza del testo.</translation>
+        <translation>L&apos;URI generato è troppo lungo. Riduci la lunghezza del testo.</translation>
     </message>
     <message>
         <source>Error encoding URI into QR Code.</source>
@@ -2435,7 +2453,7 @@ p, li { white-space: pre-wrap; }
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Invia Trumpow</translation>
+        <translation>Invia Dogecoin</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -2510,8 +2528,8 @@ p, li { white-space: pre-wrap; }
         <translation>somma almeno</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for trumpow transactions than the network can process.</source>
-        <translation>Non vi è alcuna controindicazione a pagare la commissione minima, a patto che il volume delle transazioni sia inferiore allo spazio disponibile nei blocchi. Occorre comunque essere consapevoli che ciò potrebbe impedire la conferma delle transazioni nel caso in cui la rete risultasse satura.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for dogecoin transactions than the network can process.</source>
+        <translation>Pagare la commissione minima dovrebbe essere sufficiente, a patto che il volume delle transazioni sia inferiore allo spazio disponibile nei blocchi. Occorre comunque essere consapevoli che ciò potrebbe impedire la conferma delle transazioni nel caso in cui la rete risultasse satura.</translation>
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -2614,8 +2632,8 @@ p, li { white-space: pre-wrap; }
         <translation>Richiesta di pagamento scaduta.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Trumpow address</source>
-        <translation>Attenzione: Indirizzo Trumpow non valido</translation>
+        <source>Warning: Invalid Dogecoin address</source>
+        <translation>Attenzione: Indirizzo Dogecoin non valido</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2627,11 +2645,11 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Warning: Fee estimation is currently not possible.</source>
-        <translation>Attenzione: Non é possibile calcolare le commissioni di transazione in questo momento.</translation>
+        <translation>Attenzione: Non è possibile calcolare le commissioni di transazione in questo momento.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 trumpowtoshi and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 trumpowtoshi in fee, while &quot;total at least&quot; pays 1000 trumpowtoshi. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Se la commissioni di transazione sono configurate su 1000 ribbit e la transazione é solo 250 bytes, la commissione sará solamente di 250 ribbit per kilobyte, mentre il totale sará di almeno 1000 ribbit. Per transazioni più grandi di un kilobyte entrambi pagano per kilobyte.</translation>
+        <source>If the custom fee is set to 1000 satoshis and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 satoshis in fee, while &quot;total at least&quot; pays 1000 satoshis. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Se la commissioni di transazione sono configurate su 1000 satoshi e la transazione è solo 250 bytes, la commissione sarà solamente di 250 satoshi per kilobyte, mentre il totale sarà di almeno 1000 satoshi. Per transazioni più grandi di un kilobyte entrambi pagano per kilobyte.</translation>
     </message>
     <message>
         <source>Priority:</source>
@@ -2659,7 +2677,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>The recipient address is not valid. Please recheck.</source>
-        <translation>L&apos;indirizzo del destinatario non é valido, controlla di nuovo.</translation>
+        <translation>L&apos;indirizzo del destinatario non è valido, controlla di nuovo.</translation>
     </message>
     <message>
         <source>The amount to pay must be larger than 0.</source>
@@ -2693,6 +2711,10 @@ p, li { white-space: pre-wrap; }
         <source>Using the fallbackfee can result in sending a transaction that will take several hours or days (or never) to confirm. Consider choosing your fee manually or wait until you have validated the complete chain.</source>
         <translation>L&apos;utilizzo del fallbackfee (commissione di transazione di riserva) può causare l&apos;invio di transazioni che impiegano ore o giorni prima di essere confermate. Considera la possibilitá di scegliere le commissioni di transazione manualmente o di attendere che l&apos;intera chain sia stata convalidata.</translation>
     </message>
+    <message>
+        <source>If the custom fee is set to 1000 koinu and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 koinu in fee, while &quot;total at least&quot; pays 1000 koinu. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Se la commissione di transazione è impostata su 1000 koinu e la transazione è solo 250 bytes, la commissione sarà solamente di 250 koinu per kilobyte, mentre il totale sarà di almeno 1000 koinu. Per transazioni più grandi di un kilobyte entrambi pagano per kilobyte.</translation>
+    </message>
 </context>
 <context>
     <name>SendCoinsEntry</name>
@@ -2717,8 +2739,8 @@ p, li { white-space: pre-wrap; }
         <translation>Questo è un normale pagamento.</translation>
     </message>
     <message>
-        <source>The Trumpow address to send the payment to</source>
-        <translation>L&apos;indirizzo Trumpow a cui vuoi inviare il pagamento</translation>
+        <source>The Dogecoin address to send the payment to</source>
+        <translation>L&apos;indirizzo Dogecoin a cui vuoi inviare il pagamento</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2737,8 +2759,8 @@ p, li { white-space: pre-wrap; }
         <translation>Rimuovi questa voce</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less trumpows than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>La commissione sarà sottratta dall&apos;importo che si sta inviando. Il beneficiario riceverà un totale di trumpow inferiore al valore inserito. Nel caso in cui siano stati selezionati più beneficiari la commissione sarà divisa in parti uguali.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less dogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>La commissione sarà sottratta dall&apos;importo che si sta inviando. Il beneficiario riceverà un totale di dogecoin inferiore al valore inserito. Nel caso in cui siano stati selezionati più beneficiari la commissione sarà divisa in parti uguali.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2761,8 +2783,8 @@ p, li { white-space: pre-wrap; }
         <translation>Inserisci un&apos;etichetta per questo indirizzo per aggiungerlo alla lista degli indirizzi utilizzati</translation>
     </message>
     <message>
-        <source>A message that was attached to the trumpow: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Trumpow network.</source>
-        <translation>Messaggio incluso nell&apos;URI trumpow e che sarà memorizzato con la transazione. Nota: questo messaggio non sarà inviato attraverso la rete Trumpow.</translation>
+        <source>A message that was attached to the dogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dogecoin network.</source>
+        <translation>Messaggio incluso nell&apos;URI dogecoin e che sarà memorizzato con la transazione. Nota: questo messaggio non sarà inviato attraverso la rete Dogecoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2806,12 +2828,12 @@ p, li { white-space: pre-wrap; }
         <translation>&amp;Firma Messaggio</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive trumpows sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Puoi firmare messaggi/accordi con i tuoi indirizzi per dimostrare di poterli utilizzare per ricevere Trumpow. Si consiglia di fare attenzione a non firmare dichiarazioni vaghe o casuali che potrebbero essere utilizzate in attacchi phishing. Si raccomanda di firmare esclusivamente dichiarazioni dettagliate e delle quali si condivide in pieno il contenuto.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive dogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Puoi firmare messaggi/accordi con i tuoi indirizzi per dimostrare di poterli utilizzare per ricevere Dogecoin. Si consiglia di fare attenzione a non firmare dichiarazioni vaghe o casuali che potrebbero essere utilizzate in attacchi phishing. Si raccomanda di firmare esclusivamente dichiarazioni dettagliate e delle quali si condivide in pieno il contenuto.</translation>
     </message>
     <message>
-        <source>The Trumpow address to sign the message with</source>
-        <translation>L&apos;indirizzo Trumpow da utilizzare per firmare il messaggio</translation>
+        <source>The Dogecoin address to sign the message with</source>
+        <translation>L&apos;indirizzo Dogecoin da utilizzare per firmare il messaggio</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2842,7 +2864,7 @@ p, li { white-space: pre-wrap; }
         <translation>Copia la firma corrente nella clipboard</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Trumpow address</source>
+        <source>Sign the message to prove you own this Dogecoin address</source>
         <translation>Firma un messaggio per dimostrare di possedere questo indirizzo</translation>
     </message>
     <message>
@@ -2866,11 +2888,11 @@ p, li { white-space: pre-wrap; }
         <translation>Per verificare il messaggio inserire l&apos;indirizzo del firmatario, il messaggio e la firma nei campi sottostanti, assicurandosi di copiare esattamente anche ritorni a capo, spazi, tabulazioni, etc. Si raccomanda di non lasciarsi fuorviare dalla firma a leggere più di quanto non sia riportato nel testo del messaggio stesso, in modo da evitare di cadere vittima di attacchi di tipo man-in-the-middle. Si ricorda che la verifica della firma dimostra soltanto che il firmatario può ricevere pagamenti con l&apos;indirizzo corrispondente, non prova l&apos;invio di alcuna transazione.</translation>
     </message>
     <message>
-        <source>The Trumpow address the message was signed with</source>
-        <translation>L&apos;indirizzo Trumpow con cui è stato firmato il messaggio</translation>
+        <source>The Dogecoin address the message was signed with</source>
+        <translation>L&apos;indirizzo Dogecoin con cui è stato firmato il messaggio</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Trumpow address</source>
+        <source>Verify the message to ensure it was signed with the specified Dogecoin address</source>
         <translation>Verifica il messaggio per accertare che sia stato firmato con l&apos;indirizzo specificato</translation>
     </message>
     <message>
@@ -3153,7 +3175,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>I trumpow generati devono maturare ancora per %1 blocchi prima di essere spendibili. Dopo essere stato generato, questo blocco è stato trasmesso alla rete per essere aggiunto alla blockchain. Se l&apos;inserimento nella blockchain dovesse fallire, il suo stato cambierà a &quot;non accettato&quot; e i trumpow non saranno spendibili. Alle volte, questo può accadere nel caso in cui un altro nodo generi un blocco entro pochi secondi dal tuo.</translation>
+        <translation>I dogecoin generati devono maturare ancora per %1 blocchi prima di essere spendibili. Dopo essere stato generato, questo blocco è stato trasmesso alla rete per essere aggiunto alla blockchain. Se l&apos;inserimento nella blockchain dovesse fallire, il suo stato cambierà a &quot;non accettato&quot; e i dogecoin non saranno spendibili. Alle volte, questo può accadere nel caso in cui un altro nodo generi un blocco entro pochi secondi dal tuo.</translation>
     </message>
 </context>
 <context>
@@ -3450,7 +3472,7 @@ p, li { white-space: pre-wrap; }
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Invia Trumpow</translation>
+        <translation>Invia Dogecoin</translation>
     </message>
 </context>
 <context>
@@ -3547,8 +3569,8 @@ p, li { white-space: pre-wrap; }
         <translation>Impossibile avviare il server HTTP. Dettagli nel log di debug.</translation>
     </message>
     <message>
-        <source>Trumpow Core</source>
-        <translation>Trumpow Core</translation>
+        <source>Dogecoin Core</source>
+        <translation>Dogecoin Core</translation>
     </message>
     <message>
         <source>The %s developers</source>
@@ -3581,10 +3603,6 @@ p, li { white-space: pre-wrap; }
     <message>
         <source>Error reading %s! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
         <translation>Errore lettura %s! Tutte le chiavi sono state lette correttamente, ma i dati delle transazioni o della rubrica potrebbero essere mancanti o non corretti.</translation>
-    </message>
-    <message>
-        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
-        <translation>Esegue un comando quando lo stato di una transazione del portafoglio cambia (%s in cmd è sostituito da TxID)</translation>
     </message>
     <message>
         <source>Maximum allowed median peer time offset adjustment. Local perspective of time may be influenced by peers forward or backward by this amount. (default: %u seconds)</source>
@@ -4287,8 +4305,8 @@ p, li { white-space: pre-wrap; }
         <translation>Errore</translation>
     </message>
     <message>
-        <source>Bitcoin Core and Trumpow Core</source>
-        <translation>Bitcoin Core e Trumpow Core</translation>
+        <source>Bitcoin Core and Dogecoin Core</source>
+        <translation>Bitcoin Core e Dogecoin Core</translation>
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect/-noconnect)</source>
@@ -4328,7 +4346,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Reduce storage requirements by enabling pruning (deleting) of old blocks. This allows the pruneblockchain RPC to be called to delete specific blocks, and enables automatic pruning of old blocks if a target size in MiB is provided. This mode is incompatible with -txindex and -rescan. Warning: Reverting this setting requires re-downloading the entire blockchain. (default: 0 = disable pruning blocks, 1 = allow manual pruning via RPC, &gt;%u = automatically prune block files to stay under the specified target size in MiB)</source>
-        <translation>Riduci lo spazio occupato su disco abilitando la cancellazione (pruning) dei blocchi più vecchi. Questo permette l&apos;utilizzazione del comando RPC pruneblockchain per cancellare blocchi specifici, e abilita la cancellazione automatica dei blocchi più vecchi se viene specificato un target massimo per lo spazio occupato su disco in MiB. Questa modalitá é incompatibile con -txindex e -rescan. Attenzione: la modifica di questa opzione richiede una nuova sincronizzazione dell&apos;intera blockchain con la rete. (default: 0 = disabilita cancellazione dei blocchi, 1 = abilita cancellazione dei blocchi via RPC, &gt;%u = cancella automaticamente i file dei blocchi per rimanere al di sotto del target massimo specificato in MiB)</translation>
+        <translation>Riduci lo spazio occupato su disco abilitando la cancellazione (pruning) dei blocchi più vecchi. Questo permette l&apos;utilizzazione del comando RPC pruneblockchain per cancellare blocchi specifici, e abilita la cancellazione automatica dei blocchi più vecchi se viene specificato un target massimo per lo spazio occupato su disco in MiB. Questa modalitá è incompatibile con -txindex e -rescan. Attenzione: la modifica di questa opzione richiede una nuova sincronizzazione dell&apos;intera blockchain con la rete. (default: 0 = disabilita cancellazione dei blocchi, 1 = abilita cancellazione dei blocchi via RPC, &gt;%u = cancella automaticamente i file dei blocchi per rimanere al di sotto del target massimo specificato in MiB)</translation>
     </message>
     <message>
         <source>Set lowest fee rate (in %s/kB) for transactions to be included in block creation. (default: %s)</source>
@@ -4340,11 +4358,11 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
-        <translation>Il presente software è una versione preliminare - ogni uso é a proprio rischio e pericolo. Non utilizzare per il mining o per applicazioni a scopo commerciale</translation>
+        <translation>Il presente software è una versione preliminare - ogni uso è a proprio rischio e pericolo. Non utilizzare per il mining o per applicazioni a scopo commerciale</translation>
     </message>
     <message>
         <source>This is the transaction fee you may pay when fee estimates are not available.</source>
-        <translation>Questa é la commissione di transazione utilizzata quando il calcolo automatico delle commissioni non é disponibile.</translation>
+        <translation>Questa è la commissione di transazione utilizzata quando il calcolo automatico delle commissioni non è disponibile.</translation>
     </message>
     <message>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit %s and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard. Paper wallet art provided by Anacoluthia.</source>
@@ -4352,7 +4370,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Username and hashed password for JSON-RPC connections. The field &lt;userpw&gt; comes in the format: &lt;USERNAME&gt;:&lt;SALT&gt;$&lt;HASH&gt;. A canonical python script is included in share/rpcuser. The client then connects normally using the rpcuser=&lt;USERNAME&gt;/rpcpassword=&lt;PASSWORD&gt; pair of arguments. This option can be specified multiple times</source>
-        <translation>Il nome utente e l&apos;hash della password per connessioni JSON-RPC. Il campo &lt;userpw&gt; deve essere nel formato: &lt;NOMEUTENTE&gt;:&lt;SALT&gt;$&lt;HASH&gt;. Uno script python per la generazione del campo é incluso nella cartella share/rpcuser. Il client può successivamente connettersi normalmente utilizzando le opzioni rpcuser=&lt;NOMEUTENTE&gt;/rpcpassword=&lt;PASSWORD&gt;. L&apos;opzione può essere specificata varie volte.</translation>
+        <translation>Il nome utente e l&apos;hash della password per connessioni JSON-RPC. Il campo &lt;userpw&gt; deve essere nel formato: &lt;NOMEUTENTE&gt;:&lt;SALT&gt;$&lt;HASH&gt;. Uno script python per la generazione del campo è incluso nella cartella share/rpcuser. Il client può successivamente connettersi normalmente utilizzando le opzioni rpcuser=&lt;NOMEUTENTE&gt;/rpcpassword=&lt;PASSWORD&gt;. L&apos;opzione può essere specificata varie volte.</translation>
     </message>
     <message>
         <source>Wallet will not create transactions that violate mempool chain limits (default: %u)</source>
@@ -4372,10 +4390,10 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>%s is set very high!</source>
-        <translation>Il valore %s é molto alto!</translation>
+        <translation>Il valore %s è molto alto!</translation>
     </message>
     <message>
-        <source>High</source>
+        <source>Amaze</source>
         <translation>Fantastico</translation>
     </message>
     <message>
@@ -4388,10 +4406,10 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Keypool ran out, please call keypoolrefill first</source>
-        <translation>La keypool é vuota, usa keypoolrefill prima di continuare</translation>
+        <translation>La keypool è vuota, usa keypoolrefill prima di continuare</translation>
     </message>
     <message>
-        <source>Very High</source>
+        <source>Many generous</source>
         <translation>Molto generoso</translation>
     </message>
     <message>
@@ -4399,7 +4417,7 @@ p, li { white-space: pre-wrap; }
         <translation>Minimo</translation>
     </message>
     <message>
-        <source>Low</source>
+        <source>More</source>
         <translation>Continua</translation>
     </message>
     <message>
@@ -4411,7 +4429,7 @@ p, li { white-space: pre-wrap; }
         <translation>Inizializzazione dei thread di rete...</translation>
     </message>
     <message>
-        <source>Maximum</source>
+        <source>Such expensive</source>
         <translation>Costosissimo!</translation>
     </message>
     <message>
@@ -4420,11 +4438,11 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>This is the minimum transaction fee you pay on every transaction.</source>
-        <translation>Questa é la commissione minima da pagare per ogni transazione.</translation>
+        <translation>Questa è la commissione minima da pagare per ogni transazione.</translation>
     </message>
     <message>
         <source>This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Questa é la commissione che pagherai quando invii una transazione.</translation>
+        <translation>Questa è la commissione che pagherai quando invii una transazione.</translation>
     </message>
     <message>
         <source>Transaction amounts must not be negative</source>
@@ -4443,12 +4461,12 @@ p, li { white-space: pre-wrap; }
         <translation>Usa la test chain</translation>
     </message>
     <message>
-        <source>Overview</source>
-        <translation>Overview</translation>
+        <source>Wow</source>
+        <translation>Wow</translation>
     </message>
     <message>
         <source>-discardthreshold is set very high! This is the output amount that the wallet will discard (to fee) if it is smaller than this setting.</source>
-        <translation>-discardthreshold é molto alto! Questo é il valore minimo di un output di transazione utilizzato per convalidare le transazioni del portafoglio e scartare il resto.</translation>
+        <translation>-discardthreshold è molto alto! Questo è il valore minimo di un output di transazione utilizzato per convalidare le transazioni del portafoglio e scartare il resto.</translation>
     </message>
     <message>
         <source>Amount under which a transaction output is considered non-standard and will not be accepted or relayed, in %s (default: %s)</source>
@@ -4473,6 +4491,14 @@ p, li { white-space: pre-wrap; }
     <message>
         <source>Specify directory where to write backups and data dumps (default datadir/backups)</source>
         <translation>Specifica la cartella in cui salvare i backup e i dump di dati (default datadir/backups)</translation>
+    </message>
+    <message>
+        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID, %i with block height, with a value of 0 if tx is no longer in chaintip)</source>
+        <translation>Esegui il comando quando viene rilevato un cambiamento in una transazione nel portafoglio (%s viene sostituito dal TxID, %i dal numero del blocco o con un valore 0 se la transazione non è più inclusa nella chaintip)</translation>
+    </message>
+    <message>
+        <source>Enable BIP-70 PaymentServer (default: 0)</source>
+        <translation>Abilita il server pagamenti BIP-70 (default: 0)</translation>
     </message>
 </context>
 </TS>

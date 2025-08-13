@@ -258,7 +258,7 @@ fi
 ### Setup ###
 
 if [[ $setup == true ]]; then
-    git clone https://github.com/Trumpow/gitian.sigs.git
+    git clone https://github.com/trumpowppc/gitian.sigs.git
     git clone https://github.com/trumpowppc/trumpow-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
 

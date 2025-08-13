@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Copyright (c) 2014-2016 The Bitcoin Core developers
-# Copyright (c) 2021 The Dogecoin Core developers
+# Copyright (c) 2021-2022 The Dogecoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -27,13 +27,13 @@ def make_utxo(node, amount, confirmed=True, scriptPubKey=CScript([1])):
                 unconfirmed otherwise.
     """
     fee = 1*COIN
-    while node.getbalance() < satoshi_round((amount + fee)/COIN):
+    while node.getbalance() < trumpowtoshi_round((amount + fee)/COIN):
         node.generate(100)
         #print (node.getbalance(), amount, fee)
 
     new_addr = node.getnewaddress()
     #print new_addr
-    txid = node.sendtoaddress(new_addr, satoshi_round((amount+fee)/COIN))
+    txid = node.sendtoaddress(new_addr, trumpowtoshi_round((amount+fee)/COIN))
     tx1 = node.getrawtransaction(txid, 1)
     txid = int(txid, 16)
     i = None

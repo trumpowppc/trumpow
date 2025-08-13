@@ -39,7 +39,7 @@ static const secp256k1_fe secp256k1_const_beta = SECP256K1_FE_CONST(
 );
 
 /** Normalize a field element. This brings the field element to a canonical representation, reduces
- *  its magnitude to 1, and reduces it modulo field size `T`.
+ *  its magnitude to 1, and reduces it modulo field size `p`.
  */
 static void secp256k1_fe_normalize(secp256k1_fe *r);
 

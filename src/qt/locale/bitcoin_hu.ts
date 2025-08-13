@@ -91,19 +91,19 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Sending addresses</source>
+        <source>Such sending addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Receiving addresses</source>
+        <source>Much receiving addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>These are your Trumpow addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Dogecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>These are your Trumpow addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Dogecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -205,7 +205,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TRUMPOWS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DOGECOINS&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -217,7 +217,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your trumpows from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dogecoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -279,7 +279,7 @@
         <translation>Szinkronizálás a hálózattal...</translation>
     </message>
     <message>
-        <source>&amp;Overview</source>
+        <source>&amp;Wow</source>
         <translation>&amp;Áttekintés</translation>
     </message>
     <message>
@@ -351,8 +351,8 @@
         <translation>Lemezen lévő blokkok újraindexelése...</translation>
     </message>
     <message>
-        <source>Send coins to a Trumpow address</source>
-        <translation>Trumpow küldése megadott címre</translation>
+        <source>Send coins to a Dogecoin address</source>
+        <translation>Dogecoin küldése megadott címre</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -375,19 +375,19 @@
         <translation>Üzenet &amp;valódiságának ellenőrzése</translation>
     </message>
     <message>
-        <source>Trumpow</source>
-        <translation>Trumpow</translation>
+        <source>Dogecoin</source>
+        <translation>Dogecoin</translation>
     </message>
     <message>
         <source>Wallet</source>
         <translation>Tárca</translation>
     </message>
     <message>
-        <source>&amp;Send</source>
+        <source>&amp;Such Send</source>
         <translation>&amp;Küldés</translation>
     </message>
     <message>
-        <source>&amp;Receive</source>
+        <source>&amp;Much Receive</source>
         <translation>&amp;Fogadás</translation>
     </message>
     <message>
@@ -403,12 +403,12 @@
         <translation>A tárcádhoz tartozó privát kulcsok titkosítása</translation>
     </message>
     <message>
-        <source>Sign messages with your Trumpow addresses to prove you own them</source>
-        <translation>Üzenetek aláírása a Trumpow-címmeiddel, amivel bizonyítod, hogy a cím a sajátod</translation>
+        <source>Sign messages with your Dogecoin addresses to prove you own them</source>
+        <translation>Üzenetek aláírása a Dogecoin-címmeiddel, amivel bizonyítod, hogy a cím a sajátod</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Trumpow addresses</source>
-        <translation>Üzenetek ellenőrzése, hogy valóban a megjelölt Trumpow-címekkel vannak-e aláírva</translation>
+        <source>Verify messages to ensure they were signed with specified Dogecoin addresses</source>
+        <translation>Üzenetek ellenőrzése, hogy valóban a megjelölt Dogecoin-címekkel vannak-e aláírva</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -427,8 +427,8 @@
         <translation>Fül eszköztár</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and trumpow: URIs)</source>
-        <translation>Fizetési kérelem (QR-kódot és &quot;trumpow:&quot; URI azonosítót hoz létre)</translation>
+        <source>Request payments (generates QR codes and dogecoin: URIs)</source>
+        <translation>Fizetési kérelem (QR-kódot és &quot;dogecoin:&quot; URI azonosítót hoz létre)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -439,17 +439,17 @@
         <translation>A használt fogadó címek és címkék megtekintése</translation>
     </message>
     <message>
-        <source>Open a trumpow: URI or payment request</source>
-        <translation>&quot;trumpow:&quot; URI azonosító vagy fizetési kérelem megnyitása</translation>
+        <source>Open a dogecoin: URI or payment request</source>
+        <translation>&quot;dogecoin:&quot; URI azonosító vagy fizetési kérelem megnyitása</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Paran&amp;cssor kapcsolók</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Trumpow network</source>
+        <source>%n active connection(s) to Dogecoin network</source>
         <translation>
-            <numerusform>%n aktív kapcsolat a Trumpow hálózathoz</numerusform>
+            <numerusform>%n aktív kapcsolat a Dogecoin hálózathoz</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -553,11 +553,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
+        <source>&amp;Such sending addresses...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>&amp;Receiving addresses...</source>
+        <source>&amp;Much receiving addresses...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -565,11 +565,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Import a Trumpow private key</source>
+        <source>Import a Dogecoin private key</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Trumpow command-line options</source>
+        <source>Show the %1 help message to get a list with possible Dogecoin command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -617,7 +617,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>A fatal error occurred. Trumpow can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Dogecoin can no longer continue safely and will quit.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -811,7 +811,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Trumpow address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Dogecoin address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1005,7 +1005,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Trumpow block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>%1 will download and store a copy of the Dogecoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
@@ -1034,11 +1034,11 @@
         <translation>Elrejtés</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the trumpow network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the dogecoin network, as detailed below.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Attempting to spend trumpows that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend dogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1148,16 +1148,16 @@
         <translation>Szakértő</translation>
     </message>
     <message>
-        <source>Automatically open the Trumpow client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>A Trumpow-kliens portjának automatikus megnyitása a routeren. Ez csak akkor működik, ha a routered támogatja az UPnP-t és az engedélyezve is van rajta.</translation>
+        <source>Automatically open the Dogecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>A Dogecoin-kliens portjának automatikus megnyitása a routeren. Ez csak akkor működik, ha a routered támogatja az UPnP-t és az engedélyezve is van rajta.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>&amp;UPnP port-feltérképezés</translation>
     </message>
     <message>
-        <source>Connect to the Trumpow network through a SOCKS5 proxy.</source>
-        <translation>Csatlakozás a Trumpow hálózatához SOCKS5 proxyn keresztül</translation>
+        <source>Connect to the Dogecoin network through a SOCKS5 proxy.</source>
+        <translation>Csatlakozás a Dogecoin hálózatához SOCKS5 proxyn keresztül</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1304,7 +1304,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Connect to the Trumpow network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <source>Connect to the Dogecoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1351,8 +1351,8 @@
         <translation>Űrlap</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Trumpow network after a connection is established, but this process has not completed yet.</source>
-        <translation>A kijelzett információ lehet, hogy elavult. A pénztárcája automatikusan szinkronizálja magát a Trumpow hálózattal miután a kapcsolat létrejön, de ez e folyamat még nem fejeződött be.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dogecoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>A kijelzett információ lehet, hogy elavult. A pénztárcája automatikusan szinkronizálja magát a Dogecoin hálózattal miután a kapcsolat létrejön, de ez e folyamat még nem fejeződött be.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1459,11 +1459,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>To see ongoing development and contribute, check out the Trumpow Core repository on GitHub</source>
+        <source>To see ongoing development and contribute, check out the Dogecoin Core repository on GitHub</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Services that claim to double your trumpows are always ponzi schemes</source>
+        <source>Services that claim to double your dogecoins are always ponzi schemes</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1474,11 +1474,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>New Address</source>
+        <source>Very New Address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Print</source>
+        <source>So Print</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1578,7 +1578,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The paper wallet printing process has begun.&lt;br/&gt;Please wait for the wallets to print completely and verify that everything printed correctly.&lt;br/&gt;Check for misalignments, ink bleeding, smears, or anything else that could make the private keys unreadable.&lt;br/&gt;Now, enter the number of TRMP you wish to send to each wallet:</source>
+        <source>The paper wallet printing process has begun.&lt;br/&gt;Please wait for the wallets to print completely and verify that everything printed correctly.&lt;br/&gt;Check for misalignments, ink bleeding, smears, or anything else that could make the private keys unreadable.&lt;br/&gt;Now, enter the number of DOGE you wish to send to each wallet:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1649,7 +1649,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Cannot start trumpow: click-to-pay handler</source>
+        <source>Cannot start dogecoin: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1665,7 +1665,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Trumpow address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Dogecoin address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1730,6 +1730,18 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Payment acknowledged</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>BIP70 payment requests are deprecated and disabled by default. Restart with -enable-bip70 if you absolutely have to use this functionality.
+
+Use this functionality with extreme caution.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Payment request file handling is disabled by default. Restart with -enable-bip70 if you absolutely have to use this functionality.
+
+Use this functionality with extreme caution.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1798,8 +1810,8 @@ p, li { white-space: pre-wrap; }
         <translation>Összeg</translation>
     </message>
     <message>
-        <source>Enter a Trumpow address (e.g. %1)</source>
-        <translation>Ad meg egy Trumpow címet (pl: %1)</translation>
+        <source>Enter a Dogecoin address (e.g. %1)</source>
+        <translation>Ad meg egy Dogecoin címet (pl: %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2306,7 +2318,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Trumpow network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dogecoin network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2559,7 +2571,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 trumpowtoshi and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 trumpowtoshi in fee, while &quot;total at least&quot; pays 1000 trumpowtoshi. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 satoshis and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 satoshis in fee, while &quot;total at least&quot; pays 1000 satoshis. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2567,7 +2579,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for trumpow transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for dogecoin transactions than the network can process.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2679,7 +2691,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Warning: Invalid Trumpow address</source>
+        <source>Warning: Invalid Dogecoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2696,6 +2708,10 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>(no label)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>If the custom fee is set to 1000 koinu and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 koinu in fee, while &quot;total at least&quot; pays 1000 koinu. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2750,7 +2766,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The Trumpow address to send the payment to</source>
+        <source>The Dogecoin address to send the payment to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2758,7 +2774,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less trumpows than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less dogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2766,7 +2782,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>A message that was attached to the trumpow: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Trumpow network.</source>
+        <source>A message that was attached to the dogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dogecoin network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2839,7 +2855,7 @@ p, li { white-space: pre-wrap; }
         <translation>A jelenleg kiválasztott aláírás másolása a rendszer-vágólapra</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Trumpow address</source>
+        <source>Sign the message to prove you own this Dogecoin address</source>
         <translation>Üzenet </translation>
     </message>
     <message>
@@ -2859,11 +2875,11 @@ p, li { white-space: pre-wrap; }
         <translation>Üzenet ellenőrzése</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive trumpows sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive dogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The Trumpow address to sign the message with</source>
+        <source>The Dogecoin address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2875,11 +2891,11 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The Trumpow address the message was signed with</source>
+        <source>The Dogecoin address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Trumpow address</source>
+        <source>Verify the message to ensure it was signed with the specified Dogecoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3521,12 +3537,12 @@ p, li { white-space: pre-wrap; }
 </translation>
     </message>
     <message>
-        <source>Trumpow Core</source>
-        <translation>Trumpow Core</translation>
+        <source>Dogecoin Core</source>
+        <translation>Dogecoin Core</translation>
     </message>
     <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
-        <translation>Parancs, amit akkor hajt végre, amikor egy tárca-tranzakció megváltozik  (%s a parancsban lecserélődik a blokk TxID-re)</translation>
+        <translation type="vanished">Parancs, amit akkor hajt végre, amikor egy tárca-tranzakció megváltozik  (%s a parancsban lecserélődik a blokk TxID-re)</translation>
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: 1 when listening and no -proxy)</source>
@@ -3676,7 +3692,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Insufficient funds</source>
-        <translation>Nincs elég trumpowod.</translation>
+        <translation>Nincs elég dogecoinod.</translation>
     </message>
     <message>
         <source>Loading block index...</source>
@@ -3715,7 +3731,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Bitcoin Core and Trumpow Core</source>
+        <source>Bitcoin Core and Dogecoin Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4047,7 +4063,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>High</source>
+        <source>Amaze</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4211,7 +4227,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Very High</source>
+        <source>Many generous</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4227,7 +4243,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Low</source>
+        <source>More</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4359,7 +4375,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Maximum</source>
+        <source>Such expensive</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4475,7 +4491,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Overview</source>
+        <source>Wow</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4484,6 +4500,14 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>ZeroMQ notification options:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID, %i with block height, with a value of 0 if tx is no longer in chaintip)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enable BIP-70 PaymentServer (default: 0)</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

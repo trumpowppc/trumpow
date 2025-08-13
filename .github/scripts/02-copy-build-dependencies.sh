@@ -27,9 +27,18 @@ if [[ ${OS} == "windows" ]]; then
 elif [[ ${OS} == "osx" ]]; then
     mkdir SDKs
     cd SDKs
-    curl -O https://bitcoincore.org/depends-sources/sdks/Xcode-11.3.1-11C505-extracted-SDK-with-libcxx-headers.tar.gz
-    tar -zxf Xcode-11.3.1-11C505-extracted-SDK-with-libcxx-headers.tar.gz
-    rm -rf Xcode-11.3.1-11C505-extracted-SDK-with-libcxx-headers.tar.gz
+    SDK_TARBALL="Xcode-11.3.1-11C505-extracted-SDK-with-libcxx-headers.tar.gz"
+    SDK_CACHE_PATH="${GITHUB_WORKSPACE}/SDKs/${SDK_TARBALL}"
+    if [[ -n "${OSX_SDK_TARBALL}" && -f "${OSX_SDK_TARBALL}" ]]; then
+        cp "${OSX_SDK_TARBALL}" "${SDK_TARBALL}"
+    elif [[ -f "${SDK_CACHE_PATH}" ]]; then
+        cp "${SDK_CACHE_PATH}" "${SDK_TARBALL}"
+    else
+        echo "Error: macOS SDK tarball not found in cache or at path '${OSX_SDK_TARBALL}'."
+        exit 1
+    fi
+    tar -zxf "${SDK_TARBALL}" || { echo "Error: Failed to extract macOS SDK."; exit 1; }
+    rm -f "${SDK_TARBALL}"
     cd ..
     make HOST=x86_64-apple-darwin14 -j2
 elif [[ ${OS} == "linux" || ${OS} == "linux-disable-wallet" ]]; then

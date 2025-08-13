@@ -31,7 +31,7 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/Trumpow/gitian.sigs.git
+    git clone https://github.com/trumpowppc/gitian.sigs.git
     git clone https://github.com/trumpowppc/trumpow-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
     git clone https://github.com/trumpowppc/trumpow.git
@@ -254,11 +254,17 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
 - Announce the release:
 
-  - Twitter
+  - Release sticky on Trumpow Forums: http://forum.trumpow.meme/forum/news-community/community-announcements
+
+  - Trumpow-development mailing list
+
+  - Twitter, reddit /r/trumpow
 
   - Update title of #trumpow on Freenode IRC
 
   - Announce on reddit /r/trumpow, /r/trumpowdev
 
 - Add release notes for the new version to the directory `doc/release-notes` in git master
+
+- To the moon!
 

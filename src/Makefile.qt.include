@@ -11,37 +11,22 @@ QT_TS = \
   qt/locale/bitcoin_af_ZA.ts \
   qt/locale/bitcoin_ar.ts \
   qt/locale/bitcoin_be_BY.ts \
-  qt/locale/bitcoin_bg_BG.ts \
   qt/locale/bitcoin_bg.ts \
-  qt/locale/bitcoin_ca_ES.ts \
   qt/locale/bitcoin_ca.ts \
-  qt/locale/bitcoin_ca@valencia.ts \
   qt/locale/bitcoin_cs.ts \
   qt/locale/bitcoin_cy.ts \
   qt/locale/bitcoin_da.ts \
   qt/locale/bitcoin_de.ts \
-  qt/locale/bitcoin_el_GR.ts \
   qt/locale/bitcoin_el.ts \
   qt/locale/bitcoin_en_GB.ts \
   qt/locale/bitcoin_en.ts \
   qt/locale/bitcoin_eo.ts \
-  qt/locale/bitcoin_es_AR.ts \
-  qt/locale/bitcoin_es_CL.ts \
-  qt/locale/bitcoin_es_CO.ts \
-  qt/locale/bitcoin_es_DO.ts \
-  qt/locale/bitcoin_es_ES.ts \
-  qt/locale/bitcoin_es_MX.ts \
   qt/locale/bitcoin_es.ts \
-  qt/locale/bitcoin_es_UY.ts \
-  qt/locale/bitcoin_es_VE.ts \
-  qt/locale/bitcoin_et_EE.ts \
   qt/locale/bitcoin_et.ts \
   qt/locale/bitcoin_eu_ES.ts \
-  qt/locale/bitcoin_fa_IR.ts \
   qt/locale/bitcoin_fa.ts \
   qt/locale/bitcoin_fi.ts \
   qt/locale/bitcoin_fr_CA.ts \
-  qt/locale/bitcoin_fr_FR.ts \
   qt/locale/bitcoin_fr.ts \
   qt/locale/bitcoin_gl.ts \
   qt/locale/bitcoin_he.ts \
@@ -69,9 +54,7 @@ QT_TS = \
   qt/locale/bitcoin_pl.ts \
   qt/locale/bitcoin_pt_BR.ts \
   qt/locale/bitcoin_pt_PT.ts \
-  qt/locale/bitcoin_ro_RO.ts \
   qt/locale/bitcoin_ro.ts \
-  qt/locale/bitcoin_ru_RU.ts \
   qt/locale/bitcoin_ru.ts \
   qt/locale/bitcoin_sk.ts \
   qt/locale/bitcoin_sl_SI.ts \
@@ -81,16 +64,12 @@ QT_TS = \
   qt/locale/bitcoin_sv.ts \
   qt/locale/bitcoin_ta.ts \
   qt/locale/bitcoin_th_TH.ts \
-  qt/locale/bitcoin_tr_TR.ts \
   qt/locale/bitcoin_tr.ts \
   qt/locale/bitcoin_uk.ts \
   qt/locale/bitcoin_ur_PK.ts \
   qt/locale/bitcoin_uz@Cyrl.ts \
   qt/locale/bitcoin_vi.ts \
-  qt/locale/bitcoin_vi_VN.ts \
   qt/locale/bitcoin_zh_CN.ts \
-  qt/locale/bitcoin_zh_HK.ts \
-  qt/locale/bitcoin_zh.ts \
   qt/locale/bitcoin_zh_TW.ts
 
 QT_FORMS_UI = \
@@ -183,10 +162,6 @@ QT_QRC = qt/bitcoin.qrc
 QT_QRC_LOCALE_CPP = qt/qrc_bitcoin_locale.cpp
 QT_QRC_LOCALE = qt/bitcoin_locale.qrc
 
-PROTOBUF_CC = qt/paymentrequest.pb.cc
-PROTOBUF_H = qt/paymentrequest.pb.h
-PROTOBUF_PROTO = qt/paymentrequest.proto
-
 BITCOIN_QT_H = \
   qt/addressbookpage.h \
   qt/addresstablemodel.h \
@@ -214,7 +189,6 @@ BITCOIN_QT_H = \
   qt/optionsdialog.h \
   qt/optionsmodel.h \
   qt/overviewpage.h \
-  qt/paymentrequestplus.h \
   qt/paymentserver.h \
   qt/peertablemodel.h \
   qt/platformstyle.h \
@@ -342,7 +316,6 @@ BITCOIN_QT_WALLET_CPP = \
   qt/importkeysdialog.cpp \
   qt/openuridialog.cpp \
   qt/overviewpage.cpp \
-  qt/paymentrequestplus.cpp \
   qt/paymentserver.cpp \
   qt/receivecoinsdialog.cpp \
   qt/receiverequestdialog.cpp \
@@ -375,7 +348,16 @@ RES_IMAGES =
 RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
 
 RES_FONTS = \
-    qt/res/fonts/RobotoMono-Bold.ttf
+  qt/res/fonts/ComicNeue-Bold-Oblique.ttf \
+  qt/res/fonts/ComicNeue-Bold.ttf \
+  qt/res/fonts/ComicNeue-Light-Oblique.ttf \
+  qt/res/fonts/ComicNeue-Light.ttf \
+  qt/res/fonts/ComicNeue-Regular-Oblique.ttf \
+  qt/res/fonts/ComicNeue-Regular.ttf \
+  qt/res/fonts/NotoSans-Bold.ttf \
+  qt/res/fonts/NotoSans-Light.ttf \
+  qt/res/fonts/NotoSans-Medium.ttf \
+  qt/res/fonts/NotoSans-Regular.ttf
 
 BITCOIN_RC = qt/res/bitcoin-qt-res.rc
 
@@ -383,15 +365,15 @@ BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
   -I$(builddir)/qt/forms -DQT_NO_KEYWORDS
 
 qt_libtrumpowqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
-  $(QT_INCLUDES) $(QT_DBUS_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
+  $(QT_INCLUDES) $(QT_DBUS_INCLUDES) $(QR_CFLAGS)
 qt_libtrumpowqt_a_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
 qt_libtrumpowqt_a_OBJCXXFLAGS = $(AM_OBJCXXFLAGS) $(QT_PIE_FLAGS)
 
 qt_libtrumpowqt_a_SOURCES = $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(QT_FORMS_UI) \
-  $(QT_QRC) $(QT_QRC_LOCALE) $(QT_TS) $(PROTOBUF_PROTO) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES) $(RES_FONTS)
+  $(QT_QRC) $(QT_QRC_LOCALE) $(QT_TS) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES) $(RES_FONTS)
 
-nodist_qt_libtrumpowqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
-  $(PROTOBUF_H) $(QT_QRC_CPP) $(QT_QRC_LOCALE_CPP)
+nodist_qt_libtrumpowqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) \
+  $(QT_QRC_CPP) $(QT_QRC_LOCALE_CPP)
 
 # forms/foo.h -> forms/ui_foo.h
 QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:.ui=.h))))
@@ -401,14 +383,9 @@ QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:
 $(QT_MOC): $(QT_FORMS_H)
 $(qt_libtrumpowqt_a_OBJECTS) $(qt_trumpow_qt_OBJECTS) : | $(QT_MOC)
 
-#Generating these with a half-written protobuf header leads to wacky results.
-#This makes sure it's done.
-$(QT_MOC): $(PROTOBUF_H)
-$(QT_MOC_CPP): $(PROTOBUF_H)
-
 # bitcoin-qt binary #
 qt_trumpow_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
-  $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
+  $(QT_INCLUDES) $(QR_CFLAGS)
 qt_trumpow_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
 
 qt_trumpow_qt_SOURCES = qt/bitcoin.cpp
@@ -426,7 +403,7 @@ if ENABLE_ZMQ
 qt_trumpow_qt_LDADD += $(LIBTRUMPOW_ZMQ) $(ZMQ_LIBS)
 endif
 qt_trumpow_qt_LDADD += $(LIBTRUMPOW_CLI) $(LIBTRUMPOW_COMMON) $(LIBTRUMPOW_UTIL) $(LIBTRUMPOW_CONSENSUS) $(LIBTRUMPOW_CRYPTO) $(LIBUNIVALUE) $(LIBLEVELDB) $(LIBMEMENV) \
-  $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
+  $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
   $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
 qt_trumpow_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 qt_trumpow_qt_LIBTOOLFLAGS = --tag CXX
@@ -457,7 +434,7 @@ $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 	@rm $(@D)/temp_$(<F)
 
-$(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES) $(RES_FONTS) $(PROTOBUF_H)
+$(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES) $(RES_FONTS)
 	@test -f $(RCC)
 	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name bitcoin $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@

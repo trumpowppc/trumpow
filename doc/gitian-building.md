@@ -101,18 +101,18 @@ Binaries and signatures will be created in a `gitian-output` folder, relative to
 The entire gitian flow can be performed step by step, example using docker :
 ```bash
 #Download Gitian dependencies
-./gitian-build.sh --docker --setup 1.0
+./gitian-build.sh --docker --setup 1.2.0.0
 
 #Build & sign executables
-./gitian-build.sh --docker --build --sign SIGNER 1.0
+./gitian-build.sh --docker --build --sign SIGNER 1.2.0.0
 
 #Verify signatures
-./gitian-build.sh --verify 1.0
+./gitian-build.sh --verify 1.2.0.0
 ```
 
 Or to do everything at once :
 ```bash
-./gitian-build.sh --docker --setup --build --sign SIGNER --verify 1.0
+./gitian-build.sh --docker --setup --build --sign SIGNER --verify 1.2.0.0
 ```
 
 ### Signing externally
@@ -121,7 +121,7 @@ If you want to do the PGP signing on another device, that's also possible; just 
 and follow the steps in the build process as normal.
 
 ```bash
-gpg: skipped "satoshi": secret key not available
+gpg: skipped "trumpowtoshi": secret key not available
 ```
 
 When you execute `gsign` you will get an error from GPG, which can be ignored. Copy the resulting `.assert` files in `gitian.sigs` to your signing machine and do
@@ -136,8 +136,8 @@ This will create the `.sig` files that can be committed together with the `.asse
 
 ## Publish signatures
 
-Gitian signatures for each release are added to https://github.com/Trumpow/gitian.sigs.
+Gitian signatures for each release are added to https://github.com/trumpowppc/gitian.sigs.
 
-`gitian-build.sh` will create signatures inside `gitian-output/sigs/` folder. Create a pull request to [trumpow/gitian.sigs](https://github.com/Trumpow/gitian.sigs) to publish your signatures, the `.assert` and `.assert.sig` files.
+`gitian-build.sh` will create signatures inside `gitian-output/sigs/` folder. Create a pull request to [trumpowppc/gitian.sigs](https://github.com/trumpowppc/gitian.sigs) to publish your signatures, the `.assert` and `.assert.sig` files.
 
 **When your PR is merged, you will be recorded for all future history as a *Gitian Builder of Trumpow Core*!**

@@ -53,38 +53,31 @@ will also work on other Linux distributions, however the commands for
 installing the toolchain will be different.
 
 Install the general dependencies. First, ensure your system is updated and has the latest security patches.
-
 ```bash
 sudo apt update
 sudo apt upgrade
 sudo apt-get install build-essential libtool autotools-dev automake pkg-config bsdmainutils curl git
 ```
-
 A host toolchain (`build-essential`) is necessary because some dependency
 packages (such as `protobuf`) need to build host utilities that are used in the
 build process.
 
 ## Get the Source Code
 
-To build from source code, you'll need the source code. Either check it out via
-`git` or download a zip file. (Look at the green "<> Code" button on [the
-Trumpow GitHub repository](https://github.com/trumpowppc/trumpow/)).
+To build Trumpow from source code, you'll need the source code. Either check it out via `git` or download
+a zip file. (Look at the green "<> Code" button on [the Trumpow GitHub repository](https://github.com/trumpowppc/trumpow/)).
 
 Make sure this code is available in your Ubuntu directory. If you've unzipped a single downloaded file, you may need to change
 the permissions of all extracted files with command like:
-
 ```bash
 sudo chmod -R <your_username> .
 ```
-
 If you've downloaded via `git`, do not use `sudo`. Instead prefer something like:
-
 ```bash
 cd $HOME
 git clone https://github.com/trumpowppc/trumpow.git
 git checkout <branchname>
 ```
-
 ... where `<branchname>` is the name of the branch you want to build, such as
 "1.14.7-dev" for the unstable branch or "master" for the most recent stable
 release.
@@ -144,7 +137,6 @@ cd ..
 CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --prefix=/
 make
 ```
-
 In either case, be aware that if the first `make` invocation fails, you will see further errors during the `./configure` and second `make` stages. Please
 report any errors with this in mind.
 
@@ -174,7 +166,6 @@ cd ..
 CONFIG_SITE=$PWD/depends/i686-w64-mingw32/share/config.site ./configure --prefix=/
 make
 ```
-
 ## Depends system
 
 For further documentation on the depends system see [README.md](../depends/README.md) in the `depends/` directory.

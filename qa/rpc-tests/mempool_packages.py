@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Copyright (c) 2014-2016 The Bitcoin Core developers
-# Copyright (c) 2021 The Dogecoin Core developers
+# Copyright (c) 2021-2022 The Dogecoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -30,7 +30,7 @@ class MempoolPackagesTest(BitcoinTestFramework):
     # Build a transaction that spends parent_txid:vout
     # Return amount sent
     def chain_transaction(self, node, parent_txid, vout, value, fee, num_outputs):
-        send_value = satoshi_round((value - fee)/num_outputs)
+        send_value = trumpowtoshi_round((value - fee)/num_outputs)
         inputs = [ {'txid' : parent_txid, 'vout' : vout} ]
         outputs = {}
         for i in range(num_outputs):
@@ -150,7 +150,7 @@ class MempoolPackagesTest(BitcoinTestFramework):
         for x in reversed(chain):
             descendant_fees += mempool[x]['fee']
             if (x == chain[-1]):
-                assert_equal(mempool[x]['modifiedfee'], mempool[x]['fee']+satoshi_round(0.00002))
+                assert_equal(mempool[x]['modifiedfee'], mempool[x]['fee']+trumpowtoshi_round(0.00002))
             assert_equal(mempool[x]['descendantfees'], descendant_fees * COIN + 2000)
 
         # TODO: check that node1's mempool is as expected
@@ -213,7 +213,7 @@ class MempoolPackagesTest(BitcoinTestFramework):
         value = utxo[0]['amount']
         vout = utxo[0]['vout']
 
-        send_value = satoshi_round((value - fee)/2)
+        send_value = trumpowtoshi_round((value - fee)/2)
         inputs = [ {'txid' : txid, 'vout' : vout} ]
         outputs = {}
         for i in range(2):

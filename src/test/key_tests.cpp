@@ -11,7 +11,6 @@
 #include "utilstrencodings.h"
 #include "test/test_bitcoin.h"
 
-#include <fstream>
 #include <string>
 #include <vector>
 
@@ -21,12 +20,12 @@ static const std::string strSecret1     ("6KT4nnfpW5wnMUwiFLVq1fqhQuWCRiZPHcYmqh
 static const std::string strSecret2     ("6KxcdTfGQmZRQHYMK5Q5GJL3cTYQGxnaCLDDR4LznqLLtBaMZjv");
 static const std::string strSecret1C    ("QUS3j6aLfNpoBQLV4H4EuxRwNWjsS6RwNKuEuw29nwKNJo6DESbk");
 static const std::string strSecret2C    ("QWgUFvfu1ug6hn1NenQqpXV4XW9bjTE9X1nuoBmG5JLNkdu66iwg");
-static const CBitcoinAddress addr1 ("Pv5sA4VLuVYBfoYMoFHjiSpdsQ4YWqySop");
-static const CBitcoinAddress addr2 ("PXyBPx7LxxZyfPg8xpvjpetcwf1JzMzGHe");
-static const CBitcoinAddress addr1C("PmWHzEp2J9rfdHiTxVCdYs1rtGLJoidcsj");
-static const CBitcoinAddress addr2C("PgxbzCEp86n7J9NbkxKwifAP5DP7dLfc7r");
+static const CBitcoinAddress addr1 ("Tv5sA4VLuVYBfoYMoFHjiSpdsQ4YWqySop");
+static const CBitcoinAddress addr2 ("TXyBPx7LxxZyfPg8xpvjpetcwf1JzMzGHe");
+static const CBitcoinAddress addr1C("TmWHzEp2J9rfdHiTxVCdYs1rtGLJoidcsj");
+static const CBitcoinAddress addr2C("TgxbzCEp86n7J9NbkxKwifAP5DP7dLfc7r");
 
-static const std::string strAddressBad ("PeQC2MoNNfxnQKLq6LpshH5kLcvBxddjvN");
+static const std::string strAddressBad ("TeQC2MoNNfxnQKLq6LpshH5kLcvBxddjvN");
 
 
 #ifdef KEY_TESTS_DUMPINFO

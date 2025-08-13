@@ -12,6 +12,22 @@ echo "----------------------------------------"
 echo "Installing Build Packages for ${OS}"
 echo "----------------------------------------"
 
+# Ensure we are running on an Ubuntu-based system before using apt-get
+if [[ -f /etc/os-release ]]; then
+    . /etc/os-release
+    if [[ ${ID} != "ubuntu" ]]; then
+        echo "Error: apt-get based installation is only supported on Ubuntu."
+        echo "Detected host OS: ${PRETTY_NAME:-${ID}}"
+        echo "Please install the required build dependencies manually for your platform."
+        exit 1
+    fi
+else
+    echo "Error: Unable to detect host operating system."
+    echo "This script currently supports Ubuntu only."
+    echo "Please install the required build dependencies manually for your platform."
+    exit 1
+fi
+
 apt-get update
 
 if [[ ${OS} == "windows" ]]; then

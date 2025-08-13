@@ -5,7 +5,7 @@
     <name>AddPeerDialog</name>
     <message>
         <location filename="../forms/addpeerdialog.ui" line="+14"/>
-        <location filename="../peerdialog.cpp" line="+113"/>
+        <location filename="../peerdialog.cpp" line="+114"/>
         <location line="+12"/>
         <location line="+6"/>
         <source>Add Peer</source>
@@ -100,7 +100,7 @@
         <translation>&amp;Delete</translation>
     </message>
     <message>
-        <location filename="../addressbookpage.cpp" line="+50"/>
+        <location filename="../addressbookpage.cpp" line="+51"/>
         <source>Choose the address to send coins to</source>
         <translation type="unfinished"></translation>
     </message>
@@ -116,22 +116,22 @@
     </message>
     <message>
         <location line="+6"/>
-        <source>Sending addresses</source>
+        <source>Such sending addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Receiving addresses</source>
+        <source>Much receiving addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your Trumpow addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Dogecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your Trumpow addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Dogecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -211,7 +211,7 @@
         <translation>Repeat new passphrase</translation>
     </message>
     <message>
-        <location filename="../askpassphrasedialog.cpp" line="+46"/>
+        <location filename="../askpassphrasedialog.cpp" line="+47"/>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -257,7 +257,7 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TRUMPOWS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DOGECOINS&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -273,7 +273,7 @@
     </message>
     <message>
         <location line="-56"/>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your trumpows from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dogecoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -345,7 +345,7 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+138"/>
+        <location filename="../bitcoingui.cpp" line="+139"/>
         <source>Wallet</source>
         <translation type="unfinished">Wallet</translation>
     </message>
@@ -355,9 +355,9 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+158"/>
-        <source>&amp;Overview</source>
-        <translation type="unfinished">&amp;Overview</translation>
+        <location line="+164"/>
+        <source>&amp;Wow</source>
+        <translation type="unfinished">&amp;Wow</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -366,22 +366,22 @@
     </message>
     <message>
         <location line="+6"/>
-        <source>&amp;Send</source>
-        <translation type="unfinished">&amp;Send</translation>
+        <source>&amp;Such Send</source>
+        <translation type="unfinished">&amp;Such Send</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send coins to a Trumpow address</source>
-        <translation type="unfinished">Send coins to a Trumpow address</translation>
+        <source>Send coins to a Dogecoin address</source>
+        <translation type="unfinished">Send coins to a Dogecoin address</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>&amp;Receive</source>
-        <translation type="unfinished">&amp;Receive</translation>
+        <source>&amp;Much Receive</source>
+        <translation type="unfinished">&amp;Much Receive</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Request payments (generates QR codes and trumpow: URIs)</source>
+        <source>Request payments (generates QR codes and dogecoin: URIs)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -481,8 +481,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Sign messages with your Trumpow addresses to prove you own them</source>
-        <translation type="unfinished">Sign messages with your Trumpow addresses to prove you own them</translation>
+        <source>Sign messages with your Dogecoin addresses to prove you own them</source>
+        <translation type="unfinished">Sign messages with your Dogecoin addresses to prove you own them</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -491,8 +491,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Verify messages to ensure they were signed with specified Trumpow addresses</source>
-        <translation type="unfinished">Verify messages to ensure they were signed with specified Trumpow addresses</translation>
+        <source>Verify messages to ensure they were signed with specified Dogecoin addresses</source>
+        <translation type="unfinished">Verify messages to ensure they were signed with specified Dogecoin addresses</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -516,7 +516,7 @@
     </message>
     <message>
         <location line="+4"/>
-        <source>&amp;Sending addresses...</source>
+        <source>&amp;Such sending addresses...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -526,7 +526,7 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>&amp;Receiving addresses...</source>
+        <source>&amp;Much receiving addresses...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -541,7 +541,7 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Open a trumpow: URI or payment request</source>
+        <source>Open a dogecoin: URI or payment request</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -551,7 +551,7 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Import a Trumpow private key</source>
+        <source>Import a Dogecoin private key</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -561,7 +561,7 @@
     </message>
     <message>
         <location line="+2"/>
-        <source>Show the %1 help message to get a list with possible Trumpow command-line options</source>
+        <source>Show the %1 help message to get a list with possible Dogecoin command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -591,10 +591,10 @@
     </message>
     <message numerus="yes">
         <location line="+155"/>
-        <source>%n active connection(s) to Trumpow network</source>
+        <source>%n active connection(s) to Dogecoin network</source>
         <translation type="unfinished">
-            <numerusform>%n active connection to Trumpow network</numerusform>
-            <numerusform>%n active connections to Trumpow network</numerusform>
+            <numerusform>%n active connection to Dogecoin network</numerusform>
+            <numerusform>%n active connections to Dogecoin network</numerusform>
         </translation>
     </message>
     <message>
@@ -677,8 +677,8 @@
     </message>
     <message>
         <location line="+13"/>
-        <source>Trumpow</source>
-        <translation type="unfinished">Trumpow</translation>
+        <source>Dogecoin</source>
+        <translation type="unfinished">Dogecoin</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -756,13 +756,13 @@
         <translation type="unfinished">Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../bitcoin.cpp" line="+523"/>
+        <location filename="../bitcoin.cpp" line="+529"/>
         <source>Runaway exception</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+0"/>
-        <source>A fatal error occurred. Trumpow can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Dogecoin can no longer continue safely and will quit.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -854,7 +854,7 @@
         <translation type="unfinished">Confirmed</translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="+55"/>
+        <location filename="../coincontroldialog.cpp" line="+56"/>
         <source>Copy address</source>
         <translation type="unfinished"></translation>
     </message>
@@ -984,7 +984,7 @@
         <translation>&amp;Address</translation>
     </message>
     <message>
-        <location filename="../editaddressdialog.cpp" line="+28"/>
+        <location filename="../editaddressdialog.cpp" line="+29"/>
         <source>New receiving address</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1005,7 +1005,7 @@
     </message>
     <message>
         <location line="+71"/>
-        <source>The entered address &quot;%1&quot; is not a valid Trumpow address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Dogecoin address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1027,7 +1027,7 @@
 <context>
     <name>FreespaceChecker</name>
     <message>
-        <location filename="../intro.cpp" line="+78"/>
+        <location filename="../intro.cpp" line="+79"/>
         <source>A new data directory will be created.</source>
         <translation>A new data directory will be created.</translation>
     </message>
@@ -1055,7 +1055,7 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <location filename="../utilitydialog.cpp" line="+71"/>
+        <location filename="../utilitydialog.cpp" line="+73"/>
         <source>version</source>
         <translation type="unfinished">version</translation>
     </message>
@@ -1220,7 +1220,7 @@
     </message>
     <message>
         <location line="+10"/>
-        <source>%1 will download and store a copy of the Trumpow block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>%1 will download and store a copy of the Dogecoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1274,12 +1274,12 @@
     </message>
     <message>
         <location line="+119"/>
-        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the trumpow network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the dogecoin network, as detailed below.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+19"/>
-        <source>Attempting to spend trumpows that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend dogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1290,7 +1290,7 @@
     <message>
         <location line="+7"/>
         <location line="+26"/>
-        <location filename="../modaloverlay.cpp" line="+139"/>
+        <location filename="../modaloverlay.cpp" line="+140"/>
         <source>Unknown...</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1354,7 +1354,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../openuridialog.cpp" line="+47"/>
+        <location filename="../openuridialog.cpp" line="+48"/>
         <source>Select payment request file to open</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1500,7 +1500,7 @@
     </message>
     <message>
         <location line="+30"/>
-        <source>Automatically open the Trumpow client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Dogecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1510,7 +1510,7 @@
     </message>
     <message>
         <location line="+17"/>
-        <source>Connect to the Trumpow network through a SOCKS5 proxy.</source>
+        <source>Connect to the Dogecoin network through a SOCKS5 proxy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1565,7 +1565,7 @@
     </message>
     <message>
         <location line="+25"/>
-        <source>Connect to the Trumpow network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <source>Connect to the Dogecoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1644,7 +1644,7 @@
         <translation>&amp;Cancel</translation>
     </message>
     <message>
-        <location filename="../optionsdialog.cpp" line="+93"/>
+        <location filename="../optionsdialog.cpp" line="+96"/>
         <source>default</source>
         <translation>default</translation>
     </message>
@@ -1690,7 +1690,7 @@
     <message>
         <location line="+62"/>
         <location line="+427"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Trumpow network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dogecoin network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1784,7 +1784,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../overviewpage.cpp" line="+158"/>
+        <location filename="../overviewpage.cpp" line="+159"/>
         <source>Encrypt your wallet with a strong passphrase for maximum security</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1825,12 +1825,12 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>To see ongoing development and contribute, check out the Trumpow Core repository on GitHub</source>
+        <source>To see ongoing development and contribute, check out the Dogecoin Core repository on GitHub</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Services that claim to double your trumpows are always ponzi schemes</source>
+        <source>Services that claim to double your dogecoins are always ponzi schemes</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1843,12 +1843,12 @@
     </message>
     <message>
         <location line="+44"/>
-        <source>New Address</source>
+        <source>Very New Address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+92"/>
-        <source>Print</source>
+        <source>So Print</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1956,7 +1956,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+87"/>
+        <location line="+95"/>
         <source>failed to open file, is it writable?</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1972,7 +1972,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+0"/>
-        <source>The paper wallet printing process has begun.&lt;br/&gt;Please wait for the wallets to print completely and verify that everything printed correctly.&lt;br/&gt;Check for misalignments, ink bleeding, smears, or anything else that could make the private keys unreadable.&lt;br/&gt;Now, enter the number of TRMP you wish to send to each wallet:</source>
+        <source>The paper wallet printing process has begun.&lt;br/&gt;Please wait for the wallets to print completely and verify that everything printed correctly.&lt;br/&gt;Check for misalignments, ink bleeding, smears, or anything else that could make the private keys unreadable.&lt;br/&gt;Now, enter the number of DOGE you wish to send to each wallet:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2060,8 +2060,8 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>PaymentServer</name>
     <message>
-        <location filename="../paymentserver.cpp" line="+326"/>
-        <location line="+216"/>
+        <location filename="../paymentserver.cpp" line="+319"/>
+        <location line="+278"/>
         <location line="+42"/>
         <location line="+113"/>
         <location line="+14"/>
@@ -2070,12 +2070,13 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-402"/>
-        <source>Cannot start trumpow: click-to-pay handler</source>
+        <location line="-464"/>
+        <source>Cannot start dogecoin: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+103"/>
+        <location line="+135"/>
+        <location line="+20"/>
         <location line="+14"/>
         <location line="+7"/>
         <source>URI handling</source>
@@ -2093,16 +2094,31 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+8"/>
-        <source>URI cannot be parsed! This can be caused by an invalid Trumpow address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Dogecoin address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+9"/>
+        <location line="+14"/>
         <source>Payment request file handling</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-65"/>
+        <source>BIP70 payment requests are deprecated and disabled by default. Restart with -enable-bip70 if you absolutely have to use this functionality.
+
+Use this functionality with extreme caution.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+51"/>
+        <source>Payment request file handling is disabled by default. Restart with -enable-bip70 if you absolutely have to use this functionality.
+
+Use this functionality with extreme caution.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2258,13 +2274,13 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../bitcoinunits.cpp" line="+188"/>
+        <location filename="../bitcoinunits.cpp" line="+189"/>
         <source>Amount</source>
         <translation type="unfinished">Amount</translation>
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+136"/>
-        <source>Enter a Trumpow address (e.g. %1)</source>
+        <source>Enter a Dogecoin address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2573,7 +2589,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+60"/>
-        <location filename="../rpcconsole.cpp" line="+476"/>
+        <location filename="../rpcconsole.cpp" line="+477"/>
         <location line="+776"/>
         <source>Select a peer to view detailed information.</source>
         <translation type="unfinished"></translation>
@@ -2907,7 +2923,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location line="+14"/>
         <location line="+23"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Trumpow network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dogecoin network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3098,7 +3114,7 @@ p, li { white-space: pre-wrap; }
     <name>SendCoinsDialog</name>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="+14"/>
-        <location filename="../sendcoinsdialog.cpp" line="+553"/>
+        <location filename="../sendcoinsdialog.cpp" line="+560"/>
         <source>Send Coins</source>
         <translation>Send Coins</translation>
     </message>
@@ -3184,8 +3200,12 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+51"/>
+        <source>If the custom fee is set to 1000 koinu and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 koinu in fee, while &quot;total at least&quot; pays 1000 koinu. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location line="+16"/>
-        <source>If the custom fee is set to 1000 trumpowtoshi and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 trumpowtoshi in fee, while &quot;total at least&quot; pays 1000 trumpowtoshi. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 satoshis and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 satoshis in fee, while &quot;total at least&quot; pays 1000 satoshis. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3246,7 +3266,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location line="+557"/>
         <location line="+13"/>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for trumpow transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for dogecoin transactions than the network can process.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3285,7 +3305,7 @@ p, li { white-space: pre-wrap; }
         <translation>S&amp;end</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="-483"/>
+        <location filename="../sendcoinsdialog.cpp" line="-488"/>
         <source>Copy quantity</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3320,7 +3340,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+202"/>
+        <location line="+207"/>
         <location line="+5"/>
         <location line="+5"/>
         <location line="+4"/>
@@ -3404,7 +3424,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+134"/>
-        <source>Warning: Invalid Trumpow address</source>
+        <source>Warning: Invalid Dogecoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3459,7 +3479,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+39"/>
-        <source>The Trumpow address to send the payment to</source>
+        <source>The Dogecoin address to send the payment to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3486,7 +3506,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="-1021"/>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less trumpows than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less dogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3516,7 +3536,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+47"/>
-        <source>A message that was attached to the trumpow: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Trumpow network.</source>
+        <source>A message that was attached to the dogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dogecoin network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3573,12 +3593,12 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+6"/>
-        <source>You can sign messages/agreements with your addresses to prove you can receive trumpows sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive dogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>The Trumpow address to sign the message with</source>
+        <source>The Dogecoin address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3620,7 +3640,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Trumpow address</source>
+        <source>Sign the message to prove you own this Dogecoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3651,12 +3671,12 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+21"/>
-        <source>The Trumpow address the message was signed with</source>
+        <source>The Dogecoin address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+37"/>
-        <source>Verify the message to ensure it was signed with the specified Trumpow address</source>
+        <source>Verify the message to ensure it was signed with the specified Dogecoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3810,7 +3830,7 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>TransactionDesc</name>
     <message numerus="yes">
-        <location filename="../transactiondesc.cpp" line="+31"/>
+        <location filename="../transactiondesc.cpp" line="+32"/>
         <source>Open for %n more block(s)</source>
         <translation>
             <numerusform>Open for %n more block</numerusform>
@@ -4048,7 +4068,7 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>TransactionTableModel</name>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="+247"/>
+        <location filename="../transactiontablemodel.cpp" line="+248"/>
         <source>Date</source>
         <translation type="unfinished">Date</translation>
     </message>
@@ -4184,7 +4204,7 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>TransactionView</name>
     <message>
-        <location filename="../transactionview.cpp" line="+69"/>
+        <location filename="../transactionview.cpp" line="+70"/>
         <location line="+16"/>
         <source>All</source>
         <translation type="unfinished"></translation>
@@ -4386,7 +4406,7 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>WalletFrame</name>
     <message>
-        <location filename="../walletframe.cpp" line="+28"/>
+        <location filename="../walletframe.cpp" line="+29"/>
         <source>No wallet has been loaded.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4394,7 +4414,7 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>WalletModel</name>
     <message>
-        <location filename="../walletmodel.cpp" line="+292"/>
+        <location filename="../walletmodel.cpp" line="+293"/>
         <source>Send Coins</source>
         <translation type="unfinished">Send Coins</translation>
     </message>
@@ -4402,7 +4422,7 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>WalletView</name>
     <message>
-        <location filename="../walletview.cpp" line="+48"/>
+        <location filename="../walletview.cpp" line="+49"/>
         <source>&amp;Export</source>
         <translation type="unfinished">&amp;Export</translation>
     </message>
@@ -4446,8 +4466,8 @@ p, li { white-space: pre-wrap; }
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+12"/>
-        <source>Trumpow Core</source>
-        <translation type="unfinished">Trumpow Core</translation>
+        <source>Dogecoin Core</source>
+        <translation type="unfinished">Dogecoin Core</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -4456,7 +4476,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+1"/>
-        <source>Bitcoin Core and Trumpow Core</source>
+        <source>Bitcoin Core and Dogecoin Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4565,12 +4585,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+9"/>
+        <location line="+11"/>
         <source>Extra transactions to keep in memory for compact block reconstructions (default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4745,7 +4760,12 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+47"/>
+        <location line="+41"/>
+        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID, %i with block height, with a value of 0 if tx is no longer in chaintip)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
         <source>Execute command when we see a really long fork (%s in cmd is replaced by message)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4916,7 +4936,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+1"/>
-        <source>High</source>
+        <source>Amaze</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5012,6 +5032,11 @@ p, li { white-space: pre-wrap; }
     <message>
         <location line="+1"/>
         <source>Done loading</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Enable BIP-70 PaymentServer (default: 0)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5241,7 +5266,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+1"/>
-        <source>Very High</source>
+        <source>Many generous</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5261,7 +5286,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+1"/>
-        <source>Low</source>
+        <source>More</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5471,7 +5496,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+1"/>
-        <source>Maximum</source>
+        <source>Such expensive</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5661,7 +5686,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+1"/>
-        <source>Overview</source>
+        <source>Wow</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

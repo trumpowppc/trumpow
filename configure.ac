@@ -1,14 +1,14 @@
 dnl require autoconf 2.60 (AS_ECHO/AS_ECHO_N)
 AC_PREREQ([2.60])
 define(_CLIENT_VERSION_MAJOR, 1)
-define(_CLIENT_VERSION_MINOR, 1)
+define(_CLIENT_VERSION_MINOR, 2)
 define(_CLIENT_VERSION_REVISION, 0)
 define(_CLIENT_VERSION_BUILD, 0)
 define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2025)
 define(_COPYRIGHT_HOLDERS,[The %s developers])
 define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Bitcoin Core, Dogecoin Core, and Trumpow Core]])
-define(_CURRENT_RELEASE_DATE,[[2025-8-3]])
+define(_CURRENT_RELEASE_DATE,[[2025-8-15]])
 define(_EXPECTED_DAYS_TO_NEXT_RELEASE,[270])
 AC_INIT([Trumpow Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/trumpowppc/trumpow/issues],[trumpow],[https://trumpow.meme/])
 AC_CONFIG_SRCDIR([src/validation.cpp])
@@ -56,8 +56,38 @@ case $host in
      lt_cv_deplibs_check_method="pass_all"
   ;;
 esac
-dnl Require C++11 compiler (no GNU extensions)
-AX_CXX_COMPILE_STDCXX([11], [noext], [mandatory], [nodefault])
+
+AC_ARG_ENABLE([c++14],
+  [AS_HELP_STRING([--enable-c++14],
+  [enable compilation in c++14 mode (disabled by default)])],
+  [use_cxx14=$enableval],
+  [use_cxx14=no])
+
+AC_ARG_ENABLE([c++17],
+  [AS_HELP_STRING([--enable-c++17],
+  [enable compilation in c++17 mode (disabled by default)])],
+  [use_cxx17=$enableval],
+  [use_cxx17=no])
+
+AC_ARG_ENABLE([null-warnings],
+  [AS_HELP_STRING([--enable-null-warnings],
+  [warn about using NULL instead of nullptr (default is no)])],
+  [use_null_warnings=$enableval],
+  [use_null_warnings=no])
+
+dnl Require either of C++ 17, 14 or 11 (default) compiler (no GNU extensions)
+if test "x$use_cxx17" = xyes; then
+  if test "x$use_cxx14" = xyes; then
+    AC_MSG_ERROR("Both c++17 and c++14 are configured. Please configure only one standard")
+  fi
+  AX_CXX_COMPILE_STDCXX([17], [noext], [mandatory], [nodefault])
+elif test "x$use_cxx14" = xyes; then
+  AX_CXX_COMPILE_STDCXX([14], [noext], [mandatory], [nodefault])
+else
+  AX_CXX_COMPILE_STDCXX([11], [noext], [mandatory], [nodefault])
+fi
+
+
 dnl Check if -latomic is required for <std::atomic>
 CHECK_ATOMIC
 
@@ -207,8 +237,6 @@ AC_ARG_WITH([armv82-crypto],
   [armv82_crypto=$withval],
   [armv82_crypto=no])
 
-AC_ARG_WITH([protoc-bindir],[AS_HELP_STRING([--with-protoc-bindir=BIN_DIR],[specify protoc bin path])], [protoc_bin_path=$withval], [])
-
 AC_ARG_ENABLE(man,
     [AS_HELP_STRING([--disable-man],
                     [do not install man pages (default is to install)])],,
@@ -266,6 +294,14 @@ if test "x$CXXFLAGS_overridden" = "xno"; then
   AX_CHECK_COMPILE_FLAG([-Wunused-local-typedef],[CXXFLAGS="$CXXFLAGS -Wno-unused-local-typedef"],,[[$CXXFLAG_WERROR]])
   AX_CHECK_COMPILE_FLAG([-Wdeprecated-register],[CXXFLAGS="$CXXFLAGS -Wno-deprecated-register"],,[[$CXXFLAG_WERROR]])
 fi
+
+if test "x$use_null_warnings" = "xyes"; then
+  AX_CHECK_COMPILE_FLAG([-Wzero-as-null-pointer-constant],
+    [CXXFLAGS="$CXXFLAGS -Wzero-as-null-pointer-constant"],
+    [AC_MSG_WARN([Compiler doesn't support -Wzero-as-null-pointer-constant])],
+    [[$CXXFLAG_WERROR]])
+fi
+
 CPPFLAGS="$CPPFLAGS -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS"
 
 AC_ARG_WITH([utils],
@@ -578,7 +614,7 @@ AC_CHECK_DECLS([strnlen])
 # Check for daemon(3), unrelated to --with-daemon (although used by it)
 AC_CHECK_DECLS([daemon])
 
-AC_CHECK_DECLS([le16toh, le32toh, le64toh, htole16, htole32, htole64, be16toh, be32toh, be64toh, htobe16, htobe32, htobe64, be32dec, be32enc],,,
+AC_CHECK_DECLS([le16toh, le32toh, le64toh, htole16, htole32, htole64, be16toh, be32toh, be64toh, htobe16, htobe32, htobe64],,,
 		[#if HAVE_ENDIAN_H
                  #include <endian.h>
                  #elif HAVE_SYS_ENDIAN_H
@@ -589,6 +625,8 @@ AC_CHECK_DECLS([bswap_16, bswap_32, bswap_64],,,
 		[#if HAVE_BYTESWAP_H
                  #include <byteswap.h>
                  #endif])
+
+AC_CHECK_DECLS([__builtin_clz, __builtin_clzl, __builtin_clzll])
 
 dnl Check for MSG_NOSIGNAL
 AC_MSG_CHECKING(for MSG_NOSIGNAL)
@@ -623,6 +661,41 @@ AC_LINK_IFELSE([AC_LANG_SOURCE([
   ]
 )
 
+# Check for different ways of gathering OS randomness
+AC_MSG_CHECKING(for Linux getrandom syscall)
+AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[#include <unistd.h>
+  #include <sys/syscall.h>
+  #include <linux/random.h>]],
+ [[ syscall(SYS_getrandom, nullptr, 32, 0); ]])],
+ [ AC_MSG_RESULT(yes); AC_DEFINE(HAVE_SYS_GETRANDOM, 1,[Define this symbol if the Linux getrandom system call is available]) ],
+ [ AC_MSG_RESULT(no)]
+)
+
+AC_MSG_CHECKING(for getentropy)
+AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[#include <unistd.h>]],
+ [[ getentropy(nullptr, 32) ]])],
+ [ AC_MSG_RESULT(yes); AC_DEFINE(HAVE_GETENTROPY, 1,[Define this symbol if the BSD getentropy system call is available]) ],
+ [ AC_MSG_RESULT(no)]
+)
+
+AC_MSG_CHECKING([for getentropy via sys/random.h])
+AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[
+ #include <sys/random.h>]],
+ [[ getentropy(nullptr, 32) ]])],
+ [ AC_MSG_RESULT(yes); AC_DEFINE(HAVE_GETENTROPY_RAND, 1,[Define this symbol if the BSD getentropy system call is available with sys/random.h]) ],
+ [ AC_MSG_RESULT(no)]
+)
+
+AC_MSG_CHECKING(for sysctl KERN_ARND)
+AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[#include <sys/types.h>
+  #include <sys/sysctl.h>]],
+ [[ static const int name[2] = {CTL_KERN, KERN_ARND};
+    sysctl(name, 2, nullptr, nullptr, nullptr, 0); ]])],
+ [ AC_MSG_RESULT(yes); AC_DEFINE(HAVE_SYSCTL_ARND, 1,[Define this symbol if the BSD sysctl(KERN_ARND) is available]) ],
+ [ AC_MSG_RESULT(no)]
+)
+
+# Check for reduced exports
 if test x$use_reduce_exports = xyes; then
   AX_CHECK_COMPILE_FLAG([-fvisibility=hidden],[RE_CXXFLAGS="-fvisibility=hidden"],
   [AC_MSG_ERROR([Cannot set default symbol visibility. Use --disable-reduce-exports.])])
@@ -762,17 +835,17 @@ fi
 
 # Configure experimental for compile-time asserts
 if test x$allow_experimental = xyes; then
-  AC_DEFINE(ALLOW_DOGECOIN_EXPERIMENTAL, 1, [Define this symbol if experimental features are allowed])
+  AC_DEFINE(ALLOW_TRUMPOW_EXPERIMENTAL, 1, [Define this symbol if experimental features are allowed])
 fi
 
 # Configure Scrypt SSE2
 if test x$use_scrypt_sse2 = xyes; then
-  DOGECOIN_REQUIRE_EXPERIMENTAL
+  TRUMPOW_REQUIRE_EXPERIMENTAL
   AC_DEFINE(USE_SSE2, 1, [Define this symbol if SSE2 works])
 fi
 
 if test x$armv8_crypto = xyes; then
-  DOGECOIN_REQUIRE_EXPERIMENTAL
+  TRUMPOW_REQUIRE_EXPERIMENTAL
   AC_MSG_CHECKING([whether to build with armv8 crypto])
   AC_MSG_RESULT(yes)
   AC_DEFINE(USE_ARMV8, 1, [Define this symbol if armv8 crypto works])
@@ -780,7 +853,7 @@ if test x$armv8_crypto = xyes; then
 fi
 
 if test x$armv82_crypto = xyes; then
-  DOGECOIN_REQUIRE_EXPERIMENTAL
+  TRUMPOW_REQUIRE_EXPERIMENTAL
   AC_CHECK_DECLS([vsha512su0q_u64],
      [AC_DEFINE(USE_ARMV82, 1, [Define this symbol if armv8.2 crypto works])
      CXXFLAGS="$CXXFLAGS -march=armv8.2-a+crypto+sha3"], AC_MSG_ERROR(sha512 missing), [#include <arm_neon.h>])
@@ -793,7 +866,6 @@ if test x$use_pkgconfig = xyes; then
     [
       PKG_CHECK_MODULES([SSL], [libssl],, [AC_MSG_ERROR(openssl  not found.)])
       PKG_CHECK_MODULES([CRYPTO], [libcrypto],,[AC_MSG_ERROR(libcrypto  not found.)])
-      BITCOIN_QT_CHECK([PKG_CHECK_MODULES([PROTOBUF], [protobuf], [have_protobuf=yes], [BITCOIN_QT_FAIL(libprotobuf not found)])])
       if test x$use_qr != xno; then
         BITCOIN_QT_CHECK([PKG_CHECK_MODULES([QR], [libqrencode], [have_qrencode=yes], [have_qrencode=no])])
       fi
@@ -853,7 +925,6 @@ else
     esac
   fi
 
-  BITCOIN_QT_CHECK(AC_CHECK_LIB([protobuf] ,[main],[PROTOBUF_LIBS=-lprotobuf], BITCOIN_QT_FAIL(libprotobuf not found)))
   if test x$use_qr != xno; then
     BITCOIN_QT_CHECK([AC_CHECK_LIB([qrencode], [main],[QR_LIBS=-lqrencode], [have_qrencode=no])])
     BITCOIN_QT_CHECK([AC_CHECK_HEADER([qrencode.h],, have_qrencode=no)])
@@ -861,7 +932,7 @@ else
 fi
 
 if test x$intel_avx2 = xyes; then
-  DOGECOIN_REQUIRE_EXPERIMENTAL
+  TRUMPOW_REQUIRE_EXPERIMENTAL
   case $host in
      x86_64-*-linux*)
     AC_CHECK_LIB([IPSec_MB],[sha1_one_block_avx2],LIBS=-lIPSec_MB, AC_MSG_ERROR(IPSec_MB missing))
@@ -873,7 +944,6 @@ if test x$intel_avx2 = xyes; then
     AC_CHECK_LIB([IPSec_MB],[sha1_one_block_avx2],LIBS=-lIPSec_MB, AC_MSG_ERROR(IPSec_MB missing))
     AC_CHECK_LIB([IPSec_MB],[sha256_one_block_avx2],LIBS=-lIPSec_MB, AC_MSG_ERROR(IPSec_MB missing))
     AC_CHECK_LIB([IPSec_MB],[sha512_one_block_avx2],LIBS=-lIPSec_MB, AC_MSG_ERROR(IPSec_MB missing))
-    AC_CHECK_LIB([Qt5PlatformSupport],[main],LIBS+=" -lQt5PlatformSupport", AC_MSG_ERROR(lib missing))
     AC_CHECK_LIB([mingwthrd],         [main],LIBS+=" -lmingwthrd", AC_MSG_ERROR(lib missing))
     AC_CHECK_LIB([kernel32],          [main],LIBS+=" -lkernel32", AC_MSG_ERROR(lib missing))
     AC_CHECK_LIB([user32],            [main],LIBS+=" -luser32", AC_MSG_ERROR(lib missing))
@@ -894,6 +964,12 @@ if test x$intel_avx2 = xyes; then
     AC_CHECK_LIB([iphlpapi],          [main],LIBS+=" -liphlpapi", AC_MSG_ERROR(lib missing))
     AC_CHECK_LIB([crypt32],           [main],LIBS+=" -lcrypt32", AC_MSG_ERROR(lib missing))
     AC_CHECK_LIB([ssp],               [main],LIBS+=" -lssp", AC_MSG_ERROR(lib missing))
+
+    dnl only check for Qt5 if we're actually building Qt
+    if test x$bitcoin_enable_qt != xno; then
+      AC_CHECK_LIB([Qt5PlatformSupport],[main],LIBS+=" -lQt5PlatformSupport", AC_MSG_ERROR(lib missing))
+    fi
+
     AC_DEFINE(USE_AVX2, 1, [Define this symbol if intel axv2 works])
 esac
 fi
@@ -952,8 +1028,6 @@ fi
 AM_CONDITIONAL([EMBEDDED_UNIVALUE],[test x$need_bundled_univalue = xyes])
 AC_SUBST(UNIVALUE_CFLAGS)
 AC_SUBST(UNIVALUE_LIBS)
-
-BITCOIN_QT_PATH_PROGS([PROTOC], [protoc],$protoc_bin_path)
 
 AC_MSG_CHECKING([whether to build trumpowd])
 AM_CONDITIONAL([BUILD_BITCOIND], [test x$build_bitcoind = xyes])
@@ -1154,7 +1228,6 @@ AC_SUBST(SSL_LIBS)
 AC_SUBST(EVENT_LIBS)
 AC_SUBST(EVENT_PTHREADS_LIBS)
 AC_SUBST(ZMQ_LIBS)
-AC_SUBST(PROTOBUF_LIBS)
 AC_SUBST(QR_LIBS)
 AC_SUBST(HAVE_FDATASYNC)
 AC_SUBST(HAVE_FULLFSYNC)
@@ -1229,6 +1302,7 @@ echo "  with bench    = $use_bench"
 echo "  with upnp     = $use_upnp"
 echo "  debug enabled = $enable_debug"
 echo "  werror        = $enable_werror"
+echo "  null warnings = $use_null_warnings"
 echo
 echo "  experimental  = $allow_experimental"
 if test x$allow_experimental = xyes; then

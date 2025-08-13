@@ -1,4 +1,4 @@
-Trumpow Core 1.0.0
+Trumpow Core 1.2.0.0
 =====================
 
 Development
@@ -18,8 +18,8 @@ The Trumpow repo's [root README](/README.md) contains relevant information on th
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/) forums, in the [Trumpow thread](https://bitcointalk.org/index.php?topic=361813.0).
-* Development discussion on [r/TrumpowDev](https://reddit.com/r/trumpowdev)
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/) forums, in the [Dogecoin thread](https://bitcointalk.org/index.php?topic=361813.0).
+* Discuss on [#dogecoin-dev](http://webchat.freenode.net/?channels=dogecoin-dev) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=dogecoin-dev).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

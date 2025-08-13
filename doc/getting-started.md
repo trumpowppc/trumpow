@@ -5,7 +5,7 @@ This tutorial will help you to go through the basics to use Trumpow Core after y
 > **Note:** For simplicity, this guide assumes that executables can be found under the `PATH` environment variable.
 If needed, you can specify their location by typing `PATH=$PATH:/path/to/executables`, or prepend the full path to the command like:
 > ```console
-> satoshi:~$ /path/to/trumpow-cli [arguments ...]
+> trumpowtoshi:~$ /path/to/trumpow-cli [arguments ...]
 > ```
 
 ### Table of contents
@@ -28,12 +28,12 @@ If needed, you can specify their location by typing `PATH=$PATH:/path/to/executa
 
 To start your node, you can run an headless server using `trumpowd`:
 ```console
-satoshi:~$ trumpowd -daemon
+trumpowtoshi:~$ trumpowd -daemon
 ```
 
 Or you can use the Graphical User Interface (GUI), `trumpow-qt`:
 ```console
-satoshi:~$ trumpow-qt
+trumpowtoshi:~$ trumpow-qt
 ```
 
 Detailed logging is recorded in `debug.log`, located in the [data directory](#data-directory).
@@ -53,10 +53,10 @@ To have an overview of the available commands, use the `help` command:
 
 ```console
 #List all commands
-satoshi:~$ trumpow-cli help
+trumpowtoshi:~$ trumpow-cli help
 
 #Get help for a specific command
-satoshi:~$ trumpow-cli help COMMAND
+trumpowtoshi:~$ trumpow-cli help COMMAND
 ```
 
 Some commands are different, but it's possible to use the [bitcoin RPC API documentation](https://developer.bitcoin.org/reference/rpc/).
@@ -70,25 +70,25 @@ By default, the Trumpow Core software will automatically create an address for y
 You can list wallet addresses using `getaddressesbyaccount`:
 
 ```console
-satoshi:~$ trumpow-cli getaddressesbyaccount ""
+trumpowtoshi:~$ trumpow-cli getaddressesbyaccount ""
 [
-  "PA2fBazU8Y4epNJ2fQRZCcWpxKZY9HrhLN"
+  "TA2fBazU8Y4epNJ2fQRZCcWpxKZY9HrhLN"
 ]
 ```
 
 Using `getnewaddress` will generate a new wallet address:
 ```console
-satoshi:~$ trumpow-cli getnewaddress
-PNnGtXk9khadE7EKCmQzxjnehenX92PKAv
+trumpowtoshi:~$ trumpow-cli getnewaddress
+TNnGtXk9khadE7EKCmQzxjnehenX92PKAv
 ```
 
 Private keys are stored in the `wallet.dat` file. You can use `backupwallet` to save a copy:
 
 ```console
-satoshi:~$ trumpow-cli backupwallet /path/of/wallet/backup
+trumpowtoshi:~$ trumpow-cli backupwallet /path/of/wallet/backup
 ```
 
-**Tip:** Trumpow addresses start with the letter `B`.
+**Tip:** Trumpow addresses start with the letter `T`.
 
 You now have two wallet addresses to share with other people to receive TRMP! Consider avoiding [address reuse](https://en.bitcoin.it/wiki/Address_reuse) for anonymity and security reasons.
 
@@ -98,14 +98,14 @@ The total balance of all addresses held in your wallet can be found with the `ge
 
 ```console
 #Syntax
-satoshi:~$ trumpow-cli getbalance "*" minconf
+trumpowtoshi:~$ trumpow-cli getbalance "*" minconf
 ```
 
 `minconf` stands for minimum confirmations.
 For example, to see current balance with transaction having at least 5 confirmations:
 
 ```console
-satoshi:~$ trumpow-cli getbalance "*" 5
+trumpowtoshi:~$ trumpow-cli getbalance "*" 5
 421.552000
 ```
 
@@ -118,10 +118,10 @@ Trumpow implements the [Unspent Transaction Output (UTXO)](https://en.wikipedia.
 It's possible to use a single command to create, sign and send a transaction :
 ```console
 #Syntax
-satoshi:~$ trumpow-cli sendtoaddress address amount
+trumpowtoshi:~$ trumpow-cli sendtoaddress address amount
 
 #Example
-satoshi:~$ trumpow-cli sendtoaddress nWSYUqtimF7B6qW4GBdczaG6jvqKutS1Nh 420
+trumpowtoshi:~$ trumpow-cli sendtoaddress nWSYUqtimF7B6qW4GBdczaG6jvqKutS1Nh 420
 ```
 
 So much spending power !
@@ -134,10 +134,10 @@ This displays a list of UTXOs associated to addresses kept in the wallet.
 
 ```console
 #Syntax
-satoshi:~$ trumpow-cli listunspent minconf maxconf '["address", ...]'
+trumpowtoshi:~$ trumpow-cli listunspent minconf maxconf '["address", ...]'
 
 #Example
-satoshi:~$ trumpow-cli listunspent 1 9999999 '["nnJDY1xCRgWQc7vBXHUPMPsEynuZW23Y3P"]'
+trumpowtoshi:~$ trumpow-cli listunspent 1 9999999 '["nnJDY1xCRgWQc7vBXHUPMPsEynuZW23Y3P"]'
 [
   {
     "txid": "b869ed6606d52e6446dc12db02cf868ab693dd5b9f661116269536f0f8fa2433",
@@ -155,7 +155,7 @@ satoshi:~$ trumpow-cli listunspent 1 9999999 '["nnJDY1xCRgWQc7vBXHUPMPsEynuZW23Y
 
 The `minconf` and `maxconf` parameters filter the minimum and maximum number of [confirmations](https://www.pcmag.com/encyclopedia/term/bitcoin-confirmation) of the UTXO returned.
 
-> **Note:** The example address starts with `n` instead of `B`, because it uses [testnet](#mainnet-testnet-and-regtest).
+> **Note:** The example address starts with `n` instead of `T`, because it uses [testnet](#mainnet-testnet-and-regtest).
 
 ##### createrawtransaction
 
@@ -163,7 +163,7 @@ You can now build a new transaction using the available UTXOs from above.
 
 ```console
 #Syntax
-satoshi:~$ utxos_to_use='
+trumpowtoshi:~$ utxos_to_use='
   [
     {
       "txid": "id",
@@ -171,17 +171,17 @@ satoshi:~$ utxos_to_use='
     },
     ...
   ]'
-satoshi:~$ trumpow-cli createrawtransaction "$utxos_to_use" '{"address":amount, ...}'
+trumpowtoshi:~$ trumpow-cli createrawtransaction "$utxos_to_use" '{"address":amount, ...}'
 
 #Example
-satoshi:~$ utxos_to_use='
+trumpowtoshi:~$ utxos_to_use='
 [
   {
     "txid": "b869ed6606d52e6446dc12db02cf868ab693dd5b9f661116269536f0f8fa2433",
     "vout": 0
   }
 ]'
-satoshi:~$ trumpow-cli createrawtransaction "$utxos_to_use" '{"nWSYUqtimF7B6qW4GBdczaG6jvqKutS1Nh":69, "nnJDY1xCRgWQc7vBXHUPMPsEynuZW23Y3P": 30.999}'
+trumpowtoshi:~$ trumpow-cli createrawtransaction "$utxos_to_use" '{"nWSYUqtimF7B6qW4GBdczaG6jvqKutS1Nh":69, "nnJDY1xCRgWQc7vBXHUPMPsEynuZW23Y3P": 30.999}'
 01000000013324faf8f03695261611669f5bdd93b68a86cf02db12dc46642ed50666ed69b80000000000ffffffff0200a5459b010000001976a91418a89ee36293f15c4db4c01173babd579243161188ac60b8c4b8000000001976a914c6977da37560e1432c2e14e16952981a4c272cac88ac00000000
 ```
 
@@ -195,10 +195,10 @@ Before sending a transaction, it must be signed by the private key that the addr
 
 ```console
 #Syntax
-satoshi:~$ trumpow-cli signrawtransaction encoded_transaction
+trumpowtoshi:~$ trumpow-cli signrawtransaction encoded_transaction
 
 #Example
-satoshi:~$ trumpow-cli signrawtransaction "01000000013324faf8f03695261611669f5bdd93b68a86cf02db12dc46642ed50666ed69b80000000000ffffffff0200a5459b010000001976a91418a89ee36293f15c4db4c01173babd579243161188ac60b8c4b8000000001976a914c6977da37560e1432c2e14e16952981a4c272cac88ac00000000"
+trumpowtoshi:~$ trumpow-cli signrawtransaction "01000000013324faf8f03695261611669f5bdd93b68a86cf02db12dc46642ed50666ed69b80000000000ffffffff0200a5459b010000001976a91418a89ee36293f15c4db4c01173babd579243161188ac60b8c4b8000000001976a914c6977da37560e1432c2e14e16952981a4c272cac88ac00000000"
 {
   "hex": "01000000013324faf8f03695261611669f5bdd93b68a86cf02db12dc46642ed50666ed69b8000000006a47304402200e1bf722d4335179de170f7c762755b463b3f7b8f026f30950f701bc834f0e6e022036295fdd5e607ca41c4e0e62e59d0911b607bfabedde2424665ffae13564d0e001210388f8f226d12eccd3ba93c1454ec4498b065cea96e29b918fbdb517872ebbf581ffffffff0200a5459b010000001976a91418a89ee36293f15c4db4c01173babd579243161188ac60b8c4b8000000001976a914c6977da37560e1432c2e14e16952981a4c272cac88ac00000000",
   "complete": true
@@ -211,10 +211,10 @@ Finally, broadcast the transaction to the network so that it can be included in 
 
 ```console
 #Syntax
-satoshi:~$ trumpow-cli sendrawtransaction signed_transaction
+trumpowtoshi:~$ trumpow-cli sendrawtransaction signed_transaction
 
 #Example
-satoshi:~$ trumpow-cli sendrawtransaction 01000000013324faf8f03695261611669f5bdd93b68a86cf02db12dc46642ed50666ed69b8000000006a47304402200e1bf722d4335179de170f7c762755b463b3f7b8f026f30950f701bc834f0e6e022036295fdd5e607ca41c4e0e62e59d0911b607bfabedde2424665ffae13564d0e001210388f8f226d12eccd3ba93c1454ec4498b065cea96e29b918fbdb517872ebbf581ffffffff0200a5459b010000001976a91418a89ee36293f15c4db4c01173babd579243161188ac60b8c4b8000000001976a914c6977da37560e1432c2e14e16952981a4c272cac88ac00000000
+trumpowtoshi:~$ trumpow-cli sendrawtransaction 01000000013324faf8f03695261611669f5bdd93b68a86cf02db12dc46642ed50666ed69b8000000006a47304402200e1bf722d4335179de170f7c762755b463b3f7b8f026f30950f701bc834f0e6e022036295fdd5e607ca41c4e0e62e59d0911b607bfabedde2424665ffae13564d0e001210388f8f226d12eccd3ba93c1454ec4498b065cea96e29b918fbdb517872ebbf581ffffffff0200a5459b010000001976a91418a89ee36293f15c4db4c01173babd579243161188ac60b8c4b8000000001976a914c6977da37560e1432c2e14e16952981a4c272cac88ac00000000
 b4fae2a43cb35f8016a547e9658e061f1da4a043efafecc42f739d46d95dee21
 ```
 
@@ -229,11 +229,11 @@ First, request the information about block 69:
 
 ```console
 #Find block hash from his height
-satoshi:~$ trumpow-cli getblockhash 69
+trumpowtoshi:~$ trumpow-cli getblockhash 69
 3d2def20cd0d3aca148741ef469bda11647a3040d7669c82745d03c728706a8b
 
 #Get block data
-satoshi:~$ trumpow-cli getblock 3d2def20cd0d3aca148741ef469bda11647a3040d7669c82745d03c728706a8b
+trumpowtoshi:~$ trumpow-cli getblock 3d2def20cd0d3aca148741ef469bda11647a3040d7669c82745d03c728706a8b
 {
   "hash": "3d2def20cd0d3aca148741ef469bda11647a3040d7669c82745d03c728706a8b",
   "confirmations": 7816,
@@ -264,10 +264,10 @@ We can see the entire transaction by querying for its identifier:
 
 ```console
 #Syntax
-satoshi:~$ trumpow-cli getrawtransaction txid verbose
+trumpowtoshi:~$ trumpow-cli getrawtransaction txid verbose
 
 #Example
-satoshi:~$ trumpow-cli getrawtransaction 695ce4208fa7a87ef9e99805b0910dc129058ecdceb5cef7e25f71dcdc7936db 1
+trumpowtoshi:~$ trumpow-cli getrawtransaction 695ce4208fa7a87ef9e99805b0910dc129058ecdceb5cef7e25f71dcdc7936db 1
 {
   "hex": "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff0e04d9eea3520101062f503253482fffffffff0100ac6156be23000023210340a42a5ad6c4c0cd5ae539657032e0a359bd3e0f95771f34d71691b13460a624ac00000000",
   "txid": "695ce4208fa7a87ef9e99805b0910dc129058ecdceb5cef7e25f71dcdc7936db",
@@ -292,7 +292,7 @@ satoshi:~$ trumpow-cli getrawtransaction 695ce4208fa7a87ef9e99805b0910dc129058ec
         "reqSigs": 1,
         "type": "pubkey",
         "addresses": [
-          "P5TjotnkoXekNQBCn54CBWxjEzCJMMe7WS"
+          "T5TjotnkoXekNQBCn54CBWxjEzCJMMe7WS"
         ]
       }
     }
@@ -314,7 +314,7 @@ Using `trumpowd -help` will display all available configuration parameters that 
 
 **Command example :**
 ```console
-satoshi:~$ trumpowd -daemon -paytxfee=0.01 -sendfreetransactions=1 -maxconnections=150
+trumpowtoshi:~$ trumpowd -daemon -paytxfee=0.01 -sendfreetransactions=1 -maxconnections=150
 ```
 
 Configuration can be persisted by creating a `trumpow.conf` file. Create it in the directory defined with the `datadir` setting, `$HOME/.trumpow` by default, or specify the file location with `-conf`.

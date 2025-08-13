@@ -43,7 +43,7 @@ class GetAuxBlockTest (BitcoinTestFramework):
     assert_equal (reversedTarget, blocktemplate['target'])
 
     # Verify data that can be found in another way.
-    assert_equal (auxblock['chainid'], 63)
+    assert_equal (auxblock['chainid'], 168)
     assert_equal (auxblock['height'], self.nodes[0].getblockcount () + 1)
     assert_equal (auxblock['previousblockhash'], self.nodes[0].getblockhash (auxblock['height'] - 1))
 
@@ -51,24 +51,39 @@ class GetAuxBlockTest (BitcoinTestFramework):
     auxblock2 = self.nodes[0].getauxblock ()
     assert_equal (auxblock2, auxblock)
 
-    # If we receive a new block, the old hash will be replaced.
-    self.sync_all ()
-    self.nodes[1].generate (1)
-    self.sync_all ()
-    auxblock2 = self.nodes[0].getauxblock ()
-    assert auxblock['hash'] != auxblock2['hash']
+    # Invalid format for hash - fails before checking auxpow
     try:
-      self.nodes[0].getauxblock (auxblock['hash'], "x")
-      raise AssertionError ("invalid block hash accepted")
+      self.nodes[0].getauxblock("00", "x")
+      raise AssertionError("malformed hash accepted")
     except JSONRPCException as exc:
-      assert_equal (exc.error['code'], -8)
+      assert_equal(exc.error['code'], -8)
+      assert("hash must be of length 64" in exc.error["message"])
 
     # Invalid format for auxpow.
     try:
-      self.nodes[0].getauxblock (auxblock2['hash'], "x")
-      raise AssertionError ("malformed auxpow accepted")
+      self.nodes[0].getauxblock(auxblock2['hash'], "x")
+      raise AssertionError("malformed auxpow accepted")
     except JSONRPCException as exc:
-      assert_equal (exc.error['code'], -1)
+      assert_equal(exc.error['code'], -22)
+      assert("decode failed" in exc.error["message"])
+
+    # If we receive a new block, the old hash will be replaced.
+    self.sync_all()
+    self.nodes[1].generate(1)
+    self.sync_all()
+    auxblock2 = self.nodes[0].getauxblock()
+    assert auxblock['hash'] != auxblock2['hash']
+    apow = auxpow.computeAuxpowWithChainId(auxblock['hash'], auxpow.reverseHex(auxblock['target']), "98", True)
+    try:
+        self.nodes[0].getauxblock(auxblock['hash'], apow)
+        raise AssertionError("invalid block hash accepted")
+    except JSONRPCException as exc:
+        assert_equal(exc.error['code'], -8)
+        assert("block hash unknown" in exc.error["message"])
+
+    # Auxpow doesn't match given hash
+    res = self.nodes[0].getauxblock(auxblock2['hash'], apow)
+    assert not res
 
     # Invalidate the block again, send a transaction and query for the
     # auxblock to solve that contains the transaction.
@@ -82,12 +97,12 @@ class GetAuxBlockTest (BitcoinTestFramework):
     target = blocktemplate['target']
 
     # Compute invalid auxpow.
-    apow = auxpow.computeAuxpowWithChainId (auxblock['hash'], target, "63", False)
+    apow = auxpow.computeAuxpowWithChainId (auxblock['hash'], target, "168", False)
     res = self.nodes[0].getauxblock (auxblock['hash'], apow)
     assert not res
 
     # Compute and submit valid auxpow.
-    apow = auxpow.computeAuxpowWithChainId (auxblock['hash'], target, "63", True)
+    apow = auxpow.computeAuxpowWithChainId (auxblock['hash'], target, "168", True)
     res = self.nodes[0].getauxblock (auxblock['hash'], apow)
     assert res
 
@@ -138,7 +153,7 @@ class GetAuxBlockTest (BitcoinTestFramework):
     assert "_target" in nmc_api_auxblock
 
     reversedTarget = auxpow.reverseHex(nmc_api_auxblock["_target"])
-    apow = auxpow.computeAuxpowWithChainId(nmc_api_auxblock["hash"], reversedTarget, "63", True)
+    apow = auxpow.computeAuxpowWithChainId(nmc_api_auxblock["hash"], reversedTarget, "168", True)
     res = self.nodes[1].getauxblock(nmc_api_auxblock["hash"], apow)
     assert res
 

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # Copyright (c) 2015-2016 The Bitcoin Core developers
+# Copyright (c) 2021 The Dogecoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -834,7 +835,7 @@ SIGHASH_SINGLE = 3
 SIGHASH_ANYONECANPAY = 0x80
 
 def FindAndDelete(script, sig):
-    """Consensus critical, see FindAndDelete() in Satoshi codebase"""
+    """Consensus critical, see FindAndDelete() in trumpowtoshi codebase"""
     r = b''
     last_sop_idx = sop_idx = 0
     skip = True

@@ -1,7 +1,7 @@
 Trumpow Fee Recommendation
 ----------------------------
 
-_last updated for 1.0.0_
+_last updated for 1.2.0.0_
 
 The Trumpow chain has a relatively low block interval, 1 megabyte blockspace
 and aims to provide a cheap means for people to transact. Therefore, the biggest
@@ -21,8 +21,10 @@ wallet, are:
 The wallet rejects transactions that have outputs under the dust limit, and
 discards change to fee if it falls under this limit.
 
-Fees are calculated over the exact size of a transaction. For example, a 192 byte
-transaction only has to pay `0.01 / 1000 * 192 = 0.00192` TRMP fee.
+Note: In the past, Trumpow has enforced a rounding function in the fee
+      mechanism. Since version 1.14.5, this is no longer the case, and fees are
+      calculated over the exact size of a transaction. For example, a 192 byte
+      transaction only has to pay `0.01 / 1000 * 192 = 0.00192` DOGE fee.
 
 ## Miner default inclusion policies
 

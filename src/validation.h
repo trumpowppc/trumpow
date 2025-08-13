@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2016 The Bitcoin Core developers
-// Copyright (c) 2022 The Dogecoin Core developers
+// Copyright (c) 2022-2023 The Dogecoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -14,6 +14,7 @@
 #include "amount.h"
 #include "chain.h"
 #include "coins.h"
+#include "fs.h"
 #include "policy/policy.h" // For RECOMMENDED_MIN_TX_FEE
 #include "protocol.h" // For CMessageHeader::MessageStartChars
 #include "script/script_error.h"
@@ -33,7 +34,6 @@
 #include <atomic>
 
 #include <boost/unordered_map.hpp>
-#include <boost/filesystem/path.hpp>
 
 class CBlockIndex;
 class CBlockTreeDB;
@@ -61,13 +61,13 @@ static const CAmount DEFAULT_MIN_RELAY_TX_FEE = RECOMMENDED_MIN_TX_FEE / 10;
 //rnicoll: 8/2021 scaled down as recommended fee is lowered
 static const CAmount DEFAULT_TRANSACTION_MAXFEE = RECOMMENDED_MIN_TX_FEE * 10000;
 
-//! Discourage users to set fees higher than this amount (in satoshis) per kB
+//! Discourage users to set fees higher than this amount (in trumpowtoshis) per kB
 /* Trumpow: Set the high tx fee to be higher than the default values
  *           implemented by the wallet.
  */
 static const CAmount HIGH_TX_FEE_PER_KB = RECOMMENDED_MIN_TX_FEE * 1000;
 
-//! -maxtxfee will warn if called with a higher fee than this amount (in satoshis)
+//! -maxtxfee will warn if called with a higher fee than this amount (in trumpowtoshis)
 //mlumin: 5/2021 adjusted max upward in terms of coin
 static const CAmount HIGH_MAX_TX_FEE = 100 * HIGH_TX_FEE_PER_KB;
 /** Default for -limitancestorcount, max number of in-mempool ancestors */
@@ -186,7 +186,7 @@ extern size_t nCoinCacheUsage;
 /** A fee rate smaller than this is considered zero fee (for relaying, mining and transaction creation) */
 //mlumin 5/2021: changing variable name to Rate vs Fee because thats what it is.
 extern CFeeRate minRelayTxFeeRate;
-/** Absolute maximum transaction fee (in satoshis) used by wallet and mempool (rejects high fee in sendrawtransaction) */
+/** Absolute maximum transaction fee (in trumpowtoshis) used by wallet and mempool (rejects high fee in sendrawtransaction) */
 extern CAmount maxTxFee;
 /** If the tip is older than this (in seconds), the node is considered to be in initial block download. */
 extern int64_t nMaxTipAge;
@@ -264,7 +264,7 @@ FILE* OpenBlockFile(const CDiskBlockPos &pos, bool fReadOnly = false);
 /** Open an undo file (rev?????.dat) */
 FILE* OpenUndoFile(const CDiskBlockPos &pos, bool fReadOnly = false);
 /** Translation to a filesystem path */
-boost::filesystem::path GetBlockPosFilename(const CDiskBlockPos &pos, const char *prefix);
+fs::path GetBlockPosFilename(const CDiskBlockPos &pos, const char *prefix);
 /** Import blocks from an external file */
 bool LoadExternalBlockFile(const CChainParams& chainparams, FILE* fileIn, CDiskBlockPos *dbp = NULL);
 /** Initialize a new block tree database + block data on disk */

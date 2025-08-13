@@ -75,7 +75,7 @@ class BIP68Test(BitcoinTestFramework):
         utxo = utxos[0]
 
         tx1 = CTransaction()
-        value = int(satoshi_round(utxo["amount"] - self.relayfee)*COIN)
+        value = int(trumpowtoshi_round(utxo["amount"] - self.relayfee)*COIN)
 
         # Check that the disable flag disables relative locktime.
         # If sequence locks were used, this would require 1 block for the

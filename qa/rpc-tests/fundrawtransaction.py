@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Copyright (c) 2014-2016 The Bitcoin Core developers
-# Copyright (c) 2021 The Dogecoin Core developers
+# Copyright (c) 2021-2022 The Dogecoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -730,7 +730,7 @@ class RawTransactionsTest(BitcoinTestFramework):
         # outputs 2 and 3 take the same share of the fee
         assert_equal(share[2], share[3])
 
-        # output 0 takes at least as much share of the fee, and no more than 2 satoshis more, than outputs 2 and 3
+        # output 0 takes at least as much share of the fee, and no more than 2 trumpowtoshis more, than outputs 2 and 3
         assert_greater_than_or_equal(share[0], share[2])
         assert_greater_than_or_equal(share[2] + Decimal(2e-8), share[0])
 

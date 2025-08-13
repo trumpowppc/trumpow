@@ -1,13 +1,13 @@
 name: trumpow
 # Running 'snapcraft register <name>' is advised
-version: '1.0.0'
+version: '1.2.0.0'
 summary: Reference client of Trumpow, a peer-to-peer digital currency like Bitcoin.
 description: |
   Trumpow is a community-driven cryptocurrency that was inspired by Dogecoin. The Trumpow Core software allows anyone to operate a node in the Trumpow blockchain networks and uses the Scrypt hashing method for Proof of Work. It is adapted from Bitcoin Core and other cryptocurrencies.
 
 grade: stable
 confinement: strict
-base: core22
+base: core18
 compression: lzo
 architectures:
   - build-on: amd64
@@ -19,30 +19,30 @@ architectures:
 
 apps:
   d:
-    command: bin/trumpowd
+    command: trumpowd
     plugs: [home, removable-media, network, network-bind]
     environment:
       # Override HOME so the datadir is located at ~/snap/trumpow/common/.trumpow/ instead of ~/snap/trumpow/current/.trumpow/, and each new version of the snap won't have a different data directory: https://docs.snapcraft.io/environment-variables/7983
       HOME: $SNAP_USER_COMMON
   qt:
-    command-chain: [bin/desktop-launch]
-    command: bin/trumpow-qt
+    command: desktop-launch trumpow-qt
     plugs: [home, removable-media, network, network-bind, desktop, x11, unity7]
     environment:
       HOME: $SNAP_USER_COMMON
       DISABLE_WAYLAND: 1
+
   cli:
-    command: bin/trumpow-cli
+    command: trumpow-cli
     plugs: [home, removable-media, network]
     environment:
       HOME: $SNAP_USER_COMMON
   tx:
-    command: bin/trumpow-tx
+    command: trumpow-tx
     plugs: [home, removable-media, network]
     environment:
       HOME: $SNAP_USER_COMMON
   test:
-    command: bin/test_trumpow
+    command: test_trumpow
     plugs: [home, removable-media, network]
     environment:
       HOME: $SNAP_USER_COMMON
@@ -63,7 +63,7 @@ parts:
       - dpkg-dev
     stage-packages:
       - libxkbcommon0
-      - fonts-ubuntu
+      - ttf-ubuntu-font-family
       - dmz-cursor-theme
       - light-themes
       - adwaita-icon-theme
@@ -72,7 +72,7 @@ parts:
       - libqt5gui5
       - libgdk-pixbuf2.0-0
       - libqt5svg5 # for loading icon themes which are svg
-      - libgtk2.0-0
+      - try: [appmenu-qt5] # not available on core18
       - locales-all
       - xdg-user-dirs
       - fcitx-frontend-qt5
@@ -82,10 +82,10 @@ parts:
     override-build: |
       echo "This script is viewable at https://github.com/trumpowppc/trumpow/blob/master/contrib/snap/snapcraft.yaml"
       echo "Downloading files..."
-      if [ "$CRAFT_ARCH_TRIPLET" = "i386-linux-gnu" ]; then # snap designates 32-bit as i386, but trumpow designates it as i686
+      if [ "$SNAPCRAFT_ARCH_TRIPLET" = "i386-linux-gnu" ]; then # snap designates 32-bit as i386, but trumpow designates it as i686
         BUILD_ARCH_TRIPLET=i686-pc-linux-gnu
       else
-        BUILD_ARCH_TRIPLET=$CRAFT_ARCH_TRIPLET
+        BUILD_ARCH_TRIPLET=$SNAPCRAFT_ARCH_TRIPLET
       fi
       wget https://github.com/trumpowppc/trumpow/releases/download/v${SNAPCRAFT_PROJECT_VERSION}/trumpow-${SNAPCRAFT_PROJECT_VERSION}-${BUILD_ARCH_TRIPLET}.tar.gz
       wget https://github.com/Trumpow/gitian.sigs/archive/refs/heads/master.tar.gz
@@ -117,7 +117,7 @@ parts:
       install -m 0755 -D -t $CRAFT_PART_INSTALL/bin trumpow-${SNAPCRAFT_PROJECT_VERSION}/bin/trumpow-cli
       install -m 0755 -D -t $CRAFT_PART_INSTALL/bin trumpow-${SNAPCRAFT_PROJECT_VERSION}/bin/trumpow-tx
       install -m 0755 -D -t $CRAFT_PART_INSTALL/bin trumpow-${SNAPCRAFT_PROJECT_VERSION}/bin/test_trumpow
-      wget https://raw.githubusercontent.com/Trumpow/trumpow/master/share/pixmaps/trumpow128.png
+      wget https://raw.githubusercontent.com/trumpowppc/trumpow/master/share/pixmaps/trumpow128.png
       install -m 0644 -D -t $CRAFT_PART_INSTALL/share/pixmaps trumpow128.png
     build-packages:
       - wget
