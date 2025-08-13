@@ -1,4 +1,4 @@
-# Building trumpow 1.1.1 on MacOS #
+# Building trumpow 1.2.0.0 on MacOS #
 
 Tested on MacOs Ventura and Sonoma on Intel (x86_64) and Apple Silicon (arm64) macs.
 

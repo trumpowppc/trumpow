@@ -1,6 +1,6 @@
 name: trumpow
 # Running 'snapcraft register <name>' is advised
-version: '1.1.1'
+version: '1.2.0.0'
 summary: Reference client of Trumpow, a peer-to-peer digital currency like Bitcoin.
 description: |
   Trumpow is a community-driven cryptocurrency that was inspired by Dogecoin. The Trumpow Core software allows anyone to operate a node in the Trumpow blockchain networks and uses the Scrypt hashing method for Proof of Work. It is adapted from Bitcoin Core and other cryptocurrencies.

@@ -1,7 +1,7 @@
 Trumpow Fee Recommendation
 ----------------------------
 
-_last updated for 1.1.1_
+_last updated for 1.2.0.0_
 
 The Trumpow chain has a relatively low block interval, 1 megabyte blockspace
 and aims to provide a cheap means for people to transact. Therefore, the biggest
