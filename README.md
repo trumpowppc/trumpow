@@ -25,14 +25,13 @@ Changes:
 * Addresses start with `T` instead of `D`
 * BIPS features will start block 1000
 * AuxPow / Merged mining starts at block 60,000 (Chain ID: 168)
-* GUI themed for Trumpow
+* GUI themed for Trumpow (same as DOGE)
 * Coin Name    : TrumPOW
 * Coin ticker  : $TRMP
-* Algorithm    : Scrypt
+* Algorithm    : Scrypt (same as DOGE)
 * Block Time   : 60 seconds
-* Explorer 1   : https://explorer.trumpow.meme
-* github       : https://github.com/trumpowppc/trumpow
-* Wallet       : https://github.com/trumpowppc/trumpow/releases
+* Explorer #1   : https://explorer.trumpow.meme
+* Explorer #1   : https://explorer-1.trumpow.meme
 
 
 ## Usage 💻
@@ -41,54 +40,44 @@ To start your journey with TrumPOW, see the [installation guide](INSTALL.md) and
 
 The JSON-RPC API provided by TrumPOW is self-documenting and can be browsed with `trumpow-cli help`, while detailed information for each command can be viewed with `trumpow-cli help <command>`. Alternatively, see the [Bitcoin Core documentation](https://developer.bitcoin.org/reference/rpc/) - which implement a similar protocol - to get a browsable version.
 
-
-
-<font face="Verdana"><b>### Block Rewards Distribution</b></font><br>
 &nbsp;</p>
+<font face="Verdana"><b>### Block Rewards Distribution</b></font><br>
+
 <table border="1" width="46%">
 	<tr>
-		<td width="230"><b>Starting Block</b></td>
-		<td width="270"><b>End Block</b></td>
+		<td width="250"><b>Block Range</b></td>
 		<td><b>Rewards</b></td>
 	</tr>
 	<tr>
-		<td width="230">1</td>
-		<td width="270">99,999</td>
+		<td width="250">1 - 99,999</td>
 		<td>1,000,000</td>
 	</tr>
 	<tr>
-		<td width="230">100,000</td>
-		<td width="270">199,999</td>
+		<td width="250">100,000 - 199,999</td>
 		<td>500,000</td>
 	</tr>
 	<tr>
-		<td width="230">200,000</td>
-		<td width="270">299,999</td>
+		<td width="250">200,000 - 299,999</td>
 		<td>250,000</td>
 	</tr>
 	<tr>
-		<td width="230">300,000</td>
-		<td width="270">399,999</td>
+		<td width="250">300,000 - 399,999</td>
 		<td>125,000</td>
 	</tr>
 	<tr>
-		<td width="230">400,000</td>
-		<td width="270">499,999</td>
+		<td width="250">400,000 - 499,999</td>
 		<td>62,500</td>
 	</tr>
 	<tr>
-		<td width="230">500,000</td>
-		<td width="270">599,999</td>
+		<td width="250">500,000 - 599,999</td>
 		<td>31,250</td>
 	</tr>
 	<tr>
-		<td width="230">600,000</td>
-		<td width="270">699,999</td>
+		<td width="250">600,000 - 699,999</td>
 		<td>15,625</td>
 	</tr>
 	<tr>
-		<td width="230">700,000</td>
-		<td width="270">unlimited supply</td>
+		<td width="250">700,000 - unlimited supply</td>
 		<td>10,000</td>
 	</tr>
 </table>
@@ -98,8 +87,7 @@ The JSON-RPC API provided by TrumPOW is self-documenting and can be browsed with
 
 TrumPOW by default uses port `33884` for peer-to-peer communication that
 is needed to synchronize the "mainnet" blockchain and stay informed of new
-transactions and blocks. Additionally, a JSONRPC port can be opened, which
-defaults to port `15612` for mainnet nodes. It is strongly recommended to not
+transactions and blocks. It is strongly recommended to not
 expose RPC ports to the public internet.
 
 | Function | mainnet | testnet | regtest |
@@ -126,20 +114,11 @@ Main development resources:
 Version numbers are following ```major.minor.patch``` semantics.
 
 ### Branches
-There are 4 types of branches in this repository:
+Please use Main branch in this repository:
 
-- **master:** Unstable, contains the latest code under development.
-- **maintenance:** Stable, contains the latest version of previous releases,
-  which are still under active maintenance. Format: ```<version>-maint```
-- **development:** Unstable, contains new code for upcoming releases. Format: ```<version>-dev```
-- **archive:** Stable, immutable branches for old versions that no longer change
-  because they are no longer maintained.
+- **main:** Sstable, contains the latest code.
 
-***Submit your pull requests against `master`***
-
-*Maintenance branches are exclusively mutable by release. When a release is*
-*planned, a development branch will be created and commits from master will*
-*be cherry-picked into these by maintainers.*
+***Submit your pull requests against `main`***
 
 ## Contributing 🤝
 
@@ -158,7 +137,6 @@ To see what's going on, meet people & discuss, find the latest meme, learn
 about Trumpow, give or ask for help, to share your project.
 
 Here are some places to visit:
-
 
 * [Discord](https://discord.gg/rqtkgwsk6j)
 * [Website](https://trumpow.meme/)
