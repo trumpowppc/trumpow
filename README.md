@@ -138,7 +138,7 @@ about Trumpow, give or ask for help, to share your project.
 
 Here are some places to visit:
 
-* [Discord](https://discord.gg/rqtkgwsk6j)
+* [Discord](https://discord.gg/ybRF4dny5B)
 * [Website](https://trumpow.meme/)
 * [Telegram EN](https://t.me/TrumPOWEN)
 * [Telegram CN](https://t.me/TrumPOWCN)
