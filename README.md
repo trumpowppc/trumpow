@@ -7,18 +7,18 @@ TrumPOW [$TRMP]
 
 TrumPOW introduces an innovative world of meme-inspired cryptocurrency, blending humor with blockchain technology. It is created to bring joy, entertainment, and interaction to the crypto community. Operating on a decentralized, community-focused ecosystem, TrumPOW seeks to merge the excitement of memes with the advancements of blockchain.
 
-Unlike all iterations before it, Trumpow is a layer 1 coin. This means there are no liquidity pools to drain, no blacklisting wallets, and no confusing smart contracts. Trumpow is a simple blockchain.
+Unlike all iterations before it, TrumPOW is a layer 1 coin. This means there are no liquidity pools to drain, no blacklisting wallets, and no confusing smart contracts. Trumpow is a simple blockchain.
 
-The TrumPOW software allows anyone to operate a node in the Trumpow blockchain networks and uses the Scrypt hashing method for Proof of Work. It is adapted from Dogecoin Core, Bitcoin Core, and other cryptocurrencies.
+The TrumPOW software allows anyone to operate a node in the TrumPOW blockchain networks and uses the Scrypt hashing method for Proof of Work. It is adapted from Dogecoin Core, Bitcoin Core, and other cryptocurrencies.
 
-For information about the default fees used on the Trumpow network, please
+For information about the default fees used on the TrumPOW network, please
 refer to the [fee recommendation](doc/fee-recommendation.md).
 
 **Website:** [trumpow.meme](https://trumpow.meme/)
 
 ## Dogecoin Differences
 
-Trumpow is a fork of Dogecoin. For the sake of familiarity, we will attempt to keep Trumpow similar to Dogecoin.
+Trumpow is a fork of Dogecoin. For the sake of familiarity, we will attempt to keep TrumPOW similar to Dogecoin.
 
 Changes:
 
@@ -134,7 +134,7 @@ where your contributions will have high impact and get very appreciation.
 
 You can join the communities on different social media.
 To see what's going on, meet people & discuss, find the latest meme, learn
-about Trumpow, give or ask for help, to share your project.
+about TrumPOW, give or ask for help, to share your project.
 
 Here are some places to visit:
 
@@ -152,7 +152,7 @@ Here are some places to visit:
 
 ## Frequently Asked Questions ❓
 
-Do you have a question regarding Trumpow? An answer is perhaps already in the [FAQ](doc/FAQ.md) or the [Q&A section](https://github.com/trumpowppc/trumpow/discussions/categories/q-a) of the discussion board!
+Do you have a question regarding TrumPOW? An answer is perhaps already in the [FAQ](doc/FAQ.md) or the [Q&A section](https://github.com/trumpowppc/trumpow/discussions/categories/q-a) of the discussion board!
 
 ## License ⚖️
 TrumPOW is released under the terms of the MIT license. See
