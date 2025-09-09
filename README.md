@@ -26,12 +26,12 @@ Changes:
 * BIPS features will start block 1000
 * AuxPow / Merged mining starts at block 60,000 (Chain ID: 168)
 * GUI themed for Trumpow (same as DOGE)
-* Coin Name    : TrumPOW
-* Coin ticker  : $TRMP
-* Algorithm    : Scrypt (same as DOGE)
-* Block Time   : 60 seconds
+* Coin Name     : TrumPOW
+* Coin ticker   : $TRMP
+* Algorithm     : Scrypt (same as DOGE)
+* Block Time    : 60 seconds
 * Explorer #1   : https://explorer.trumpow.meme
-* Explorer #1   : https://explorer-1.trumpow.meme
+* Explorer #2   : https://explorer-1.trumpow.meme
 
 
 ## Usage 💻
