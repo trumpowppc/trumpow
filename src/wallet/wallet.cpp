@@ -48,7 +48,8 @@ bool fWalletRbf = DEFAULT_WALLET_RBF;
 
 const char * DEFAULT_WALLET_DAT = "wallet.dat";
 const uint32_t BIP32_HARDENED_KEY_LIMIT = 0x80000000;
-const uint32_t BIP44_COIN_TYPE = 3;
+/** why 1707? because it is TrumPOW's date of birth (July 17, 2025) */
+const uint32_t BIP44_COIN_TYPE = 1707;  //PR #1928 SLIP-0044 TrumPOW (TRMP)
 
 /**
  * Fees smaller than this (in trumpowtoshi) are considered zero fee (for transaction creation)
