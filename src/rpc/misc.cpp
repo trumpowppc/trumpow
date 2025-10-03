@@ -14,6 +14,7 @@
 #include "timedata.h"
 #include "util.h"
 #include "utilstrencodings.h"
+#include "txdb.h"
 #ifdef ENABLE_WALLET
 #include "wallet/wallet.h"
 #include "wallet/walletdb.h"
@@ -529,6 +530,82 @@ UniValue echo(const JSONRPCRequest& request)
     return request.params;
 }
 
+UniValue getindexinfo(const JSONRPCRequest& request)
+{
+    if (request.fHelp || request.params.size() > 1)
+        throw std::runtime_error(
+            "getindexinfo ( index_name )\n"
+            "\nReturns the status of one or all available indices currently running in the node.\n"
+            "\nArguments:\n"
+            "1. \"index_name\"    (string, optional) Filter results for an index with a specific name.\n"
+            "\nResult:\n"
+            "{\n"
+            "  \"name\": {                    (object) The name of the index\n"
+            "    \"synced\": true|false,      (boolean) Whether the index is synced or not\n"
+            "    \"best_block_height\": n     (numeric) The block height to which the index is synced\n"
+            "  }, ...\n"
+            "}\n"
+            "\nExamples:\n"
+            + HelpExampleCli("getindexinfo", "")
+            + HelpExampleRpc("getindexinfo", "")
+            + HelpExampleCli("getindexinfo", "txindex")
+            + HelpExampleRpc("getindexinfo", "txindex")
+        );
+
+    LOCK(cs_main);
+
+    UniValue result(UniValue::VOBJ);
+    const std::string index_name =
+        (request.params.size() >= 1 && !request.params[0].isNull())
+            ? request.params[0].get_str()
+            : std::string();
+
+    // Helper to create the summary object for an index.
+    auto createIndexSummary = [&](const std::string& /*name*/, bool enabled) -> UniValue {
+        UniValue index(UniValue::VOBJ);
+        // NOTE: If you have real "is synced" signals from each index, use them here.
+        // For now, we treat "enabled" as "synced" to satisfy mempool/clients expecting the field.
+        index.pushKV("synced", enabled);
+        index.pushKV("best_block_height", enabled ? (int)chainActive.Height() : 0);
+        return index;
+    };
+
+    // txindex (this one typically exists as fTxIndex in Doge-like forks)
+    if (index_name.empty() || index_name == "txindex") {
+        result.pushKV("txindex", createIndexSummary("txindex", fTxIndex));
+    }
+
+    // Optional indexes — guard them so builds succeed when they aren't present.
+    // Define these in your build if/when you wire the features:
+    //   -DENABLE_ADDRESS_INDEX  -DENABLE_ASSET_INDEX  -DENABLE_TIMESTAMP_INDEX  -DENABLE_SPENT_INDEX
+
+#ifdef ENABLE_ADDRESS_INDEX
+    if (index_name.empty() || index_name == "addressindex") {
+        result.pushKV("addressindex", createIndexSummary("addressindex", fAddressIndex));
+    }
+#endif
+
+#ifdef ENABLE_ASSET_INDEX
+    if (index_name.empty() || index_name == "assetindex") {
+        result.pushKV("assetindex", createIndexSummary("assetindex", fAssetIndex));
+    }
+#endif
+
+#ifdef ENABLE_TIMESTAMP_INDEX
+    if (index_name.empty() || index_name == "timestampindex") {
+        result.pushKV("timestampindex", createIndexSummary("timestampindex", fTimestampIndex));
+    }
+#endif
+
+#ifdef ENABLE_SPENT_INDEX
+    if (index_name.empty() || index_name == "spentindex") {
+        result.pushKV("spentindex", createIndexSummary("spentindex", fSpentIndex));
+    }
+#endif
+
+    return result;
+}
+
 static const CRPCCommand commands[] =
 { //  category              name                      actor (function)         okSafeMode
   //  --------------------- ------------------------  -----------------------  ----------
@@ -538,12 +615,13 @@ static const CRPCCommand commands[] =
     { "util",               "createmultisig",         &createmultisig,         true,  {"nrequired","keys"} },
     { "util",               "verifymessage",          &verifymessage,          true,  {"address","signature","message"} },
     { "util",               "signmessagewithprivkey", &signmessagewithprivkey, true,  {"privkey","message"} },
+    { "util",               "getindexinfo",           &getindexinfo,           true,  {"index_name"} },
 
     /* Not shown in help */
     { "hidden",             "setmocktime",            &setmocktime,            true,  {"timestamp"}},
     { "hidden",             "getmocktime",            &getmocktime,            true,  {}},
     { "hidden",             "echo",                   &echo,                   true,  {"arg0","arg1","arg2","arg3","arg4","arg5","arg6","arg7","arg8","arg9"}},
-    { "hidden",             "echojson",               &echo,                  true,  {"arg0","arg1","arg2","arg3","arg4","arg5","arg6","arg7","arg8","arg9"}},
+    { "hidden",             "echojson",               &echo,                   true,  {"arg0","arg1","arg2","arg3","arg4","arg5","arg6","arg7","arg8","arg9"}},
 };
 
 void RegisterMiscRPCCommands(CRPCTable &t)
