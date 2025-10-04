@@ -1073,6 +1073,16 @@ bool GetTransaction(const uint256 &hash, CTransactionRef &txOut, const Consensus
 {
     CBlockIndex *pindexSlow = NULL;
 
+    // Special handling for genesis block coinbase transaction
+    if (hash == uint256S("a2435644e54e63726c142a69c36e031bbb45ddc569447d568e1af7373443bb05")) {
+        CBlock block;
+        if (ReadBlockFromDisk(block, chainActive[0], consensusParams)) {
+            txOut = block.vtx[0];
+            hashBlock = chainActive[0]->GetBlockHash();
+            return true;
+        }
+    }
+
     LOCK(cs_main);
 
     CTransactionRef ptx = mempool.get(hash);
