@@ -392,6 +392,7 @@ std::string EntryDescriptionString()
            "    \"ancestorcount\" : n,    (numeric) number of in-mempool ancestor transactions (including this one)\n"
            "    \"ancestorsize\" : n,     (numeric) virtual transaction size of in-mempool ancestors (including this one)\n"
            "    \"ancestorfees\" : n,     (numeric) modified fees (see above) of in-mempool ancestors (including this one)\n"
+           "    \"wtxid\" : hash,         (string) hash of serialized transaction, including witness data\n"
            "    \"depends\" : [           (array) unconfirmed transactions used as inputs for this transaction\n"
            "        \"transactionid\",    (string) parent transaction id\n"
            "       ... ]\n";
@@ -416,6 +417,8 @@ void entryToJSON(UniValue &info, const CTxMemPoolEntry &e)
     info.pushKV("ancestorcount", e.GetCountWithAncestors());
     info.pushKV("ancestorsize", e.GetSizeWithAncestors());
     info.pushKV("ancestorfees", e.GetModFeesWithAncestors());
+    info.pushKV("wtxid", mempool.vTxHashes[e.vTxHashesIdx].first.ToString());
+
     const CTransaction& tx = e.GetTx();
     set<string> setDepends;
     BOOST_FOREACH(const CTxIn& txin, tx.vin)
