@@ -32,6 +32,8 @@ Changes:
 * Block Time    : 60 seconds
 * Explorer #1   : https://explorer.trumpow.meme
 * Explorer #2   : https://explorer-1.trumpow.meme
+* Mempool		: https://trmpspace.trumpow.meme
+* Whitepaper	: https://docs.trumpow.meme/TrumPOW_Whitepaper_v1.0.1.pdf
 
 
 ## Usage 💻
@@ -135,20 +137,6 @@ where your contributions will have high impact and get very appreciation.
 You can join the communities on different social media.
 To see what's going on, meet people & discuss, find the latest meme, learn
 about TrumPOW, give or ask for help, to share your project.
-
-Here are some places to visit:
-
-* [Discord](https://discord.gg/ybRF4dny5B)
-* [Website](https://trumpow.meme/)
-* [Telegram EN](https://t.me/TrumPOWEN)
-* [Telegram CN](https://t.me/TrumPOWCN)
-* [X](https://x.com/TrmPow)
-* Explorer #1   : https://explorer.trumpow.meme
-* Explorer #2   : https://explorer-1.trumpow.meme
-
-## Future Plan
-
-- Please check the roadmap in our website
 
 ## Frequently Asked Questions ❓
 
