@@ -75,8 +75,8 @@ jobs:
             run-bench: false
             check-security: true
             check-symbols: false
-            dep-opts: "NO_QT=1"
-            config-opts: "--enable-zmq --enable-glibc-back-compat LDFLAGS=-static-libstdc++ --disable-tests"
+            dep-opts: ""
+            config-opts: "--enable-zmq --with-gui=qt5 --enable-glibc-back-compat LDFLAGS=-static-libstdc++ --disable-tests"
             goal: install
           - name: i686-win
             host: i686-w64-mingw32
