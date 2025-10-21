@@ -393,6 +393,12 @@ std::string EntryDescriptionString()
            "    \"ancestorsize\" : n,     (numeric) virtual transaction size of in-mempool ancestors (including this one)\n"
            "    \"ancestorfees\" : n,     (numeric) modified fees (see above) of in-mempool ancestors (including this one)\n"
            "    \"wtxid\" : hash,         (string) hash of serialized transaction, including witness data\n"
+           "    \"fees\" : {              (json object)\n"
+           "        \"base\" : n,         (numeric) transaction fee in " + CURRENCY_UNIT + "\n"
+           "        \"modified\" : n,     (numeric) transaction fee with fee deltas used for mining priority in " + CURRENCY_UNIT + "\n"
+           "        \"ancestor\" : n,     (numeric) modified fees (see above) of in-mempool ancestors (including this one) in " + CURRENCY_UNIT + "\n"
+           "        \"descendant\" : n    (numeric) modified fees (see above) of in-mempool descendants (including this one) in " + CURRENCY_UNIT + "\n"
+           "    },\n"
            "    \"depends\" : [           (array) unconfirmed transactions used as inputs for this transaction\n"
            "        \"transactionid\",    (string) parent transaction id\n"
            "       ... ]\n";
@@ -418,6 +424,14 @@ void entryToJSON(UniValue &info, const CTxMemPoolEntry &e)
     info.pushKV("ancestorsize", e.GetSizeWithAncestors());
     info.pushKV("ancestorfees", e.GetModFeesWithAncestors());
     info.pushKV("wtxid", mempool.vTxHashes[e.vTxHashesIdx].first.ToString());
+
+    // Add nested fees object
+    UniValue fees(UniValue::VOBJ);
+    fees.pushKV("base", ValueFromAmount(e.GetFee()));
+    fees.pushKV("modified", ValueFromAmount(e.GetModifiedFee()));
+    fees.pushKV("ancestor", ValueFromAmount(e.GetModFeesWithAncestors()));
+    fees.pushKV("descendant", ValueFromAmount(e.GetModFeesWithDescendants()));
+    info.pushKV("fees", fees);
 
     const CTransaction& tx = e.GetTx();
     set<string> setDepends;
