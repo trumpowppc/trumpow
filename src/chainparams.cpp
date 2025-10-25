@@ -111,7 +111,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 0; // Disabled
 
         // The best chain should have at least this much work.
-	consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000074d82d8a18841f1"); // 23275
+	    consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000074d82d8a18841f1"); // 23275
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x5b523460ef6d2917b717131b720444440e7b8ee4e634f6c02ecf2a02d41ad80a"); // 23275
 
@@ -182,6 +182,7 @@ public:
             ( 1000, uint256S("0x568308325793c296a347599535dabd87aa0eb5ed4ab4fec35d76f262297de8e8"))
             ( 5500, uint256S("0x7793d42151b246c68a45441b02676b66720fb7ec8b1e2c784a13ceedba9b1bc7"))
             ( 23275, uint256S("0x5b523460ef6d2917b717131b720444440e7b8ee4e634f6c02ecf2a02d41ad80a"))
+            ( 127460, uint256S("0034300b3b61e7617c05945ce26610e474b3b5aba2f1f4d169e83a2764d6e2622"))
         };
 
         chainTxData = ChainTxData{ };
