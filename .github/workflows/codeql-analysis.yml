@@ -35,14 +35,14 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
 
     - name: Update system
       run: |
         sudo apt-get update --yes
         sudo apt-get install build-essential libtool autotools-dev automake pkg-config bsdmainutils --yes
     - name: Dependency cache
-      uses: actions/cache@v4
+      uses: actions/cache@v5
       env:
         cache-name: depends
       with:

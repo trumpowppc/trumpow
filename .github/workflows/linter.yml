@@ -12,6 +12,6 @@ jobs:
     name: Check Translations
     runs-on: ubuntu-24.04
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     - name: Lint translation files
       run: python3 contrib/devtools/check-translations.py
