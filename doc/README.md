@@ -1,4 +1,4 @@
-Trumpow Core 1.2.0.0
+Trumpow Core 1.2.2.0
 =====================
 
 Development

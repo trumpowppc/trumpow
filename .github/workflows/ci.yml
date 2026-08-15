@@ -24,7 +24,7 @@ jobs:
       CACHE_NONCE: "1"
       WINEDEBUG: fixme-all
       WINEPREFIX: /tmp/wineprefix/
-      SDK_URL: https://depends.dogecoincore.org
+      SDK_URL: https://bitcoincore.org/depends-sources/sdks
 
     strategy:
       fail-fast: false
@@ -152,7 +152,9 @@ jobs:
                procps bison python3 python3-pip python3-setuptools python3-wheel autoconf-archive
           apt-get install -y ${{ matrix.packages }}
           python3 -m pip install setuptools==70.3.0 --upgrade
-          python3 -m pip install lief
+          # Keep this in sync with the version used by the Gitian descriptors.
+          # Newer LIEF releases do not provide wheels for Ubuntu 20.04's Python 3.8.
+          python3 -m pip install --only-binary=:all: lief==0.12.3
 
       - name: Post install
         if: ${{ matrix.postinstall }}
@@ -179,10 +181,13 @@ jobs:
         run: |
           mkdir -p ./depends/sdk-sources
           mkdir -p ./depends/SDKs
-          echo "${{ matrix.sdk-shasum }}  depends/sdk-sources/${{ env.sdk-filename }}" | sha256sum -c || \
-          curl --location --fail $SDK_URL/${{ env.sdk-filename }} -o depends/sdk-sources/${{ env.sdk-filename }} &&\
-          echo "${{ matrix.sdk-shasum }}  depends/sdk-sources/${{ env.sdk-filename }}" | sha256sum -c
-          tar -C depends/SDKs -xf depends/sdk-sources/${{ env.sdk-filename }}
+          SDK_PATH="depends/sdk-sources/${{ env.sdk-filename }}"
+          if ! test -f "$SDK_PATH" || ! echo "${{ matrix.sdk-shasum }}  $SDK_PATH" | sha256sum -c; then
+            curl --location --fail --show-error --retry 3 \
+              --output "$SDK_PATH" "$SDK_URL/${{ env.sdk-filename }}"
+          fi
+          echo "${{ matrix.sdk-shasum }}  $SDK_PATH" | sha256sum -c
+          tar -C depends/SDKs -xf "$SDK_PATH"
 
       - name: Dependency cache
         uses: actions/cache@v4

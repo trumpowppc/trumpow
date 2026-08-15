@@ -1,8 +1,8 @@
 Arch Linux build guide
 ----------------------
 
-**Last tested with:** 1.2.0.0-dev
-**Test date:** 2025/08/13
+**Last tested with:** 1.2.2.0-dev
+**Test date:** 2026/13/2026
 
 This example lists the steps necessary to setup and build a command line only
 trumpowd on archlinux:
